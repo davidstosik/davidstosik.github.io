@@ -173,8 +173,11 @@ end
 
 This code is not very pretty, but it'll do. When an article is created:
 
- - Its `valid_until` attribute is set to one month in the future.
- - A Sidekiq job is scheduled to unpublish the Article in one month.
+ - Its `valid_until` attribute is set to *one month* in the future.
+ - A Sidekiq job is scheduled to unpublish the Article in *one month*.
+
+(Did you notice how I used the same "one month" expression in the to statements
+above? That's because the code too is using the same `1.month` expression.)
 
 One would expect the job to be triggered around the time the article becomes
 invalid (ideally when now **is** `article.valid_until` or else a few milliseconds
@@ -189,6 +192,32 @@ always equal to 30 days!
 There you have it, you thought you used `1.month` consistently and that dates would
 match, but you're getting a 2-day shift between the time the article becomes
 invalid, and the time it's actually unpublished.
+
+# Last one for the fun
+
+Now for the fun, let's consider the two following expressions.
+{% highlight ruby %}
+Time.now + 1.month - Time.now - 30.days
+
+Time.now - Time.now + 1.month - 30.days
+{% endhighlight %}
+
+All I did was reorder the members of a simple arithmetic operation, right? They
+should have the same results.
+
+Not in Rails!
+
+{% highlight irb %}
+irb(main):008:0> Time.now + 1.month - Time.now - 30.days
+=> -172800.0
+
+irb(main):009:0> Time.now - Time.now + 1.month - 30.days
+=> 0.0
+{% endhighlight %}
+*(remember, time is still frozen using Timecop)*
+
+Considering the explanation above, it will be easy for you to understand why...
+
 
 [1daynotobject]: http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/
 [datecalculations+]: https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/core_ext/date/calculations.rb#L96
