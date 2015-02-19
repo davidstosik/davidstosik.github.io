@@ -10,7 +10,7 @@ what's happening under the hood).
 
 Well I've got news for you, things only get weirder!
 
-# Discovering the problem
+## Discovering the problem
 
 Let's use Timecop to freeze time first, so that we know where we're at (or should I
 say *when*?).
@@ -60,7 +60,7 @@ irb(main):007:0> 30.days.since.to_date
 
 The answer to that is "it depends", obviously.
 
-# Understanding how it's working
+## Understanding how it's working
 
 As we found out one month ago with Ben, [`1.day` is not an `Object`][1daynotobject].
 `1.month` follows the same pattern, it is an instance of `ActiveSupport::Duration`,
@@ -142,7 +142,7 @@ Advancing a date one month will use `Date#>>` operator, which, according to the
 There you have it! At no point, from beginning to end, was a number of days, or
 seconds, involved.
 
-# Consequences
+## Consequences
 
 Well, the consequences of such behavior are multiple, some come very handy, while
 others can be dangerous.
@@ -193,7 +193,7 @@ There you have it, you thought you used `1.month` consistently and that dates wo
 match, but you're getting a 2-day shift between the time the article becomes
 invalid, and the time it's actually unpublished.
 
-# Last one for the fun
+## Last one for the fun
 
 Now for the fun, let's consider the two following expressions.
 {% highlight ruby %}
