@@ -13,6 +13,8 @@ markdown: kramdown
 
 highlighter: pygments
 
+permalink: pretty
+
 defaults:
   -
     scope:
