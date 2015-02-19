@@ -15,17 +15,10 @@ layout: default
 </div>
 
 {% if page.social %}
-<div class="social">
-  <span class="facebook" style="font-size: 1px">
-    <div class="fb-like" data-layout="button_count" data-width="135" data-action="like" data-show-faces="false" data-share="true"></div>
-  </span>
-  &nbsp;
-  <span class="twitter">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="davidstosik" data-dnt="true">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  </span>
-</div>
-
+<span class='st_fblike_hcount' displayText='Facebook Like'></span>
+<span class='st_facebook_hcount' displayText='Facebook'></span>
+<span class='st_plusone_hcount' displayText='Google +1'></span>
+<span class='st_twitter_hcount' displayText='Tweet'></span>
 {% endif %}
 
 {% if page.comments %}
