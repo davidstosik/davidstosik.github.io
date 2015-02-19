@@ -22,3 +22,4 @@ defaults:
       layout: "post"
       author: "David Stosik"
       comments: true
+      social: true
