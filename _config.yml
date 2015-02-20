@@ -9,7 +9,9 @@ twitter_username: davidstosik
 github_username:  dstosik
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
 
 highlighter: pygments
 

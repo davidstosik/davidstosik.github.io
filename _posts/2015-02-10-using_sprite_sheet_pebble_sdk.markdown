@@ -69,17 +69,17 @@ And maths for the second one: `11 + 55*ceil(16*25/32)*4 + 11 + 59*ceil(13*27/32)
 
 You'll have to store in your code, somehow, the position of each sprite in the sheet (origin + size: it's a GRect). Either use `#define` macros, which will be replaced during compilation, ~~and use no memory~~ (like this:
 
-{% highlight c %}
+```c
 #define SPRITE_POS_DIGIT0_0 GRect(0,0,27,59)
-{% endhighlight %}
+```
 
 ), or constants, but then I don't know if they use memory (8 bytes per each), or not. (Update: [hmm, not exactly how it works...][redditpebbleconstant] Obviously, whichever way you choose to store your sprite positions, it's gonna take up some memory somewhere, either the app's code size, or the heap, which has the same result, as they share 24kB.)
 
 Once you get to that point, you'll only need to use the [`gbitmap_create_as_sub_bitmap()`][pebblesdk_gbitmap_create_as_subbitmap] function to pick sprites on your sheet:
 
-{% highlight c %}
+```c
 GBitmap* my_sprite = gbitmap_create_as_sub_bitmap(spritesheet, SPRITE_POS_DIGIT0_0);
-{% endhighlight %}
+```
 
 "No deep-copying occurs", which means you're just going to use 11+ more bytes each time you need a sprite.
 
