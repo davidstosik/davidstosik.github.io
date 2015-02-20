@@ -176,12 +176,12 @@ This code is not very pretty, but it'll do. When an article is created:
  - Its `valid_until` attribute is set to *one month* in the future.
  - A Sidekiq job is scheduled to unpublish the Article in *one month*.
 
-(Did you notice how I used the same "one month" expression in the to statements
-above? That's because the code too is using the same `1.month` expression.)
+(Did you notice how I used the same "*one month*" expression in the two statements
+above? That mirrors the code using the same `1.month` expression in both places.)
 
 One would expect the job to be triggered around the time the article becomes
 invalid (ideally when now **is** `article.valid_until` or else a few milliseconds
-to seconds after). That would actually happen only on 30-day months.
+to seconds after). That would be right only on 30-day months.
 
 Let's say I create an Article today (Feb. 19th 2015). Its `valid_until` attribute
 will be set to Mar. 19th, because as we saw above, adding `1.month` to a Date (or a
