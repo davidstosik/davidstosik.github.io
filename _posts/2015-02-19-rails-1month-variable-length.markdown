@@ -193,6 +193,15 @@ There you have it, you thought you used `1.month` consistently and that dates wo
 match, but you're getting a 2-day shift between the time the article becomes
 invalid, and the time it's actually unpublished.
 
+---
+
+
+**Update**: after checking Sidekiq's code, I believe this behavior is a bug,
+and filed a pull request trying to solve it: [MyWorker.perform_in(1.month) does
+not always schedule job in one month][sidekiqpr].
+
+---
+
 ## Last one for the fun
 
 Now for the fun, let's consider the two following expressions.
@@ -224,4 +233,5 @@ Considering the explanation above, it will be easy for you to understand why...
 [durationsum]: https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/duration.rb#L90
 [datecalculationsadvance]: https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/core_ext/date/calculations.rb#L110
 [rubydocdate>>]: http://ruby-doc.org/stdlib-2.2.0/libdoc/date/rdoc/Date.html#method-i-3E-3E
+[sidekiqpr]: https://github.com/mperham/sidekiq/pull/2198
 
