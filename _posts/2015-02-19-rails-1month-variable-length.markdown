@@ -5,7 +5,7 @@ categories: rails
 ---
 
 One month ago, Ben and I investigated on [`1.day` not being an `Object`][1daynotobject]
-(that's an interesting post by Ben, I suggest you read it if you want to know
+ (that's an interesting post by Ben, I suggest you read it if you want to know
 what's happening under the hood).
 
 Well I've got news for you, things only get weirder!
