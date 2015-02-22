@@ -1,5 +1,5 @@
 ---
-title: "How I got scammed and lost all trust in Indiegogo"
+title: "Zambilight: How I got scammed and lost all trust in Indiegogo"
 date:  2015-02-21 14:23:00
 categories: other
 ---
