@@ -77,7 +77,7 @@ joke!
 
 5. When I started to dig and question their organization, timeline, how they were
 planning to send dozens of units whereas they hadn't even ordered the different
-components from their suppliers, what was the sate of the custom case that would
+components from their suppliers, what was the state of the custom case that would
 hold the Raspberry Pi, I never got any convincing answer.
 
 6. I could go on and on about the updates becoming more and more flimsy, spaced in
@@ -185,8 +185,23 @@ but I believe Paypal's checks are quite thorough), we have addresses, company na
 that might help us bring the thing to the police (a few people apparently already
 did, in their respective countries).
 It's quite disturbing to see that the person we believe to be behind all this,
-posted on his Facebook page, back in August 2014, "Got a great idea for a next
+posted on his Facebook account, back in August 2014, "Got a great idea for a next
 project. Moneymaker. :)" Sure it was, as it managed to raise more than $150k...
+
+---
+
+**Update**: *Software Enterprise*'s Facebook account is likely to be a fake, maybe a
+lure to send us on a wrong track, to a fake name. User *l4v4l4mp3* contacted me to
+explain that the posts regarding Zambilight had been created only a few days ago,
+then their dates were changed (see the little clock icon next to publication date in
+the screenshot below?) to match the beginning of Zambilight's campaign. That might
+just be an attempt to orient us towards a fake name.
+Also, it is easy to find a Facebook's account unique numeric id, I checked the
+nearest ids, and only found accounts created around Feb. 18th 2015.
+
+[![facebook fake](/assets/zambilight/facebook-fake_thumb.jpg)](/assets/zambilight/facebook-fake.jpg)
+
+---
 
 Many backers also contacted Indiegogo's support obviously, as we would like to get
 some help from the people who handled and endorsed it, but it looks like, once more,
@@ -206,6 +221,10 @@ If you want to know more about this, or have precise questions, feel free to
 contact me and I'll try to reply as precisely as I can.
 There's also a lot of personal information that I did not disclose publicly, like
 names, addresses, that I could give to the right people.
+
+*Feel free to use this article in any way you like (share it, pass it to the media,
+link to it...). All I'm asking is that you provide a link to the original article,
+here.*
 
 [zambilight]: https://www.indiegogo.com/projects/meet-zambilight-the-update-for-your-television/x/8069342
 [reddit_ripped_off]: http://www.reddit.com/r/raspberry_pi/comments/2ftbjx/my_led_backlight_tv_blog
