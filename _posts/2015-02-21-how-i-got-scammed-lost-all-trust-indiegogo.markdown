@@ -157,6 +157,8 @@ name, with Philips' trademarked Ambilight.
 Philips' letter in their possession (but not releasing it
 publicly).][androidworld zambilight]
 
+[![AndroidNews](/assets/zambilight/androidworld_thumb.jpg)](/assets/zambilight/androidworld.jpg)
+
 This is not really a surprise here, it's even a concern I had back in October,
 and asked about:
 
