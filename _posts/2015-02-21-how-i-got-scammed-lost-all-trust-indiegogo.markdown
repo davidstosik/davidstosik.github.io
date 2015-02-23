@@ -98,15 +98,15 @@ time, and always promising more pictures "next week", "next Friday", etc.
 Enterprise* on the Indiegogo's project page.](/assets/zambilight/igg-comments.html)
 
 No need to say, I didn't have much trust left in *Software Enterprise*, but I still
-had a little hope that they were just a couple on unexperienced people doing this in
-their garage after a day of work, and that although their communication was really,
+had a little hope that they were just a couple of unexperienced people doing this in
+their garage after day work, and that although their communication was reall bad,
 something would come out of this. At that point, I would even accept to receive the
 base components, no documentation, no software, and do the rest myself.
 
 Then they announced, around mid-December, that units would start shipping soon, a
 bit late, but not that bad, honestly, so we got to another round of waiting.
 
-We were announced that the first batch had shipped at the end of January, but days,
+We were announced that the first batch had shipped at the end of January, but days after,
 *Software Enterprise* failed to give us any list of people they shipped their kit
 to, and more than a week after that, nobody was able to tell us they received their
 unit, and provide us pictures. Nobody but one. A backer named *Dennis Bakker* on
