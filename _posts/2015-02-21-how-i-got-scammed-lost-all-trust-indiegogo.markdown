@@ -48,6 +48,17 @@ is shamelessly copying parts of existing similar services' description (use Goog
 For example, the UK company [MinifigsMe][minifigsme]. The Youtube account that
 posted the Minifig USB keychain video is also named
 "[Minifig Me][youtube minifig me]", and also posted videos about Zambilight.
+
+        ---
+
+        **Update (2015/02/23)**: Caroline, from [MinifigsMe][minifigsme], friendly replied to my
+        email and confirmed that MinifigsMe is neither related to *Software
+        Enterprise* nor Zambilight, and that their copy has been used on the
+        Indiegogo Minifig USB Keychain campaign without their permission. Their
+        official Youtube account is called [Minifigs Me][youtube minifigs me].
+
+        ---
+
   - A third one which was basically shut down by Indiegogo, as it was trying to
 sell an existing product that anyone can buy on the Internet:
 [iPhone Projector and battery case in one][indiegogo_projector]. Here is an [article
@@ -111,7 +122,7 @@ of the scam (or maybe one more fake account created by *Software Enterprise*).
 > Received my ambilight system this afternoon.
 >
 > I almost lost my confidence in crowdfunding because i’m waiting for ages on my
-> Trackr bravo, i was happy to receive the ambilight system. 
+> Trackr bravo, i was happy to receive the ambilight system.
 > I will install it tomorrow and leave some reactions.
 >
 > Sorry for my bad english
@@ -151,7 +162,7 @@ believing that the project is legit, and that they will get something some day.
 Now the last news we got from *Software Enterprise* does not come directly from him.
 Apparently, some backers are still in contact with him by email, and he is
 saying they received a letter from Philips, asking them not to use the name
-"Zambilight", because of similarities, in both the product's purpose, and it's
+"Zambilight", because of similarities, in both the product's purpose, and its
 name, with Philips' trademarked Ambilight.
 [The information was apparently also relayed by a Dutch website, claiming they have
 Philips' letter in their possession (but not releasing it
@@ -203,6 +214,15 @@ nearest ids, and only found accounts created around Feb. 18th 2015.
 
 ---
 
+**Update 2 (2015/02/23)**: I wondered for a long time why *Software Enterprise*
+was not using Indiegogo's official way to provide updates to a project, and the
+reason suddenly appeared quite obvious to me: as long as he's only posting in
+the comment section, all people who forgot about Zambilight, or are not
+checking the comments page won't be worried and come to ask their money back,
+that's it!
+
+---
+
 Many backers also contacted Indiegogo's support obviously, as we would like to get
 some help from the people who handled and endorsed it, but it looks like, once more,
 Indiegogo does not really care about their users security, but more about the
@@ -233,6 +253,7 @@ here.*
 [indiegogo_lego]: https://www.indiegogo.com/projects/your-own-personalised-minifig-usb-keychain/x/8069342
 [minifigsme]: http://minifigs.me
 [youtube minifig me]: https://www.youtube.com/channel/UCPWwp6nJsUS_aTDE0707dUw
+[youtube minifigs me]: https://www.youtube.com/channel/UCDjbCWj8PSXsmWhPgsvsjTw
 [indiegogo_projector]: https://www.indiegogo.com/projects/iphone-projector-and-battery-case-in-one#home
 [neurdings iphone]: http://neuerdings.com/2014/08/28/iphone-projector/
 [amazon projector]: http://www.amazon.com/gp/product/B007EDQHWG
