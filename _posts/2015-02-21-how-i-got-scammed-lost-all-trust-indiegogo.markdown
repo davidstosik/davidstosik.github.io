@@ -1,11 +1,34 @@
 ---
-title: "Zambilight: How I got scammed and lost all trust in Indiegogo"
+title: "Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo"
 date:  2015-02-21 14:23:00
 categories: other
 ---
 
 *Preliminary note: this is an ongoing story, so I'll probably update and correct
 this post when I get more information.*
+
+---
+
+<a name="20150224-1"></a>
+**Update (2015/02/24):** Following [Philips' letter](#20150224-3) that
+*Software Enterprise* allegedly received, Zambilight has been renamed Zambi.
+I probably won't change the name everywhere, but you get the idea.
+
+---
+
+## Updates
+
+With more and more updates going on, maintaining an index of all updates sounds
+like a good idea.
+
+- [2015/02/24: Zambilight becomes Zambi](#20150224-1)
+- [2015/02/24: Reply from Paypal](#20150224-2)
+- [2015/02/24: Philips' letter](#20150224-3)
+- [2015/02/23: A response from Caroline at MinifigsMe](#20150223-1)
+- [2015/02/23: Personal thought](#20150223-2)
+- [2015/02/22: The Facebook account we found is probably a fake/lure](#20150222)
+
+---
 
 Today's post won't be about coding, but just a story of a scam that managed to raise
 more than $150,000 on Indiegogo.
@@ -51,6 +74,7 @@ posted the Minifig USB keychain video is also named
 
         ---
 
+        <a name="20150223-1"></a>
         **Update (2015/02/23)**: Caroline, from [MinifigsMe][minifigsme], friendly replied to my
         email and confirmed that MinifigsMe is neither related to *Software
         Enterprise* nor Zambilight, and that their copy has been used on the
@@ -155,6 +179,34 @@ When I opened my refund request on Paypal, it even claimed that the seller was n
 a claim, that Paypal will look into. I think they blocked his account and are now
 taking things into hand.
 
+---
+
+<a name="20150224-2"></a>
+**Update (2015/02/24):** I received an email from Paypal, in response to my claim,
+saying (in French, as my Paypal account is French):
+
+> Vous avez signalé un litige plus de (note from the author: the number of days was
+> actually missing in the email) après la date limite d'ouverture, de
+> sorte qu'il a été automatiquement clos. Bien que le litige soit clos, nous
+> vous encourageons à communiquer avec le vendeur pour résoudre le problème.
+>
+> Si ce délai est dépassé, vous pouvez contacter la Direction Générale de la
+> concurrence, de la consommation et de la répression des fraudes (DGCCRF).
+
+Which loosely translates:
+> You have filed a claim more than (note from the author: the number of days was
+> actually missing in the email) after the limit date. In consequence, your claim
+> was automatically closed. However, we strongly invite you to try to come to an
+> agreement with the seller.
+>
+> You can also contact the DGCCRF (French General Directorate for competition
+> policy,  consumer affairs and fraud control).
+
+I'll try to get a refund directly from *Software Enterprise*, but I don't have much
+hope...
+
+---
+
 Some people even go directly to *Software Enterprise* to ask for a refund, and it
 seems he's refunding them quite quickly. That might be a ruse to keep other people
 believing that the project is legit, and that they will get something some day.
@@ -188,6 +240,37 @@ I personally believe that telling us they're having problems with Philips now is
 just a way to keep backers on the fence, waiting longer, and get more of them past
 Paypal's time limit for opening a claim.
 
+---
+
+<a name="20150224-3"></a>
+**Update (2015/02/24):** *Software Enterprise* posted low-resolution pictures of the
+alleged letter from Philips.
+
+[![Philips' letter (1)](/assets/zambilight/philips-letter-1_thumb.jpg)](/assets/zambilight/philips-letter-1.jpg)
+[![Philips' letter (2)](/assets/zambilight/philips-letter-2_thumb.jpg)](/assets/zambilight/philips-letter-2.jpg)
+[![Philips' letter (3)](/assets/zambilight/philips-letter-3_thumb.jpg)](/assets/zambilight/philips-letter-3.jpg)
+[![Philips' letter (4)](/assets/zambilight/philips-letter-4_thumb.jpg)](/assets/zambilight/philips-letter-4.jpg)
+[![Philips' letter (5)](/assets/zambilight/philips-letter-5_thumb.jpg)](/assets/zambilight/philips-letter-5.jpg)
+
+The certificates seem legit:
+
+ - [Ambilight on the United States Patent and Trademark Office's website][uspto]
+ - [Ambilight on the Word Intellectual Property Organization's website][wipo]
+
+It still does not explain why *Software Enterprise* is not using Indiegogo's
+update system to inform all his backers, neither why he told us all September
+backers' units were shipped, and the only package that was delivered contained a
+pack of Pampers...
+
+Maybe Philips' letter is real, but maybe they're just reacting to scam allegations
+and are trying to protect their brand from the bad publicity Zambilight could do.
+
+I also would like to understand why Philips' letter is redacted. It's important for
+backers to know when it was received, at the very least. If it's all real, and
+Philips gave them 10 days to change their name, then I guess it can't be very old...
+
+---
+
 So what's next? Well, a few backers took the things into hand, created a Facebook
 group: [Zambilight News on Facebook][fb zambilight news], they are investigating
 based on the few hints we have. We have a good idea of *Software Enterprise*'s real
@@ -201,20 +284,23 @@ project. Moneymaker. :)" Sure it was, as it managed to raise more than $150k...
 
 ---
 
-**Update**: *Software Enterprise*'s Facebook account is likely to be a fake, maybe a
-lure to send us on a wrong track, to a fake name. User *l4v4l4mp3* contacted me to
-explain that the posts regarding Zambilight had been created only a few days ago,
-then their dates were changed (see the little clock icon next to publication date in
-the screenshot below?) to match the beginning of Zambilight's campaign. That might
-just be an attempt to orient us towards a fake name.
-Also, it is easy to find a Facebook's account unique numeric id, I checked the
-nearest ids, and only found accounts created around Feb. 18th 2015.
+<a name="20150222"></a>
+**Update (2015/02/22)**: *Software Enterprise*'s Facebook account is likely to
+be a fake, maybe a lure to send us on a wrong track, to a fake name. User
+*l4v4l4mp3* contacted me to explain that the posts regarding Zambilight had
+been created only a few days ago, then their dates were changed (see the little
+clock icon next to publication date in the screenshot below?) to match the
+beginning of Zambilight's campaign. That might just be an attempt to orient us
+towards a fake name.  Also, it is easy to find a Facebook's account unique
+numeric id, I checked the nearest ids, and only found accounts created around
+Feb. 18th 2015.
 
 [![facebook fake](/assets/zambilight/facebook-fake_thumb.jpg)](/assets/zambilight/facebook-fake.jpg)
 
 ---
 
-**Update 2 (2015/02/23)**: I wondered for a long time why *Software Enterprise*
+<a name="20150223-2"></a>
+**Update (2015/02/23)**: I wondered for a long time why *Software Enterprise*
 was not using Indiegogo's official way to provide updates to a project, and the
 reason suddenly appeared quite obvious to me: as long as he's only posting in
 the comment section, all people who forgot about Zambilight, or are not
@@ -260,3 +346,5 @@ here.*
 [androidworld zambilight]: http://androidworld.nl/nieuws/zambilight-claim-philips/
 [fb zambilight news]: https://www.facebook.com/groups/zambilight/
 [kickstarter]: https://www.kickstarter.com/
+[uspto]: http://tsdr.uspto.gov/documentviewer?caseId=sn79094181&docId=ORC20120221002738#docIndex=5&page=1
+[wipo]: http://www.wipo.int/romarin/advSearch.do?ID=0&searchDatabaseAct=on&searchString=+%2FMARKGR%2FINTREGN+contains+1068753
