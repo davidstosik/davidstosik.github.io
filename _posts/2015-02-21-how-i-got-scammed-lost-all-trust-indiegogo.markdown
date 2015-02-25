@@ -21,12 +21,19 @@ I probably won't change the name everywhere, but you get the idea.
 With more and more updates going on, maintaining an index of all updates sounds
 like a good idea.
 
-- [2015/02/24: Zambilight becomes Zambi](#20150224-1)
-- [2015/02/24: Reply from Paypal](#20150224-2)
-- [2015/02/24: Philips' letter](#20150224-3)
-- [2015/02/23: A response from Caroline at MinifigsMe](#20150223-1)
-- [2015/02/23: Personal thought](#20150223-2)
-- [2015/02/22: The Facebook account we found is probably a fake/lure](#20150222)
+- 2015/02/25:
+  * [Backers are continuing their investigation](#20150225-1)
+  * [Refunds are issued](#20150225-2)
+  * [Indiegogo campaign is still running](#20150225-3)
+- 2015/02/24
+  * [Zambilight becomes Zambi](#20150224-1)
+  * [Reply from Paypal](#20150224-2)
+  * [Philips' letter](#20150224-3)
+- 2015/02/23
+  * [A response from Caroline at MinifigsMe](#20150223-1)
+  * [Personal thought](#20150223-2)
+- 2015/02/22
+  * [The Facebook account we found is probably a fake/lure](#20150222)
 
 ---
 
@@ -211,6 +218,38 @@ Some people even go directly to *Software Enterprise* to ask for a refund, and i
 seems he's refunding them quite quickly. That might be a ruse to keep other people
 believing that the project is legit, and that they will get something some day.
 
+---
+
+<a name="20150225-2"></a>
+**Update (2015/02/25):** *SE* is apparently issuing a refund to any person who asks.
+I'm yet to get my money back, but form what I've read, backers (those who paid using
+Paypal, as well as those who used a credit card) who ask for a refund get their
+money back in a few days. This seems to be good news, but I'd like to remind
+everybody to stay careful. The refunds are apparently sent from a different Paypal
+account than the one we paidi to in the first place, because it is allegedly
+blocked.
+
+By sending us money that way, instead of issuing an "official" refund of the
+original transaction, it feels like there's still a door open for *SE* to open a
+claim on this payment he made, and to ask a refund on a fallacious reason.
+Especially if he sent money as a "purchase", then he is eligible for "Paypal
+Purchase Protection" for 180 days, during which he can claim his money back, because
+he didn't received the purchased item. We all know there's no item involved, but
+seen from Paypal, it would look like a buyer (him) who can't give any proof of the
+item he bought, versus a seller (the refunded backer), who cannot prove the item
+was properly delivered (obviously). Knowing that Paypal usually protects the buyer
+first, I would not bet on the backer keeping his refund money.
+
+In the same way I would not accept a refund by check on the condition that I wait 6
+months to cash it, I will not accept a Paypal payment that looks like a commercial
+transaction, and I recommend everybody out there to do the same (I will not force
+anybody, it's up to you, but I think I made my point).
+
+Note that people who are still under Paypal Purchase Protection have their claim
+examined by Paypal, and normally get their money back the proper way.
+
+---
+
 Now the last news we got from *Software Enterprise* does not come directly from him.
 Apparently, some backers are still in contact with him by email, and he is
 saying they received a letter from Philips, asking them not to use the name
@@ -271,6 +310,18 @@ Philips gave them 10 days to change their name, then I guess it can't be very ol
 
 ---
 
+<a name="20150225-3"></a>
+**Update (2015/02/25):** The Indiegogo campaign is still running, and collecting
+funds (three payments happened in the last 48 hours). To see that, although *SE*
+claims they asked Indiegogo to interrupt the "InDemand" campaign (it's a campaign
+that succeeded and then never ends) is a proof of either one of two things:
+
+ - Either *SE* lied once more. (Well, why not?)
+ - Or Indiegogo is really not willing to put an end to that farce, and will continue
+to milk it as long as possible...
+
+---
+
 So what's next? Well, a few backers took the things into hand, created a Facebook
 group: [Zambilight News on Facebook][fb zambilight news], they are investigating
 based on the few hints we have. We have a good idea of *Software Enterprise*'s real
@@ -306,6 +357,35 @@ reason suddenly appeared quite obvious to me: as long as he's only posting in
 the comment section, all people who forgot about Zambilight, or are not
 checking the comments page won't be worried and come to ask their money back,
 that's it!
+
+---
+
+<a name="20150225-1"></a>
+**Update (2015/02/25):** Backers are continuing their investigation, and managed to
+uncover a few disturbing things. Using available information and tools creatively,
+a few backers are linking our *Software Enterprise*'s identity to others we can find
+on the Internet. Conclusions are:
+
+  - *SE* owns more than one e-Commerce businesses:
+    * one of them sells baby supplies (including Pampers branded items)
+    * another one sells electronic, appliance, TV/Hifi goods.
+  - *SE* plays poker online, on multiple sites (which is fine by me, as long as
+it's not with our money).
+  - He owns multiple domains that all seem related to various kinds of business.
+  - He's been promoting his various Indiegogo campaings on forums, trying to get
+unrelated people to "share". Not a uncommon practice, but the way he did it does
+not seem very ethic.
+  - Most shocking of all: *SE* was sentenced in 2008 to 100h of community service
+for "abuse of trust", selling "goods from dubious Internet stores", then not
+delivering anything (rings a bell?). Note that I'm quoting a Belgian news website
+written in Dutch, that I put through Google Translate. He used multiple user names
+on auction websites, that match the company names gathered somewhere else.
+
+Now obviously, people have been able to link all this using names, addresses,
+company names, domain names, email addresses... I know them myself, or have access
+to them, but will not share them publicly. If you wish to know more and have a good
+reason to, feel free to contact me. If you like investigating, you'll manage to find
+all this by yourself anyway, using the information I'm providing.
 
 ---
 
