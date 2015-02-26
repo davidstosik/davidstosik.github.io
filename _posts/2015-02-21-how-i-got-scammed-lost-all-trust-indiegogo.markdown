@@ -21,6 +21,8 @@ I probably won't change the name everywhere, but you get the idea.
 With more and more updates going on, maintaining an index of all updates sounds
 like a good idea.
 
+- 2015/02/26:
+  * [Got my money back](#20150226)
 - 2015/02/25:
   * [Backers are continuing their investigation](#20150225-1)
   * [Refunds are issued](#20150225-2)
@@ -211,6 +213,16 @@ Which loosely translates:
 
 I'll try to get a refund directly from *Software Enterprise*, but I don't have much
 hope...
+
+---
+
+<a name="20150226"></a>
+**Update (2015/02/26):** I got my money back! It came from a different Paypal
+account than the one I paid to, but it does not show as a commercial transaction.
+The only clue I can see is that no fee was cut from the received amount. (Payments
+for purchase usually take out a fee from the recipient.)
+
+I contacted Paypal to confirm this, I'll probably know better within 48 hours.
 
 ---
 
