@@ -238,7 +238,7 @@ I'm yet to get my money back, but form what I've read, backers (those who paid u
 Paypal, as well as those who used a credit card) who ask for a refund get their
 money back in a few days. This seems to be good news, but I'd like to remind
 everybody to stay careful. The refunds are apparently sent from a different Paypal
-account than the one we paidi to in the first place, because it is allegedly
+account than the one we paid to in the first place, because it is allegedly
 blocked.
 
 By sending us money that way, instead of issuing an "official" refund of the
