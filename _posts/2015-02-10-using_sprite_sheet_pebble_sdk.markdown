@@ -102,4 +102,4 @@ Now you don't have to care about the sprite sheet making process at all! How coo
 [redditpebbleconstant]: http://www.reddit.com/r/pebbledevelopers/comments/2uds2z/question_pebble_memory_is_it_cheaper_to_use/cob2t0K
 [pebblesdk_gbitmap_create_as_subbitmap]: http://developer.getpebble.com/docs/c/group___graphics_types.html#ga5d86515990747e47a76c0a16ed6b2850
 [texturepacker]: https://www.codeandweb.com/texturepacker
-[texturepackerpebble]: https://github.com/dstosik/TexturePackerPebble
+[texturepackerpebble]: https://github.com/davidstosik/TexturePackerPebble
