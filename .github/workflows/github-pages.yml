@@ -11,6 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+
+      - name: Bundler Install
+        run: bundle install
+
       - name: Jekyll Build
         run: JEKYLL_ENV=production bundle exec jekyll build -d build
 
