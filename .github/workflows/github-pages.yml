@@ -39,7 +39,6 @@ jobs:
       - name: Git-fu
         working-directory: build
         run: |
-          touch .nojekyll
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .
