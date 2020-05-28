@@ -11,13 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Jekyll Build
+        run: JEKYLL_ENV=production bundle exec jekyll build -d build
+
       - uses: actions/cache@v1
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-
-      - uses: helaili/jekyll-action@2.0.3
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
