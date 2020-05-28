@@ -31,9 +31,13 @@ jobs:
       - name: Jekyll Build
         run: JEKYLL_ENV=production bundle exec jekyll build -d build
 
+      - uses: actions/checkout@v2
+        with:
+          clean: false
+          ref: master
+
       - name: Git-fu
         run: |
-          git checkout origin master
           git rm -rf *
           touch .nojekyll
           mv build/* ./
