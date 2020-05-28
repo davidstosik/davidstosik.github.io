@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+          path: build
+
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6'
@@ -31,16 +36,11 @@ jobs:
       - name: Jekyll Build
         run: JEKYLL_ENV=production bundle exec jekyll build -d build
 
-      - uses: actions/checkout@v2
-        with:
-          clean: false
-          ref: master
-
       - name: Git-fu
+        working-directory: build
         run: |
-          git rm -rf *
           touch .nojekyll
-          mv build/* ./
-          rmdir build
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .
           git commit -m "Jekyll build"
