@@ -46,5 +46,5 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .
-          git commit -m "Jekyll build"
+          git commit -m "Update GitHub pages from Jekyll build for commit ${GITHUB_SHA}"
           git push origin master
