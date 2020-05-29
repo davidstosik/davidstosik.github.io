@@ -1,0 +1,227 @@
+<p>One month ago, Ben and I investigated on <a href="http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/"><code class="highlighter-rouge">1.day</code> not being an <code class="highlighter-rouge">Object</code></a>
+ (that’s an interesting post by Ben, I suggest you read it if you want to know
+what’s happening under the hood).</p>
+
+<p>Well I’ve got news for you, things only get weirder!</p>
+
+<h2 id="discovering-the-problem">Discovering the problem</h2>
+
+<p>Let’s use Timecop to freeze time first, so that we know where we’re at (or should I
+say <em>when</em>?).</p>
+
+<div class="language-irb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">irb(main):001:0&gt;</span><span class="w"> </span><span class="no">Timecop</span><span class="p">.</span><span class="nf">freeze</span> <span class="s1">'2015/02/19'</span>
+<span class="p">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mi">19</span> <span class="mo">00</span><span class="p">:</span><span class="mo">00</span><span class="p">:</span><span class="mo">00</span> <span class="o">+</span><span class="mi">0900</span>
+</code></pre></div></div>
+
+<p>Next, let’s check how long a month is.</p>
+
+<div class="language-irb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">irb(main):002:0&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="nf">month</span>
+<span class="p">=&gt;</span> <span class="mi">2592000</span>
+
+<span class="gp">irb(main):003:0&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="nf">month</span> <span class="o">==</span> <span class="mi">30</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">3600</span>
+<span class="p">=&gt;</span> <span class="kp">true</span>
+</code></pre></div></div>
+
+<p>So, it looks like <code class="highlighter-rouge">1.month</code> is 30 days, even in February, right?</p>
+
+<p><em>Wait, does that mean that if I add <code class="highlighter-rouge">1.month</code> to today (Feb. 19th, remember?), then I
+won’t get March 19th as one would expect?</em></p>
+
+<p>Let’s check:</p>
+
+<div class="language-irb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">irb(main):004:0&gt;</span><span class="w"> </span><span class="no">Date</span><span class="p">.</span><span class="nf">today</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span>
+<span class="p">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">19</span>
+
+<span class="gp">irb(main):005:0&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="nf">month</span><span class="p">.</span><span class="nf">since</span><span class="p">.</span><span class="nf">to_date</span>
+<span class="p">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">19</span>
+</code></pre></div></div>
+
+<p>Actually I do…</p>
+
+<p><em>But you said a month is 30 days, and I’m pretty sure that if I add 30 days to
+Feb. 19th, I won’t get March 19th…</em></p>
+
+<p>Right:</p>
+
+<div class="language-irb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">irb(main):006:0&gt;</span><span class="w"> </span><span class="no">Date</span><span class="p">.</span><span class="nf">today</span> <span class="o">+</span> <span class="mi">30</span><span class="p">.</span><span class="nf">days</span>
+<span class="p">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">21</span>
+
+<span class="gp">irb(main):007:0&gt;</span><span class="w"> </span><span class="mi">30</span><span class="p">.</span><span class="nf">days</span><span class="p">.</span><span class="nf">since</span><span class="p">.</span><span class="nf">to_date</span>
+<span class="p">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">21</span>
+</code></pre></div></div>
+
+<p><em>So what’s up? Is <code class="highlighter-rouge">1.month</code> equal to 30 days, or to 28?</em></p>
+
+<p>The answer to that is “it depends”, obviously.</p>
+
+<h2 id="understanding-how-its-working">Understanding how it’s working</h2>
+
+<p>As we found out one month ago with Ben, <a href="http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/"><code class="highlighter-rouge">1.day</code> is not an <code class="highlighter-rouge">Object</code></a>.
+<code class="highlighter-rouge">1.month</code> follows the same pattern, it is an instance of <code class="highlighter-rouge">ActiveSupport::Duration</code>,
+which allows it to behave interestingly.</p>
+
+<p>As seen in Ben’s post, ActiveSupport’s Date and Time calculations are defined
+in a couple of files, and we’ll focus here on the <code class="highlighter-rouge">Date#+</code> method:</p>
+
+<blockquote>
+  <p><a href="https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/core_ext/date/calculations.rb#L96">activesupport/lib/active_support/core_ext/date/calculations.rb#L96</a></p>
+</blockquote>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">plus_with_duration</span><span class="p">(</span><span class="n">other</span><span class="p">)</span> <span class="c1">#:nodoc:</span>
+  <span class="k">if</span> <span class="no">ActiveSupport</span><span class="o">::</span><span class="no">Duration</span> <span class="o">===</span> <span class="n">other</span>
+    <span class="n">other</span><span class="p">.</span><span class="nf">since</span><span class="p">(</span><span class="nb">self</span><span class="p">)</span>
+  <span class="k">else</span>
+    <span class="n">plus_without_duration</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+<span class="kp">alias_method</span> <span class="ss">:plus_without_duration</span><span class="p">,</span> <span class="p">:</span><span class="o">+</span>
+<span class="kp">alias_method</span> <span class="p">:</span><span class="o">+</span><span class="p">,</span> <span class="ss">:plus_with_duration</span>
+</code></pre></div></div>
+
+<p>When adding something to a Date using the <code class="highlighter-rouge">+</code> operator, if the right operand is an
+instance of <code class="highlighter-rouge">ActiveSupport::Duration</code>, then the calculation is delegated to the
+method <code class="highlighter-rouge">ActiveSupport::Duration#since</code>, which itself calls <code class="highlighter-rouge">#sum</code>.</p>
+
+<blockquote>
+  <p><a href="https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/duration.rb#L90">activesupport/lib/active_support/duration.rb#L90</a></p>
+</blockquote>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">sign</span><span class="p">,</span> <span class="n">time</span> <span class="o">=</span> <span class="o">::</span><span class="no">Time</span><span class="p">.</span><span class="nf">current</span><span class="p">)</span> <span class="c1">#:nodoc:</span>
+  <span class="n">parts</span><span class="p">.</span><span class="nf">inject</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="p">,(</span><span class="n">type</span><span class="p">,</span><span class="n">number</span><span class="p">)</span><span class="o">|</span>
+    <span class="k">if</span> <span class="n">t</span><span class="p">.</span><span class="nf">acts_like?</span><span class="p">(</span><span class="ss">:time</span><span class="p">)</span> <span class="o">||</span> <span class="n">t</span><span class="p">.</span><span class="nf">acts_like?</span><span class="p">(</span><span class="ss">:date</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">type</span> <span class="o">==</span> <span class="ss">:seconds</span>
+        <span class="n">t</span><span class="p">.</span><span class="nf">since</span><span class="p">(</span><span class="n">sign</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span>
+      <span class="k">else</span>
+        <span class="n">t</span><span class="p">.</span><span class="nf">advance</span><span class="p">(</span><span class="n">type</span> <span class="o">=&gt;</span> <span class="n">sign</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span>
+      <span class="k">end</span>
+    <span class="k">else</span>
+      <span class="k">raise</span> <span class="o">::</span><span class="no">ArgumentError</span><span class="p">,</span> <span class="s2">"expected a time or date, got </span><span class="si">#{</span><span class="n">time</span><span class="p">.</span><span class="nf">inspect</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>I don’t understand why the <code class="highlighter-rouge">:seconds</code> case is treated separately (it looks like it
+would work as well with the <code class="highlighter-rouge">else</code> code), but the important line is
+<code class="highlighter-rouge">t.advance(type =&gt; sign * number)</code>. Long story short,</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span>
+</code></pre></div></div>
+
+<p>is equivalent to:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">time</span><span class="p">.</span><span class="nf">advance</span><span class="p">(</span><span class="ss">:months</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Note that, at no point, the value of <code class="highlighter-rouge">1.month</code> was converted in days, or in seconds.
+It was represented as a “quantity of 1, on the month unit”, all along.
+Now if we jump back to <code class="highlighter-rouge">Date#advance</code> definition</p>
+
+<blockquote>
+  <p><a href="https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/core_ext/date/calculations.rb#L110">activesupport/lib/active_support/core_ext/date/calculations.rb#L110</a></p>
+</blockquote>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">advance</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+  <span class="n">options</span> <span class="o">=</span> <span class="n">options</span><span class="p">.</span><span class="nf">dup</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="nb">self</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">&gt;&gt;</span> <span class="n">options</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="ss">:years</span><span class="p">)</span> <span class="o">*</span> <span class="mi">12</span> <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="ss">:years</span><span class="p">]</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">&gt;&gt;</span> <span class="n">options</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="ss">:months</span><span class="p">)</span>     <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="ss">:months</span><span class="p">]</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span>  <span class="n">options</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="ss">:weeks</span><span class="p">)</span> <span class="o">*</span> <span class="mi">7</span>  <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="ss">:weeks</span><span class="p">]</span>
+  <span class="n">d</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span>  <span class="n">options</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="ss">:days</span><span class="p">)</span>       <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="ss">:days</span><span class="p">]</span>
+  <span class="n">d</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Advancing a date one month will use <code class="highlighter-rouge">Date#&gt;&gt;</code> operator, which, according to the
+<a href="http://ruby-doc.org/stdlib-2.2.0/libdoc/date/rdoc/Date.html#method-i-3E-3E">Ruby documentation</a>:</p>
+
+<blockquote>
+  <p>returns a date object pointing n months after self</p>
+</blockquote>
+
+<p>There you have it! At no point, from beginning to end, was a number of days, or
+seconds, involved.</p>
+
+<h2 id="consequences">Consequences</h2>
+
+<p>Well, the consequences of such behavior are multiple, some come very handy, while
+others can be dangerous.</p>
+
+<p>First of all we can admit that it’s pretty cool we don’t have to worry about the
+number of days in a month when adding a number of months to a date.</p>
+
+<p>Problems arise when using the same expression in the same piece of code, but this
+expression ends up having different logical values. Here’s a real-life example from
+the code I’m working on at the moment.</p>
+
+<p>Let’s consider a simple <code class="highlighter-rouge">Article</code> model, that has a <code class="highlighter-rouge">#valid_until</code> attribute.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Article</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+  <span class="no">DEFAULT_VALIDITY</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span>
+
+  <span class="n">after_create</span> <span class="ss">:set_valid_until</span>
+  <span class="k">def</span> <span class="nf">set_valid_until</span>
+    <span class="nb">self</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="ss">valid_until: </span><span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">+</span> <span class="no">DEFAULT_VALIDITY</span><span class="p">)</span>
+
+    <span class="c1"># Schedule a Sidekiq worker to unpublish in one month.</span>
+    <span class="no">ArticleUnpublishWorker</span><span class="p">.</span><span class="nf">perform_in</span><span class="p">(</span><span class="no">DEFAULT_VALIDITY</span><span class="p">,</span> <span class="nb">self</span><span class="p">.</span><span class="nf">id</span><span class="p">)</span>
+  <span class="k">end</span>
+
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>This code is not very pretty, but it’ll do. When an article is created:</p>
+
+<ul>
+  <li>Its <code class="highlighter-rouge">valid_until</code> attribute is set to <em>one month</em> in the future.</li>
+  <li>A Sidekiq job is scheduled to unpublish the Article in <em>one month</em>.</li>
+</ul>
+
+<p>(Did you notice how I used the same “<em>one month</em>” expression in the two statements
+above? That mirrors the code using the same <code class="highlighter-rouge">1.month</code> expression in both places.)</p>
+
+<p>One would expect the job to be triggered around the time the article becomes
+invalid (ideally when now <strong>is</strong> <code class="highlighter-rouge">article.valid_until</code> or else a few milliseconds
+to seconds after). That would be right only on 30-day months.</p>
+
+<p>Let’s say I create an Article today (Feb. 19th 2015). Its <code class="highlighter-rouge">valid_until</code> attribute
+will be set to Mar. 19th, because as we saw above, adding <code class="highlighter-rouge">1.month</code> to a Date (or a
+Time) will advance it exactly one month.
+But the Sidekiq worker is scheduled to be run in <code class="highlighter-rouge">1.month</code>, which, all alone, is
+always equal to 30 days!</p>
+
+<p>There you have it, you thought you used <code class="highlighter-rouge">1.month</code> consistently and that dates would
+match, but you’re getting a 2-day shift between the time the article becomes
+invalid, and the time it’s actually unpublished.</p>
+
+<hr />
+
+<p><strong>Update</strong>: after checking Sidekiq’s code, I believe this behavior is a bug,
+and filed a pull request trying to solve it: <a href="https://github.com/mperham/sidekiq/pull/2198">MyWorker.perform_in(1.month) does
+not always schedule job in one month</a>.</p>
+
+<hr />
+
+<h2 id="last-one-for-the-fun">Last one for the fun</h2>
+
+<p>Now for the fun, let’s consider the two following expressions.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span> <span class="o">-</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">-</span> <span class="mi">30</span><span class="p">.</span><span class="nf">days</span>
+
+<span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">-</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span> <span class="o">-</span> <span class="mi">30</span><span class="p">.</span><span class="nf">days</span>
+</code></pre></div></div>
+
+<p>All I did was reorder the members of a simple arithmetic operation, right? They
+should have the same results.</p>
+
+<p>Not in Rails!</p>
+
+<div class="language-irb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">irb(main):008:0&gt;</span><span class="w"> </span><span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span> <span class="o">-</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">-</span> <span class="mi">30</span><span class="p">.</span><span class="nf">days</span>
+<span class="p">=&gt;</span> <span class="o">-</span><span class="mf">172800.0</span>
+
+<span class="gp">irb(main):009:0&gt;</span><span class="w"> </span><span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">-</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span> <span class="o">-</span> <span class="mi">30</span><span class="p">.</span><span class="nf">days</span>
+<span class="p">=&gt;</span> <span class="mf">0.0</span>
+</code></pre></div></div>
+<p><em>(remember, time is still frozen using Timecop)</em></p>
+
+<p>Considering the explanation above, it will be easy for you to understand why…</p>
+
