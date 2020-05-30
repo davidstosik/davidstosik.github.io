@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: David Stosik
+title: Sto's thoughts
+author: David Stosik
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm David Stosik, develop websites on my day job, and sometimes write code on
   my free time too. I'll use this space to share my experiences and thoughts.
@@ -28,9 +29,11 @@ twitter_username: davidstosik
 github_username: davidstosik
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+sass:
+  style: compressed
 
 include:
   - .nojekyll

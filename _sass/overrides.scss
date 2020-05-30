@@ -1,0 +1,30 @@
+:root {
+  --color: #108aff;
+  --color-secondary: #118bee;
+}
+
+article {
+
+  blockquote {
+    border-left: 0.1rem solid var(--color-text-secondary);
+    font-size: inherit;
+    margin: inherit;
+    margin-left: 1rem;
+    max-width: none;
+    padding: inherit;
+    padding-left: 1rem;
+    text-align: var(--justify-normal);
+  }
+
+  a {
+    em, i {
+      all: unset;
+      font-style: italic;
+    }
+
+    strong {
+      all: unset;
+      font-weight: bold;
+    }
+  }
+}
