@@ -2,6 +2,7 @@
 title: "Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo"
 date:  2015-02-21 14:23:00
 categories: other
+permalink: /:categories/:year/:month/:day/:title/
 ---
 
 *Preliminary note: this is an ongoing story, so I'll probably update and correct
