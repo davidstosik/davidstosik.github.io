@@ -37,14 +37,10 @@ plugins:
 include:
   - .nojekyll
 
-collections:
-  archives:
-    output: true
-
 defaults:
   - scope:
       path: ""
-      type: "archives"
+      type: "posts"
     values:
       layout: "post"
 

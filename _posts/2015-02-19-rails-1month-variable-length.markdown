@@ -2,6 +2,7 @@
 title:  "Rails' `1.month` has a variable length"
 date:   2015-02-19 19:27:20
 categories: rails
+hidden: true
 ---
 
 One month ago, Ben and I investigated on [`1.day` not being an `Object`][1daynotobject]
