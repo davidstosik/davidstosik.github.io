@@ -1,1 +1,792 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-29T02:20:48+00:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Testing</title><link href="/2020/05/27/testing.html" rel="alternate" type="text/html" title="Testing" /><published>2020-05-27T23:40:36+00:00</published><updated>2020-05-27T23:40:36+00:00</updated><id>/2020/05/27/testing</id><content type="html" xml:base="/2020/05/27/testing.html">&lt;p&gt;Just testing if this works.&lt;/p&gt;</content><author><name></name></author><summary type="html">Just testing if this works.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-30T04:53:20+00:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Testing</title><link href="/2020/05/27/testing.html" rel="alternate" type="text/html" title="Testing" /><published>2020-05-27T23:40:36+00:00</published><updated>2020-05-27T23:40:36+00:00</updated><id>/2020/05/27/testing</id><content type="html" xml:base="/2020/05/27/testing.html">&lt;p&gt;Just testing if this works.&lt;/p&gt;</content><author><name></name></author><summary type="html">Just testing if this works.</summary></entry><entry><title type="html">Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo</title><link href="/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo.html" rel="alternate" type="text/html" title="Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo" /><published>2015-02-21T14:23:00+00:00</published><updated>2015-02-21T14:23:00+00:00</updated><id>/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo</id><content type="html" xml:base="/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo.html">&lt;p&gt;&lt;em&gt;Preliminary note: this is an ongoing story, so I’ll probably update and correct
+this post when I get more information.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150224-1&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/24):&lt;/strong&gt; Following &lt;a href=&quot;#20150224-3&quot;&gt;Philips’ letter&lt;/a&gt; that
+&lt;em&gt;Software Enterprise&lt;/em&gt; allegedly received, Zambilight has been renamed Zambi.
+I probably won’t change the name everywhere, but you get the idea.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;updates&quot;&gt;Updates&lt;/h2&gt;
+
+&lt;p&gt;With more and more updates going on, maintaining an index of all updates sounds
+like a good idea.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2015/02/26:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150226&quot;&gt;Got my money back&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2015/02/25:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150225-1&quot;&gt;Backers are continuing their investigation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150225-2&quot;&gt;Refunds are issued&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150225-3&quot;&gt;Indiegogo campaign is still running&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2015/02/24
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150224-1&quot;&gt;Zambilight becomes Zambi&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150224-2&quot;&gt;Reply from Paypal&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150224-3&quot;&gt;Philips’ letter&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2015/02/23
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150223-1&quot;&gt;A response from Caroline at MinifigsMe&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150223-2&quot;&gt;Personal thought&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2015/02/22
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#20150222&quot;&gt;The Facebook account we found is probably a fake/lure&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Today’s post won’t be about coding, but just a story of a scam that managed to raise
+more than $150,000 on Indiegogo.&lt;/p&gt;
+
+&lt;p&gt;That project’s name is &lt;a href=&quot;https://www.indiegogo.com/projects/meet-zambilight-the-update-for-your-television/x/8069342&quot;&gt;Zambilight&lt;/a&gt;. The premise is quite interesting: a complete kit
+that uses stickable LEDs controlled by a Raspberry Pi to add to your TV
+Ambilight-like back-lighting. The idea is not new, has been subject of multiple
+tutorials, forum threads, videos on Youtube, etc. Zambilight is not even the first
+one to offer a complete, easy to assemble kit.&lt;/p&gt;
+
+&lt;p&gt;The difference is that they’re an Indiegogo project, have been featured on
+Indiegogo’s newsletter, and have an attractive price. Actually, the price offered to
+early-bird backers is lower than it would cost one person to buy each parts
+separately. At that time, I thought that maybe with bulk prices, plus a rebate to
+incent first people to back their project, it would be possible to reach such
+prices. For the record, “Super Early Birds” were offered the kit for a mere $49
+while it was announced that the product would be sold $100 after the campaign.&lt;/p&gt;
+
+&lt;p&gt;I jumped in, backing for a “Duo Zambilight Kit” ($100), when the 100 super early
+bird kits were already sold out, on September 6th. I wasn’t very careful, didn’t do
+a full background check, as I thought that Indiegogo + featured in official
+newsletter + Paypal + 100s of backers were good enough signs.&lt;/p&gt;
+
+&lt;p&gt;Quickly after backing, I starter to have my doubts and to ask questions.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Someone on Reddit claimed &lt;a href=&quot;http://www.reddit.com/r/raspberry_pi/comments/2ftbjx/my_led_backlight_tv_blog&quot;&gt;[his] LED backlight TV blog post [was] being
+ripped off by a guy on Indiegogo&lt;/a&gt;, which was true: the
+Indiegogo project page was using his pictures without his consent, and
+&lt;em&gt;Software Enterprise&lt;/em&gt; (the name used on Indiegogo by Zambilight’s “creator”,
+should have been another clue) was quickly asked to remove them and replace them
+with his own pictures and videos, which he did.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Software Enterprise&lt;/em&gt; did other scam attempts before this one:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.indiegogo.com/projects/make-your-iphone-or-ipad-app-for-25-dollar/x/8069342&quot;&gt;Make your iPhone or iPad app for 25 dollar&lt;/a&gt;, which is a
+blatant rip-off of an online course on Udemy: &lt;a href=&quot;https://www.udemy.com/ios-8-and-swift-how-to-make-a-freaking-iphone-app/&quot;&gt;iOS 8 and Swift - How to Make a
+“Freaking” iPhone App&lt;/a&gt; (compare the paragraphs “An app that…”
+and “What makes you a good teacher?” on both pages).&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.indiegogo.com/projects/your-own-personalised-minifig-usb-keychain/x/8069342&quot;&gt;Your own personalised Minifig USB Keychain&lt;/a&gt;, which description
+is shamelessly copying parts of existing similar services’ description (use Google).
+For example, the UK company &lt;a href=&quot;http://minifigs.me&quot;&gt;MinifigsMe&lt;/a&gt;. The Youtube account that
+posted the Minifig USB keychain video is also named
+“&lt;a href=&quot;https://www.youtube.com/channel/UCPWwp6nJsUS_aTDE0707dUw&quot;&gt;Minifig Me&lt;/a&gt;”, and also posted videos about Zambilight.&lt;/p&gt;
+
+        &lt;hr /&gt;
+
+        &lt;p&gt;&lt;a name=&quot;20150223-1&quot;&gt;&lt;/a&gt;
+ &lt;strong&gt;Update (2015/02/23)&lt;/strong&gt;: Caroline, from &lt;a href=&quot;http://minifigs.me&quot;&gt;MinifigsMe&lt;/a&gt;, friendly replied to my
+ email and confirmed that MinifigsMe is neither related to &lt;em&gt;Software
+ Enterprise&lt;/em&gt; nor Zambilight, and that their copy has been used on the
+ Indiegogo Minifig USB Keychain campaign without their permission. Their
+ official Youtube account is called &lt;a href=&quot;https://www.youtube.com/channel/UCDjbCWj8PSXsmWhPgsvsjTw&quot;&gt;Minifigs Me&lt;/a&gt;.&lt;/p&gt;
+
+        &lt;hr /&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A third one which was basically shut down by Indiegogo, as it was trying to
+sell an existing product that anyone can buy on the Internet:
+&lt;a href=&quot;https://www.indiegogo.com/projects/iphone-projector-and-battery-case-in-one#home&quot;&gt;iPhone Projector and battery case in one&lt;/a&gt;. Here is an &lt;a href=&quot;http://neuerdings.com/2014/08/28/iphone-projector/&quot;&gt;article
+talking about it&lt;/a&gt;, and the &lt;a href=&quot;http://www.amazon.com/gp/product/B007EDQHWG&quot;&gt;product sold on
+Amazon&lt;/a&gt;. This one is the proof that Indiegogo was aware of
+&lt;em&gt;Softare Enterprise&lt;/em&gt;’s doings, but didn’t care enough to take the backers’
+questions about Zambilight more seriously.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/assets/zambilight/igg-zambilight.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/igg-zambilight_thumb.jpg&quot; alt=&quot;Zambilight&quot; /&gt;&lt;/a&gt;
+ &lt;a href=&quot;/assets/zambilight/igg-iphone-app.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/igg-iphone-app_thumb.jpg&quot; alt=&quot;iPhone app&quot; /&gt;&lt;/a&gt;
+ &lt;a href=&quot;/assets/zambilight/igg-minifig.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/igg-minifig_thumb.jpg&quot; alt=&quot;LEGO Minifig&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The deeper I got digging, asking questions, the shadier their technical
+descriptions of the product, and solutions to apparent problems got. I’ll take for
+example the way they were claiming it should work with a TV’s internal tuner. It
+took me about 10 days to get them admit that it was based on the TV having a SCART
+Video output, which is really not a granted thing, especially outside of Europe.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When I got too annoying, they offered me, and a few other questioning people, to
+become beta-testers, promising us we’d get a kit before anyone else, test it, and
+provide feedback. No need to say now that we’ve never seen those beta kits either.
+One backer (apparently German), &lt;em&gt;Contributor GB&lt;/em&gt;, is claiming they got their own
+beta unit, but always failed to provide any picture or video, which makes me believe
+they’re part of the scam. When &lt;em&gt;Software Enterprise&lt;/em&gt; announced shipping would start,
+we even got the promise that our “beta kit” would ship with our normal perks. What a
+joke!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When I started to dig and question their organization, timeline, how they were
+planning to send dozens of units whereas they hadn’t even ordered the different
+components from their suppliers, what was the state of the custom case that would
+hold the Raspberry Pi, I never got any convincing answer.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I could go on and on about the updates becoming more and more flimsy, spaced in
+time, and always promising more pictures “next week”, “next Friday”, etc.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/zambilight/igg-comments.html&quot;&gt;For the record, I dumped the 6 months of comments left by backers and &lt;em&gt;Software
+Enterprise&lt;/em&gt; on the Indiegogo’s project page.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;No need to say, I didn’t have much trust left in &lt;em&gt;Software Enterprise&lt;/em&gt;, but I still
+had a little hope that they were just a couple of unexperienced people doing this in
+their garage after day work, and that although their communication was reall bad,
+something would come out of this. At that point, I would even accept to receive the
+base components, no documentation, no software, and do the rest myself.&lt;/p&gt;
+
+&lt;p&gt;Then they announced, around mid-December, that units would start shipping soon, a
+bit late, but not that bad, honestly, so we got to another round of waiting.&lt;/p&gt;
+
+&lt;p&gt;We were announced that the first batch had shipped at the end of January, but days after,
+&lt;em&gt;Software Enterprise&lt;/em&gt; failed to give us any list of people they shipped their kit
+to, and more than a week after that, nobody was able to tell us they received their
+unit, and provide us pictures. Nobody but one. A backer named &lt;em&gt;Dennis Bakker&lt;/em&gt; on
+Indiegogo’s website affirmed he received and installed his Zambilight kit, on
+February 5th. Hope was somehow reborn! But once more, this person failed providing
+any picture of his kit, which makes him one more person I’m suspecting to be part
+of the scam (or maybe one more fake account created by &lt;em&gt;Software Enterprise&lt;/em&gt;).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;17 days ago&lt;/p&gt;
+
+  &lt;p&gt;to randy Alexander&lt;/p&gt;
+
+  &lt;p&gt;Received my ambilight system this afternoon.&lt;/p&gt;
+
+  &lt;p&gt;I almost lost my confidence in crowdfunding because i’m waiting for ages on my
+Trackr bravo, i was happy to receive the ambilight system.
+I will install it tomorrow and leave some reactions.&lt;/p&gt;
+
+  &lt;p&gt;Sorry for my bad english&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then &lt;em&gt;Software Enterprise&lt;/em&gt; announced that by February 13th, all September backers
+would get their units shipped, and even added later that they would post pictures
+of the shipped units (that was their last message on Indiegogo’s comment page).
+One backer who paid for the “reseller kit” (10 units) even got a parcel tracking
+number! He was the only one because, you know, tracking option is expensive…
+&lt;em&gt;l4v4l4amp3&lt;/em&gt; (that’s his pseudonym on Indiegogo) kept us informed about the
+evolution he could see on the tracking page, and had the surprise not to find any
+package home after it was stated “delivered” by the shipping company…
+Luckily for us, &lt;em&gt;l4v4l4mp3&lt;/em&gt; didn’t give up that easily and started investigating,
+asking questions to the post office, and around, in order to find the lost package.
+What a surprise when he finally got hold of it, and found inside… a pack of
+Pampers diapers!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/zambilight/pampers.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/pampers_thumb.jpg&quot; alt=&quot;Pampers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s one theory that’s running between backers: &lt;em&gt;l4v4l4mp3&lt;/em&gt; should never have
+found that package, which would then have been returned to sender. And we would
+still be waiting…&lt;/p&gt;
+
+&lt;p&gt;Now we’re done believing (took us some time, right?!), and backers are starting to
+back off, asking for a refund, either directly, or via Paypal, or their credit card
+company. So far, it seems to go well, Paypal seems to be settling claims by
+refunding backers (I didn’t get mine yet, but I’ll update as soon as I do).
+When I opened my refund request on Paypal, it even claimed that the seller was not
+“able to communicate at the moment”, and that my request immediately escalated into
+a claim, that Paypal will look into. I think they blocked his account and are now
+taking things into hand.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150224-2&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/24):&lt;/strong&gt; I received an email from Paypal, in response to my claim,
+saying (in French, as my Paypal account is French):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Vous avez signalé un litige plus de (note from the author: the number of days was
+actually missing in the email) après la date limite d’ouverture, de
+sorte qu’il a été automatiquement clos. Bien que le litige soit clos, nous
+vous encourageons à communiquer avec le vendeur pour résoudre le problème.&lt;/p&gt;
+
+  &lt;p&gt;Si ce délai est dépassé, vous pouvez contacter la Direction Générale de la
+concurrence, de la consommation et de la répression des fraudes (DGCCRF).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Which loosely translates:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;You have filed a claim more than (note from the author: the number of days was
+actually missing in the email) after the limit date. In consequence, your claim
+was automatically closed. However, we strongly invite you to try to come to an
+agreement with the seller.&lt;/p&gt;
+
+  &lt;p&gt;You can also contact the DGCCRF (French General Directorate for competition
+policy,  consumer affairs and fraud control).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ll try to get a refund directly from &lt;em&gt;Software Enterprise&lt;/em&gt;, but I don’t have much
+hope…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150226&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/26):&lt;/strong&gt; I got my money back! It came from a different Paypal
+account than the one I paid to, but it does not show as a commercial transaction.
+The only clue I can see is that no fee was cut from the received amount. (Payments
+for purchase usually take out a fee from the recipient.)&lt;/p&gt;
+
+&lt;p&gt;I contacted Paypal to confirm this, I’ll probably know better within 48 hours.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Some people even go directly to &lt;em&gt;Software Enterprise&lt;/em&gt; to ask for a refund, and it
+seems he’s refunding them quite quickly. That might be a ruse to keep other people
+believing that the project is legit, and that they will get something some day.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150225-2&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/25):&lt;/strong&gt; &lt;em&gt;SE&lt;/em&gt; is apparently issuing a refund to any person who asks.
+I’m yet to get my money back, but form what I’ve read, backers (those who paid using
+Paypal, as well as those who used a credit card) who ask for a refund get their
+money back in a few days. This seems to be good news, but I’d like to remind
+everybody to stay careful. The refunds are apparently sent from a different Paypal
+account than the one we paid to in the first place, because it is allegedly
+blocked.&lt;/p&gt;
+
+&lt;p&gt;By sending us money that way, instead of issuing an “official” refund of the
+original transaction, it feels like there’s still a door open for &lt;em&gt;SE&lt;/em&gt; to open a
+claim on this payment he made, and to ask a refund on a fallacious reason.
+Especially if he sent money as a “purchase”, then he is eligible for “Paypal
+Purchase Protection” for 180 days, during which he can claim his money back, because
+he didn’t received the purchased item. We all know there’s no item involved, but
+seen from Paypal, it would look like a buyer (him) who can’t give any proof of the
+item he bought, versus a seller (the refunded backer), who cannot prove the item
+was properly delivered (obviously). Knowing that Paypal usually protects the buyer
+first, I would not bet on the backer keeping his refund money.&lt;/p&gt;
+
+&lt;p&gt;In the same way I would not accept a refund by check on the condition that I wait 6
+months to cash it, I will not accept a Paypal payment that looks like a commercial
+transaction, and I recommend everybody out there to do the same (I will not force
+anybody, it’s up to you, but I think I made my point).&lt;/p&gt;
+
+&lt;p&gt;Note that people who are still under Paypal Purchase Protection have their claim
+examined by Paypal, and normally get their money back the proper way.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Now the last news we got from &lt;em&gt;Software Enterprise&lt;/em&gt; does not come directly from him.
+Apparently, some backers are still in contact with him by email, and he is
+saying they received a letter from Philips, asking them not to use the name
+“Zambilight”, because of similarities, in both the product’s purpose, and its
+name, with Philips’ trademarked Ambilight.
+&lt;a href=&quot;http://androidworld.nl/nieuws/zambilight-claim-philips/&quot;&gt;The information was apparently also relayed by a Dutch website, claiming they have
+Philips’ letter in their possession (but not releasing it
+publicly).&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/zambilight/androidworld.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/androidworld_thumb.jpg&quot; alt=&quot;AndroidNews&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is not really a surprise here, it’s even a concern I had back in October,
+and asked about:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You say “create a name”, but aren’t you afraid of lawsuits with a name such
+as Zambilight? Philips’ “Ambilight” is a trademark, and it seems highly
+unlikely they wouldn’t react to a product named Zambilight. (Although, I’m
+talking out of my ass, because I know nothing about trademark laws. :D )&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And their answer at that time was:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Before choosing the name we have contacted The Benelux Office for
+Intellectual Property (BOIP) is the official office for the registration of
+trademarks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I personally believe that telling us they’re having problems with Philips now is
+just a way to keep backers on the fence, waiting longer, and get more of them past
+Paypal’s time limit for opening a claim.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150224-3&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/24):&lt;/strong&gt; &lt;em&gt;Software Enterprise&lt;/em&gt; posted low-resolution pictures of the
+alleged letter from Philips.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/zambilight/philips-letter-1.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-1_thumb.jpg&quot; alt=&quot;Philips' letter (1)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/zambilight/philips-letter-2.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-2_thumb.jpg&quot; alt=&quot;Philips' letter (2)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/zambilight/philips-letter-3.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-3_thumb.jpg&quot; alt=&quot;Philips' letter (3)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/zambilight/philips-letter-4.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-4_thumb.jpg&quot; alt=&quot;Philips' letter (4)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/assets/zambilight/philips-letter-5.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-5_thumb.jpg&quot; alt=&quot;Philips' letter (5)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The certificates seem legit:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tsdr.uspto.gov/documentviewer?caseId=sn79094181&amp;amp;docId=ORC20120221002738#docIndex=5&amp;amp;page=1&quot;&gt;Ambilight on the United States Patent and Trademark Office’s website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.wipo.int/romarin/advSearch.do?ID=0&amp;amp;searchDatabaseAct=on&amp;amp;searchString=+%2FMARKGR%2FINTREGN+contains+1068753&quot;&gt;Ambilight on the Word Intellectual Property Organization’s website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It still does not explain why &lt;em&gt;Software Enterprise&lt;/em&gt; is not using Indiegogo’s
+update system to inform all his backers, neither why he told us all September
+backers’ units were shipped, and the only package that was delivered contained a
+pack of Pampers…&lt;/p&gt;
+
+&lt;p&gt;Maybe Philips’ letter is real, but maybe they’re just reacting to scam allegations
+and are trying to protect their brand from the bad publicity Zambilight could do.&lt;/p&gt;
+
+&lt;p&gt;I also would like to understand why Philips’ letter is redacted. It’s important for
+backers to know when it was received, at the very least. If it’s all real, and
+Philips gave them 10 days to change their name, then I guess it can’t be very old…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150225-3&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/25):&lt;/strong&gt; The Indiegogo campaign is still running, and collecting
+funds (three payments happened in the last 48 hours). To see that, although &lt;em&gt;SE&lt;/em&gt;
+claims they asked Indiegogo to interrupt the “InDemand” campaign (it’s a campaign
+that succeeded and then never ends) is a proof of either one of two things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Either &lt;em&gt;SE&lt;/em&gt; lied once more. (Well, why not?)&lt;/li&gt;
+  &lt;li&gt;Or Indiegogo is really not willing to put an end to that farce, and will continue
+to milk it as long as possible…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So what’s next? Well, a few backers took the things into hand, created a Facebook
+group: &lt;a href=&quot;https://www.facebook.com/groups/zambilight/&quot;&gt;Zambilight News on Facebook&lt;/a&gt;, they are investigating
+based on the few hints we have. We have a good idea of &lt;em&gt;Software Enterprise&lt;/em&gt;’s real
+name, as it’s provided by Paypal on payment (nothing says it’s his real identity,
+but I believe Paypal’s checks are quite thorough), we have addresses, company names
+that might help us bring the thing to the police (a few people apparently already
+did, in their respective countries).
+It’s quite disturbing to see that the person we believe to be behind all this,
+posted on his Facebook account, back in August 2014, “Got a great idea for a next
+project. Moneymaker. :)” Sure it was, as it managed to raise more than $150k…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150222&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/22)&lt;/strong&gt;: &lt;em&gt;Software Enterprise&lt;/em&gt;’s Facebook account is likely to
+be a fake, maybe a lure to send us on a wrong track, to a fake name. User
+&lt;em&gt;l4v4l4mp3&lt;/em&gt; contacted me to explain that the posts regarding Zambilight had
+been created only a few days ago, then their dates were changed (see the little
+clock icon next to publication date in the screenshot below?) to match the
+beginning of Zambilight’s campaign. That might just be an attempt to orient us
+towards a fake name.  Also, it is easy to find a Facebook’s account unique
+numeric id, I checked the nearest ids, and only found accounts created around
+Feb. 18th 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/zambilight/facebook-fake.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/facebook-fake_thumb.jpg&quot; alt=&quot;facebook fake&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150223-2&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/23)&lt;/strong&gt;: I wondered for a long time why &lt;em&gt;Software Enterprise&lt;/em&gt;
+was not using Indiegogo’s official way to provide updates to a project, and the
+reason suddenly appeared quite obvious to me: as long as he’s only posting in
+the comment section, all people who forgot about Zambilight, or are not
+checking the comments page won’t be worried and come to ask their money back,
+that’s it!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a name=&quot;20150225-1&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Update (2015/02/25):&lt;/strong&gt; Backers are continuing their investigation, and managed to
+uncover a few disturbing things. Using available information and tools creatively,
+a few backers are linking our &lt;em&gt;Software Enterprise&lt;/em&gt;’s identity to others we can find
+on the Internet. Conclusions are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;SE&lt;/em&gt; owns more than one e-Commerce businesses:
+    &lt;ul&gt;
+      &lt;li&gt;one of them sells baby supplies (including Pampers branded items)&lt;/li&gt;
+      &lt;li&gt;another one sells electronic, appliance, TV/Hifi goods.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;SE&lt;/em&gt; plays poker online, on multiple sites (which is fine by me, as long as
+it’s not with our money).&lt;/li&gt;
+  &lt;li&gt;He owns multiple domains that all seem related to various kinds of business.&lt;/li&gt;
+  &lt;li&gt;He’s been promoting his various Indiegogo campaings on forums, trying to get
+unrelated people to “share”. Not a uncommon practice, but the way he did it does
+not seem very ethic.&lt;/li&gt;
+  &lt;li&gt;Most shocking of all: &lt;em&gt;SE&lt;/em&gt; was sentenced in 2008 to 100h of community service
+for “abuse of trust”, selling “goods from dubious Internet stores”, then not
+delivering anything (rings a bell?). Note that I’m quoting a Belgian news website
+written in Dutch, that I put through Google Translate. He used multiple user names
+on auction websites, that match the company names gathered somewhere else.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now obviously, people have been able to link all this using names, addresses,
+company names, domain names, email addresses… I know them myself, or have access
+to them, but will not share them publicly. If you wish to know more and have a good
+reason to, feel free to contact me. If you like investigating, you’ll manage to find
+all this by yourself anyway, using the information I’m providing.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Many backers also contacted Indiegogo’s support obviously, as we would like to get
+some help from the people who handled and endorsed it, but it looks like, once more,
+Indiegogo does not really care about their users security, but more about the
+small percentage they get from any money that’s put into an Indiegogo project.
+At the moment, the Zambilight project is still up, and still collecting money,
+filling &lt;em&gt;Software Enterprise&lt;/em&gt; and Indiegogo’s pockets with money, every time a new
+backer gets fooled…&lt;/p&gt;
+
+&lt;p&gt;The lesson I’ll take from all that is that Indiegogo is clearly not a safe platform
+for people willing to back interesting crowd-funding projects. And knowing that, I
+think that people who have interesting and real ideas should also avoid the
+platform, and grant their backers the safety they deserve, by using safer popular
+platforms, such as &lt;a href=&quot;https://www.kickstarter.com/&quot;&gt;KickStarter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to know more about this, or have precise questions, feel free to
+contact me and I’ll try to reply as precisely as I can.
+There’s also a lot of personal information that I did not disclose publicly, like
+names, addresses, that I could give to the right people.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Feel free to use this article in any way you like (share it, pass it to the media,
+link to it…). All I’m asking is that you provide a link to the original article,
+here.&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Preliminary note: this is an ongoing story, so I’ll probably update and correct this post when I get more information.</summary></entry><entry><title type="html">Rails’ `1.month` has a variable length</title><link href="/rails/2015/02/19/rails-1month-variable-length.html" rel="alternate" type="text/html" title="Rails' `1.month` has a variable length" /><published>2015-02-19T19:27:20+00:00</published><updated>2015-02-19T19:27:20+00:00</updated><id>/rails/2015/02/19/rails-1month-variable-length</id><content type="html" xml:base="/rails/2015/02/19/rails-1month-variable-length.html">&lt;p&gt;One month ago, Ben and I investigated on &lt;a href=&quot;http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.day&lt;/code&gt; not being an &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt;&lt;/a&gt;
+ (that’s an interesting post by Ben, I suggest you read it if you want to know
+what’s happening under the hood).&lt;/p&gt;
+
+&lt;p&gt;Well I’ve got news for you, things only get weirder!&lt;/p&gt;
+
+&lt;h2 id=&quot;discovering-the-problem&quot;&gt;Discovering the problem&lt;/h2&gt;
+
+&lt;p&gt;Let’s use Timecop to freeze time first, so that we know where we’re at (or should I
+say &lt;em&gt;when&lt;/em&gt;?).&lt;/p&gt;
+
+&lt;div class=&quot;language-irb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;irb(main):001:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Timecop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;freeze&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'2015/02/19'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0900&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, let’s check how long a month is.&lt;/p&gt;
+
+&lt;div class=&quot;language-irb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;irb(main):002:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2592000&lt;/span&gt;
+
+&lt;span class=&quot;gp&quot;&gt;irb(main):003:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So, it looks like &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; is 30 days, even in February, right?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Wait, does that mean that if I add &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; to today (Feb. 19th, remember?), then I
+won’t get March 19th as one would expect?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s check:&lt;/p&gt;
+
+&lt;div class=&quot;language-irb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;irb(main):004:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;today&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;
+
+&lt;span class=&quot;gp&quot;&gt;irb(main):005:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;since&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_date&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Actually I do…&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;But you said a month is 30 days, and I’m pretty sure that if I add 30 days to
+Feb. 19th, I won’t get March 19th…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Right:&lt;/p&gt;
+
+&lt;div class=&quot;language-irb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;irb(main):006:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;today&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;
+
+&lt;span class=&quot;gp&quot;&gt;irb(main):007:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;since&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_date&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;So what’s up? Is &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; equal to 30 days, or to 28?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The answer to that is “it depends”, obviously.&lt;/p&gt;
+
+&lt;h2 id=&quot;understanding-how-its-working&quot;&gt;Understanding how it’s working&lt;/h2&gt;
+
+&lt;p&gt;As we found out one month ago with Ben, &lt;a href=&quot;http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.day&lt;/code&gt; is not an &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt;&lt;/a&gt;.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; follows the same pattern, it is an instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;ActiveSupport::Duration&lt;/code&gt;,
+which allows it to behave interestingly.&lt;/p&gt;
+
+&lt;p&gt;As seen in Ben’s post, ActiveSupport’s Date and Time calculations are defined
+in a couple of files, and we’ll focus here on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Date#+&lt;/code&gt; method:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/core_ext/date/calculations.rb#L96&quot;&gt;activesupport/lib/active_support/core_ext/date/calculations.rb#L96&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;plus_with_duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#:nodoc:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveSupport&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Duration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;since&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plus_without_duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;kp&quot;&gt;alias_method&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:plus_without_duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+&lt;span class=&quot;kp&quot;&gt;alias_method&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:plus_with_duration&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When adding something to a Date using the &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; operator, if the right operand is an
+instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;ActiveSupport::Duration&lt;/code&gt;, then the calculation is delegated to the
+method &lt;code class=&quot;highlighter-rouge&quot;&gt;ActiveSupport::Duration#since&lt;/code&gt;, which itself calls &lt;code class=&quot;highlighter-rouge&quot;&gt;#sum&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/duration.rb#L90&quot;&gt;activesupport/lib/active_support/duration.rb#L90&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sign&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#:nodoc:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;acts_like?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;acts_like?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:seconds&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;since&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sign&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;advance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sign&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ArgumentError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;expected a time or date, got &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inspect&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I don’t understand why the &lt;code class=&quot;highlighter-rouge&quot;&gt;:seconds&lt;/code&gt; case is treated separately (it looks like it
+would work as well with the &lt;code class=&quot;highlighter-rouge&quot;&gt;else&lt;/code&gt; code), but the important line is
+&lt;code class=&quot;highlighter-rouge&quot;&gt;t.advance(type =&amp;gt; sign * number)&lt;/code&gt;. Long story short,&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;is equivalent to:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;advance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:months&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that, at no point, the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; was converted in days, or in seconds.
+It was represented as a “quantity of 1, on the month unit”, all along.
+Now if we jump back to &lt;code class=&quot;highlighter-rouge&quot;&gt;Date#advance&lt;/code&gt; definition&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/rails/rails/blob/4-1-stable/activesupport/lib/active_support/core_ext/date/calculations.rb#L110&quot;&gt;activesupport/lib/active_support/core_ext/date/calculations.rb#L110&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;advance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dup&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:years&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:years&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:months&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:months&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:weeks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:weeks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;       &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Advancing a date one month will use &lt;code class=&quot;highlighter-rouge&quot;&gt;Date#&amp;gt;&amp;gt;&lt;/code&gt; operator, which, according to the
+&lt;a href=&quot;http://ruby-doc.org/stdlib-2.2.0/libdoc/date/rdoc/Date.html#method-i-3E-3E&quot;&gt;Ruby documentation&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;returns a date object pointing n months after self&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There you have it! At no point, from beginning to end, was a number of days, or
+seconds, involved.&lt;/p&gt;
+
+&lt;h2 id=&quot;consequences&quot;&gt;Consequences&lt;/h2&gt;
+
+&lt;p&gt;Well, the consequences of such behavior are multiple, some come very handy, while
+others can be dangerous.&lt;/p&gt;
+
+&lt;p&gt;First of all we can admit that it’s pretty cool we don’t have to worry about the
+number of days in a month when adding a number of months to a date.&lt;/p&gt;
+
+&lt;p&gt;Problems arise when using the same expression in the same piece of code, but this
+expression ends up having different logical values. Here’s a real-life example from
+the code I’m working on at the moment.&lt;/p&gt;
+
+&lt;p&gt;Let’s consider a simple &lt;code class=&quot;highlighter-rouge&quot;&gt;Article&lt;/code&gt; model, that has a &lt;code class=&quot;highlighter-rouge&quot;&gt;#valid_until&lt;/code&gt; attribute.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Article&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;DEFAULT_VALIDITY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;after_create&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:set_valid_until&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;set_valid_until&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;valid_until: &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;DEFAULT_VALIDITY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# Schedule a Sidekiq worker to unpublish in one month.&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;ArticleUnpublishWorker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;perform_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;DEFAULT_VALIDITY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This code is not very pretty, but it’ll do. When an article is created:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Its &lt;code class=&quot;highlighter-rouge&quot;&gt;valid_until&lt;/code&gt; attribute is set to &lt;em&gt;one month&lt;/em&gt; in the future.&lt;/li&gt;
+  &lt;li&gt;A Sidekiq job is scheduled to unpublish the Article in &lt;em&gt;one month&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(Did you notice how I used the same “&lt;em&gt;one month&lt;/em&gt;” expression in the two statements
+above? That mirrors the code using the same &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; expression in both places.)&lt;/p&gt;
+
+&lt;p&gt;One would expect the job to be triggered around the time the article becomes
+invalid (ideally when now &lt;strong&gt;is&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;article.valid_until&lt;/code&gt; or else a few milliseconds
+to seconds after). That would be right only on 30-day months.&lt;/p&gt;
+
+&lt;p&gt;Let’s say I create an Article today (Feb. 19th 2015). Its &lt;code class=&quot;highlighter-rouge&quot;&gt;valid_until&lt;/code&gt; attribute
+will be set to Mar. 19th, because as we saw above, adding &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; to a Date (or a
+Time) will advance it exactly one month.
+But the Sidekiq worker is scheduled to be run in &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt;, which, all alone, is
+always equal to 30 days!&lt;/p&gt;
+
+&lt;p&gt;There you have it, you thought you used &lt;code class=&quot;highlighter-rouge&quot;&gt;1.month&lt;/code&gt; consistently and that dates would
+match, but you’re getting a 2-day shift between the time the article becomes
+invalid, and the time it’s actually unpublished.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: after checking Sidekiq’s code, I believe this behavior is a bug,
+and filed a pull request trying to solve it: &lt;a href=&quot;https://github.com/mperham/sidekiq/pull/2198&quot;&gt;MyWorker.perform_in(1.month) does
+not always schedule job in one month&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;last-one-for-the-fun&quot;&gt;Last one for the fun&lt;/h2&gt;
+
+&lt;p&gt;Now for the fun, let’s consider the two following expressions.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;All I did was reorder the members of a simple arithmetic operation, right? They
+should have the same results.&lt;/p&gt;
+
+&lt;p&gt;Not in Rails!&lt;/p&gt;
+
+&lt;div class=&quot;language-irb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;irb(main):008:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;172800.0&lt;/span&gt;
+
+&lt;span class=&quot;gp&quot;&gt;irb(main):009:0&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;month&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;(remember, time is still frozen using Timecop)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Considering the explanation above, it will be easy for you to understand why…&lt;/p&gt;</content><author><name></name></author><summary type="html">One month ago, Ben and I investigated on 1.day not being an Object (that’s an interesting post by Ben, I suggest you read it if you want to know what’s happening under the hood).</summary></entry><entry><title type="html">Using a sprite sheet on Pebble SDK</title><link href="/pebble/2015/02/10/using_sprite_sheet_pebble_sdk.html" rel="alternate" type="text/html" title="Using a sprite sheet on Pebble SDK" /><published>2015-02-10T23:59:20+00:00</published><updated>2015-02-10T23:59:20+00:00</updated><id>/pebble/2015/02/10/using_sprite_sheet_pebble_sdk</id><content type="html" xml:base="/pebble/2015/02/10/using_sprite_sheet_pebble_sdk.html">&lt;p&gt;This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I’m sure it can help other people (and the bonus at the end might please much many people!).
+I figured this out after talking with &lt;a href=&quot;http://forums.getpebble.com/profile/6493/pedrolane&quot;&gt;@pedrolane&lt;/a&gt;, who hinted that if my images are far from 32px wide, then a sprite sheet could be a good idea. Thanks for tutoring me!&lt;/p&gt;
+
+&lt;p&gt;So I’ve been working on a watch face recently (&lt;a href=&quot;http://forums.getpebble.com/discussion/20250/watchface-wip-my-own-attempt-at-yet-another-inkblot-watchface&quot;&gt;Pebblot&lt;/a&gt;), and it turns out I need a lot of image resources (each digit being different, I’ll need 29 digits to display any time in 24-hour format, plus many other small bitmaps).
+As it’s my first work on Pebble, I went the straightest way: have each image declared as a resource in appinfo.json, then write helper functions that will load and unload the bitmaps from the resources.
+At some point, thinking it might be better not to load resources too often (apparently, it uses CPU, thus battery), I tried to cache each of them in a static variable, to retrieve it next time I need to display it.
+Turns out it uses a lot of memory in the heap!&lt;/p&gt;
+
+&lt;h2 id=&quot;maths&quot;&gt;Maths.&lt;/h2&gt;
+
+&lt;p&gt;A thing to know about bitmaps in Pebble’s SDK, is that their rows must be a multiple of 32 pixels (4 bytes) long.
+If not, then useless padding is added to get the required size. This padding is irrelevant data for your application, but it takes up memory!
+Let’s do some maths.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&quot;http://developer.getpebble.com/docs/c/group___graphics_types.html#struct_g_bitmap&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt;&lt;/a&gt; is composed of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;some private attributes I don’t know the size of (but it’s probably always the same, and hopefully not enough to care about, so I’ll ignore it, basically because I don’t know)&lt;/li&gt;
+  &lt;li&gt;a &lt;code class=&quot;highlighter-rouge&quot;&gt;GRect&lt;/code&gt;, that’s a &lt;code class=&quot;highlighter-rouge&quot;&gt;GPoint&lt;/code&gt; and a &lt;code class=&quot;highlighter-rouge&quot;&gt;GSize&lt;/code&gt;, which are each a couple of 2-Byte scalars (hence, 8 Bytes)&lt;/li&gt;
+  &lt;li&gt;a pointer address (1 Byte, am I right? or is it 2?)&lt;/li&gt;
+  &lt;li&gt;the number of bytes per row, 2 more bytes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pretty static, not really interesting. BUT, of course the &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; also stores the pixels data somewhere. That would be &lt;code class=&quot;highlighter-rouge&quot;&gt;H * nb&lt;/code&gt; Bytes (where H is the number of lines, and nb the number of Bytes per row).&lt;/p&gt;
+
+&lt;p&gt;The number of bytes per row is basically the number of “bits per row” (ie. columns), ceiled to the closest multiple of 32, the whole thing then divided by 8 (because 1 Byte = 8 bits).
+We get our formula for the memory used by the actual image data: &lt;code class=&quot;highlighter-rouge&quot;&gt;H * ceil(W/32)*4&lt;/code&gt; Bytes&lt;/p&gt;
+
+&lt;p&gt;So a &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; weighs &lt;code class=&quot;highlighter-rouge&quot;&gt;11 + H * ceil(W/32)*4&lt;/code&gt; Bytes in memory.&lt;/p&gt;
+
+&lt;p&gt;Now I’m gonna take the example of the watch face I’m working on at the moment. I need two types of digits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;16 small ones, 25x55 pixels (&lt;code class=&quot;highlighter-rouge&quot;&gt;11 + 55*4 = 231B&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;13 big ones, 27x59 pixels (&lt;code class=&quot;highlighter-rouge&quot;&gt;11 + 59*4 = 247B&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/zero.png&quot; alt=&quot;Zero&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The pink zone is the memory wasted for 32-bit padding.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If I want to keep them all in the heap, at the same time, I’m going to use &lt;code class=&quot;highlighter-rouge&quot;&gt;16*231 + 13*247 = 6907&lt;/code&gt; Bytes of memory!&lt;/p&gt;
+
+&lt;p&gt;Now let’s say I take all my resources, pack them together in one big &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt;. Well, first of all the 11+ Bytes that each &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; needs will be required only once. And I’m also going to gain on the useless 32-bit padding.
+There are two apparently efficient ways to pack all my digits in sprite sheet(s):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First one would be to line them all horizontally. The big image will be 59px tall, so I’m gonna waste 4 pixels for every column of a small digit.&lt;/li&gt;
+  &lt;li&gt;Second one, to fix that, would be to make two sprite sheets, 55 and 59px high. But I’d lose more on 32-bit padding.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In my case (and that’s NOT an absolute truth), the second one has a very slighter gain. Maths (again) for the first one:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/oneline.png&quot; alt=&quot;One line&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I need &lt;code class=&quot;highlighter-rouge&quot;&gt;16*25 + 13*27 = 751&lt;/code&gt; columns. &lt;code class=&quot;highlighter-rouge&quot;&gt;(16*25 + 13*27)/32 = 23.46&lt;/code&gt;. Too bad, looks like I’m still going to spend a lot on 32-bit padding (the closest you are to the next whole number, the better). So 24 packs of 4 Bytes per row, on 59 rows. That’s 5664 Bytes to which I need to add the 11+ of a &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; structure. &lt;strong&gt;5675&lt;/strong&gt; Bytes total.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://29.media.tumblr.com/tumblr_lltzgnHi5F1qzib3wo1_400.jpg&quot; alt=&quot;Not bad.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And maths for the second one: &lt;code class=&quot;highlighter-rouge&quot;&gt;11 + 55*ceil(16*25/32)*4 + 11 + 59*ceil(13*27/32)*4 = 5478&lt;/code&gt; Bytes. More than a 20% gain, awesome!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/twolines.png&quot; alt=&quot;Two lines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i3.kym-cdn.com/photos/images/newsfeed/000/120/220/85f.jpg&quot; alt=&quot;Fuck yeah.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;in-the-code&quot;&gt;In the code&lt;/h2&gt;
+
+&lt;p&gt;You’ll have to store in your code, somehow, the position of each sprite in the sheet (origin + size: it’s a GRect). Either use &lt;code class=&quot;highlighter-rouge&quot;&gt;#define&lt;/code&gt; macros, which will be replaced during compilation, &lt;del&gt;and use no memory&lt;/del&gt; (like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#define SPRITE_POS_DIGIT0_0 GRect(0,0,27,59)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;), or constants, but then I don’t know if they use memory (8 bytes per each), or not. (Update: &lt;a href=&quot;http://www.reddit.com/r/pebbledevelopers/comments/2uds2z/question_pebble_memory_is_it_cheaper_to_use/cob2t0K&quot;&gt;hmm, not exactly how it works…&lt;/a&gt; Obviously, whichever way you choose to store your sprite positions, it’s gonna take up some memory somewhere, either the app’s code size, or the heap, which has the same result, as they share 24kB.)&lt;/p&gt;
+
+&lt;p&gt;Once you get to that point, you’ll only need to use the &lt;a href=&quot;http://developer.getpebble.com/docs/c/group___graphics_types.html#ga5d86515990747e47a76c0a16ed6b2850&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gbitmap_create_as_sub_bitmap()&lt;/code&gt;&lt;/a&gt; function to pick sprites on your sheet:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;GBitmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_sprite&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbitmap_create_as_sub_bitmap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spritesheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SPRITE_POS_DIGIT0_0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;“No deep-copying occurs”, which means you’re just going to use 11+ more bytes each time you need a sprite.&lt;/p&gt;
+
+&lt;p&gt;Pretty cool, right?&lt;/p&gt;
+
+&lt;h2 id=&quot;texturepacker&quot;&gt;TexturePacker&lt;/h2&gt;
+
+&lt;p&gt;Now making and maintaining a sprite sheet is tedious, especially when you’re starting to add a lot of small sprites, it gets hard to pack them the best may, and to measure all dimensions and positions.&lt;/p&gt;
+
+&lt;p&gt;I discovered &lt;a href=&quot;https://www.codeandweb.com/texturepacker&quot;&gt;TexturePacker&lt;/a&gt; tonight, and played with it a while. It looks pretty good, making a sprite sheet from images I feed it with, it can even watch folders and include all images that get in there, then exports the sprite sheet in various standard formats (such as Unity).&lt;/p&gt;
+
+&lt;p&gt;Obviously, making sprite sheets for Pebble is not a “big thing”, and it didn’t have any exporter for that, so I started to write it myself: &lt;a href=&quot;https://github.com/davidstosik/TexturePackerPebble&quot;&gt;TexturePackerPebble&lt;/a&gt;.
+This exporter will export a PNG sprite sheet file, plus some .c/.h files for Pebble SDK. Just import the result in your Pebble SDK project, and call &lt;code class=&quot;highlighter-rouge&quot;&gt;gbitmap_create_with_sprite(SPRITE_ID_YOUR_ID);&lt;/code&gt; to get a &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; sprite. (You’ll get a detailed “How-to” on the project’s README file.)&lt;/p&gt;
+
+&lt;p&gt;Now you don’t have to care about the sprite sheet making process at all! How cool is that?&lt;/p&gt;</content><author><name></name></author><summary type="html">This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I’m sure it can help other people (and the bonus at the end might please much many people!). I figured this out after talking with @pedrolane, who hinted that if my images are far from 32px wide, then a sprite sheet could be a good idea. Thanks for tutoring me!</summary></entry></feed>
