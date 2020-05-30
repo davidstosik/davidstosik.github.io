@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-30T05:39:03+00:00</updated><id>/feed.xml</id><title type="html">David Stosik</title><subtitle>Hi, I'm David Stosik, develop websites on my day job, and sometimes write code on my free time too. I'll use this space to share my experiences and thoughts.</subtitle><entry><title type="html">Testing</title><link href="/2020/05/27/testing.html" rel="alternate" type="text/html" title="Testing" /><published>2020-05-27T23:40:36+00:00</published><updated>2020-05-27T23:40:36+00:00</updated><id>/2020/05/27/testing</id><content type="html" xml:base="/2020/05/27/testing.html">&lt;p&gt;Just testing if this works.&lt;/p&gt;</content><author><name></name></author><summary type="html">Just testing if this works.</summary></entry><entry><title type="html">Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo</title><link href="/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo/" rel="alternate" type="text/html" title="Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo" /><published>2015-02-21T14:23:00+00:00</published><updated>2015-02-21T14:23:00+00:00</updated><id>/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo</id><content type="html" xml:base="/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo/">&lt;p&gt;&lt;em&gt;Preliminary note: this is an ongoing story, so I’ll probably update and correct
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-30T15:54:57+00:00</updated><id>/feed.xml</id><title type="html">Sto’s thoughts</title><subtitle>Hi, I'm David Stosik, develop websites on my day job, and sometimes write code on my free time too. I'll use this space to share my experiences and thoughts.</subtitle><author><name>David Stosik</name></author><entry><title type="html">Testing</title><link href="/2020/05/27/testing.html" rel="alternate" type="text/html" title="Testing" /><published>2020-05-27T23:40:36+00:00</published><updated>2020-05-27T23:40:36+00:00</updated><id>/2020/05/27/testing</id><content type="html" xml:base="/2020/05/27/testing.html">&lt;p&gt;Just testing if this works.&lt;/p&gt;</content><author><name>David Stosik</name></author><summary type="html">Just testing if this works.</summary></entry><entry><title type="html">Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo</title><link href="/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo/" rel="alternate" type="text/html" title="Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo" /><published>2015-02-21T14:23:00+00:00</published><updated>2015-02-21T14:23:00+00:00</updated><id>/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo</id><content type="html" xml:base="/other/2015/02/21/how-i-got-scammed-lost-all-trust-indiegogo/">&lt;p&gt;&lt;em&gt;Preliminary note: this is an ongoing story, so I’ll probably update and correct
 this post when I get more information.&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -122,9 +122,9 @@ Amazon&lt;/a&gt;. This one is the proof that Indiegogo was aware of
 &lt;em&gt;Softare Enterprise&lt;/em&gt;’s doings, but didn’t care enough to take the backers’
 questions about Zambilight more seriously.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/assets/zambilight/igg-zambilight.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/igg-zambilight_thumb.jpg&quot; alt=&quot;Zambilight&quot; /&gt;&lt;/a&gt;
- &lt;a href=&quot;/assets/zambilight/igg-iphone-app.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/igg-iphone-app_thumb.jpg&quot; alt=&quot;iPhone app&quot; /&gt;&lt;/a&gt;
- &lt;a href=&quot;/assets/zambilight/igg-minifig.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/igg-minifig_thumb.jpg&quot; alt=&quot;LEGO Minifig&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/images/2015-02-21/igg-zambilight.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/igg-zambilight_thumb.jpg&quot; alt=&quot;Zambilight&quot; /&gt;&lt;/a&gt;
+ &lt;a href=&quot;/images/2015-02-21/igg-iphone-app.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/igg-iphone-app_thumb.jpg&quot; alt=&quot;iPhone app&quot; /&gt;&lt;/a&gt;
+ &lt;a href=&quot;/images/2015-02-21/igg-minifig.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/igg-minifig_thumb.jpg&quot; alt=&quot;LEGO Minifig&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -158,7 +158,7 @@ time, and always promising more pictures “next week”, “next Friday”, etc
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/zambilight/igg-comments.html&quot;&gt;For the record, I dumped the 6 months of comments left by backers and &lt;em&gt;Software
+&lt;p&gt;&lt;a href=&quot;/misc/2015-02-21/igg-comments.html&quot;&gt;For the record, I dumped the 6 months of comments left by backers and &lt;em&gt;Software
 Enterprise&lt;/em&gt; on the Indiegogo’s project page.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;No need to say, I didn’t have much trust left in &lt;em&gt;Software Enterprise&lt;/em&gt;, but I still
@@ -206,7 +206,7 @@ asking questions to the post office, and around, in order to find the lost packa
 What a surprise when he finally got hold of it, and found inside… a pack of
 Pampers diapers!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/zambilight/pampers.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/pampers_thumb.jpg&quot; alt=&quot;Pampers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2015-02-21/pampers.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/pampers_thumb.jpg&quot; alt=&quot;Pampers&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Here’s one theory that’s running between backers: &lt;em&gt;l4v4l4mp3&lt;/em&gt; should never have
 found that package, which would then have been returned to sender. And we would
@@ -308,7 +308,7 @@ name, with Philips’ trademarked Ambilight.
 Philips’ letter in their possession (but not releasing it
 publicly).&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/zambilight/androidworld.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/androidworld_thumb.jpg&quot; alt=&quot;AndroidNews&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2015-02-21/androidworld.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/androidworld_thumb.jpg&quot; alt=&quot;AndroidNews&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This is not really a surprise here, it’s even a concern I had back in October,
 and asked about:&lt;/p&gt;
@@ -338,11 +338,11 @@ Paypal’s time limit for opening a claim.&lt;/p&gt;
 &lt;strong&gt;Update (2015/02/24):&lt;/strong&gt; &lt;em&gt;Software Enterprise&lt;/em&gt; posted low-resolution pictures of the
 alleged letter from Philips.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/zambilight/philips-letter-1.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-1_thumb.jpg&quot; alt=&quot;Philips' letter (1)&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/assets/zambilight/philips-letter-2.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-2_thumb.jpg&quot; alt=&quot;Philips' letter (2)&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/assets/zambilight/philips-letter-3.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-3_thumb.jpg&quot; alt=&quot;Philips' letter (3)&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/assets/zambilight/philips-letter-4.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-4_thumb.jpg&quot; alt=&quot;Philips' letter (4)&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;/assets/zambilight/philips-letter-5.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/philips-letter-5_thumb.jpg&quot; alt=&quot;Philips' letter (5)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2015-02-21/philips-letter-1.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/philips-letter-1_thumb.jpg&quot; alt=&quot;Philips' letter (1)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2015-02-21/philips-letter-2.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/philips-letter-2_thumb.jpg&quot; alt=&quot;Philips' letter (2)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2015-02-21/philips-letter-3.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/philips-letter-3_thumb.jpg&quot; alt=&quot;Philips' letter (3)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2015-02-21/philips-letter-4.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/philips-letter-4_thumb.jpg&quot; alt=&quot;Philips' letter (4)&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2015-02-21/philips-letter-5.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/philips-letter-5_thumb.jpg&quot; alt=&quot;Philips' letter (5)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The certificates seem legit:&lt;/p&gt;
 
@@ -403,7 +403,7 @@ towards a fake name.  Also, it is easy to find a Facebook’s account unique
 numeric id, I checked the nearest ids, and only found accounts created around
 Feb. 18th 2015.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/zambilight/facebook-fake.jpg&quot;&gt;&lt;img src=&quot;/assets/zambilight/facebook-fake_thumb.jpg&quot; alt=&quot;facebook fake&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2015-02-21/facebook-fake.jpg&quot;&gt;&lt;img src=&quot;/images/2015-02-21/facebook-fake_thumb.jpg&quot; alt=&quot;facebook fake&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -472,7 +472,7 @@ names, addresses, that I could give to the right people.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Feel free to use this article in any way you like (share it, pass it to the media,
 link to it…). All I’m asking is that you provide a link to the original article,
-here.&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Preliminary note: this is an ongoing story, so I’ll probably update and correct this post when I get more information.</summary></entry><entry><title type="html">Rails’ `1.month` has a variable length</title><link href="/rails/2015/02/19/rails-1month-variable-length/" rel="alternate" type="text/html" title="Rails' `1.month` has a variable length" /><published>2015-02-19T19:27:20+00:00</published><updated>2015-02-19T19:27:20+00:00</updated><id>/rails/2015/02/19/rails-1month-variable-length</id><content type="html" xml:base="/rails/2015/02/19/rails-1month-variable-length/">&lt;p&gt;One month ago, Ben and I investigated on &lt;a href=&quot;http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.day&lt;/code&gt; not being an &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt;&lt;/a&gt;
+here.&lt;/em&gt;&lt;/p&gt;</content><author><name>David Stosik</name></author><summary type="html">Preliminary note: this is an ongoing story, so I’ll probably update and correct this post when I get more information.</summary></entry><entry><title type="html">Rails’ `1.month` has a variable length</title><link href="/rails/2015/02/19/rails-1month-variable-length/" rel="alternate" type="text/html" title="Rails' `1.month` has a variable length" /><published>2015-02-19T19:27:20+00:00</published><updated>2015-02-19T19:27:20+00:00</updated><id>/rails/2015/02/19/rails-1month-variable-length</id><content type="html" xml:base="/rails/2015/02/19/rails-1month-variable-length/">&lt;p&gt;One month ago, Ben and I investigated on &lt;a href=&quot;http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.day&lt;/code&gt; not being an &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt;&lt;/a&gt;
  (that’s an interesting post by Ben, I suggest you read it if you want to know
 what’s happening under the hood).&lt;/p&gt;
 
@@ -697,7 +697,7 @@ should have the same results.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;(remember, time is still frozen using Timecop)&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Considering the explanation above, it will be easy for you to understand why…&lt;/p&gt;</content><author><name></name></author><summary type="html">One month ago, Ben and I investigated on 1.day not being an Object (that’s an interesting post by Ben, I suggest you read it if you want to know what’s happening under the hood).</summary></entry><entry><title type="html">Using a sprite sheet on Pebble SDK</title><link href="/pebble/2015/02/10/using_sprite_sheet_pebble_sdk/" rel="alternate" type="text/html" title="Using a sprite sheet on Pebble SDK" /><published>2015-02-10T23:59:20+00:00</published><updated>2015-02-10T23:59:20+00:00</updated><id>/pebble/2015/02/10/using_sprite_sheet_pebble_sdk</id><content type="html" xml:base="/pebble/2015/02/10/using_sprite_sheet_pebble_sdk/">&lt;p&gt;This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I’m sure it can help other people (and the bonus at the end might please much many people!).
+&lt;p&gt;Considering the explanation above, it will be easy for you to understand why…&lt;/p&gt;</content><author><name>David Stosik</name></author><summary type="html">One month ago, Ben and I investigated on 1.day not being an Object (that’s an interesting post by Ben, I suggest you read it if you want to know what’s happening under the hood).</summary></entry><entry><title type="html">Using a sprite sheet on Pebble SDK</title><link href="/pebble/2015/02/10/using_sprite_sheet_pebble_sdk/" rel="alternate" type="text/html" title="Using a sprite sheet on Pebble SDK" /><published>2015-02-10T23:59:20+00:00</published><updated>2015-02-10T23:59:20+00:00</updated><id>/pebble/2015/02/10/using_sprite_sheet_pebble_sdk</id><content type="html" xml:base="/pebble/2015/02/10/using_sprite_sheet_pebble_sdk/">&lt;p&gt;This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I’m sure it can help other people (and the bonus at the end might please much many people!).
 I figured this out after talking with &lt;a href=&quot;http://forums.getpebble.com/profile/6493/pedrolane&quot;&gt;@pedrolane&lt;/a&gt;, who hinted that if my images are far from 32px wide, then a sprite sheet could be a good idea. Thanks for tutoring me!&lt;/p&gt;
 
 &lt;p&gt;So I’ve been working on a watch face recently (&lt;a href=&quot;http://forums.getpebble.com/discussion/20250/watchface-wip-my-own-attempt-at-yet-another-inkblot-watchface&quot;&gt;Pebblot&lt;/a&gt;), and it turns out I need a lot of image resources (each digit being different, I’ll need 29 digits to display any time in 24-hour format, plus many other small bitmaps).
@@ -734,7 +734,7 @@ We get our formula for the memory used by the actual image data: &lt;code class=
   &lt;li&gt;13 big ones, 27x59 pixels (&lt;code class=&quot;highlighter-rouge&quot;&gt;11 + 59*4 = 247B&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zero.png&quot; alt=&quot;Zero&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2015-02-10/zero.png&quot; alt=&quot;Zero&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;The pink zone is the memory wasted for 32-bit padding.&lt;/em&gt;&lt;/p&gt;
 
@@ -750,7 +750,7 @@ There are two apparently efficient ways to pack all my digits in sprite sheet(s)
 
 &lt;p&gt;In my case (and that’s NOT an absolute truth), the second one has a very slighter gain. Maths (again) for the first one:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/oneline.png&quot; alt=&quot;One line&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2015-02-10/oneline.png&quot; alt=&quot;One line&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I need &lt;code class=&quot;highlighter-rouge&quot;&gt;16*25 + 13*27 = 751&lt;/code&gt; columns. &lt;code class=&quot;highlighter-rouge&quot;&gt;(16*25 + 13*27)/32 = 23.46&lt;/code&gt;. Too bad, looks like I’m still going to spend a lot on 32-bit padding (the closest you are to the next whole number, the better). So 24 packs of 4 Bytes per row, on 59 rows. That’s 5664 Bytes to which I need to add the 11+ of a &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; structure. &lt;strong&gt;5675&lt;/strong&gt; Bytes total.&lt;/p&gt;
 
@@ -758,7 +758,7 @@ There are two apparently efficient ways to pack all my digits in sprite sheet(s)
 
 &lt;p&gt;And maths for the second one: &lt;code class=&quot;highlighter-rouge&quot;&gt;11 + 55*ceil(16*25/32)*4 + 11 + 59*ceil(13*27/32)*4 = 5478&lt;/code&gt; Bytes. More than a 20% gain, awesome!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/twolines.png&quot; alt=&quot;Two lines&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2015-02-10/twolines.png&quot; alt=&quot;Two lines&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i3.kym-cdn.com/photos/images/newsfeed/000/120/220/85f.jpg&quot; alt=&quot;Fuck yeah.&quot; /&gt;&lt;/p&gt;
 
@@ -789,4 +789,4 @@ There are two apparently efficient ways to pack all my digits in sprite sheet(s)
 &lt;p&gt;Obviously, making sprite sheets for Pebble is not a “big thing”, and it didn’t have any exporter for that, so I started to write it myself: &lt;a href=&quot;https://github.com/davidstosik/TexturePackerPebble&quot;&gt;TexturePackerPebble&lt;/a&gt;.
 This exporter will export a PNG sprite sheet file, plus some .c/.h files for Pebble SDK. Just import the result in your Pebble SDK project, and call &lt;code class=&quot;highlighter-rouge&quot;&gt;gbitmap_create_with_sprite(SPRITE_ID_YOUR_ID);&lt;/code&gt; to get a &lt;code class=&quot;highlighter-rouge&quot;&gt;GBitmap&lt;/code&gt; sprite. (You’ll get a detailed “How-to” on the project’s README file.)&lt;/p&gt;
 
-&lt;p&gt;Now you don’t have to care about the sprite sheet making process at all! How cool is that?&lt;/p&gt;</content><author><name></name></author><summary type="html">This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I’m sure it can help other people (and the bonus at the end might please much many people!). I figured this out after talking with @pedrolane, who hinted that if my images are far from 32px wide, then a sprite sheet could be a good idea. Thanks for tutoring me!</summary></entry></feed>
+&lt;p&gt;Now you don’t have to care about the sprite sheet making process at all! How cool is that?&lt;/p&gt;</content><author><name>David Stosik</name></author><summary type="html">This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I’m sure it can help other people (and the bonus at the end might please much many people!). I figured this out after talking with @pedrolane, who hinted that if my images are far from 32px wide, then a sprite sheet could be a good idea. Thanks for tutoring me!</summary></entry></feed>
