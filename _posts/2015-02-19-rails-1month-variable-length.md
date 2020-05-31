@@ -1,6 +1,5 @@
 ---
 title:  "Rails' `1.month` has a variable length"
-date:   2015-02-19 19:27:20
 categories: rails
 permalink: /:categories/:year/:month/:day/:title/
 ---

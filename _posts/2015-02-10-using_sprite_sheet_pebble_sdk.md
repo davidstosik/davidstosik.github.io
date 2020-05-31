@@ -1,6 +1,5 @@
 ---
 title:  "Using a sprite sheet on Pebble SDK"
-date:   2015-02-10 23:59:20
 categories: pebble
 permalink: /:categories/:year/:month/:day/:title/
 ---
