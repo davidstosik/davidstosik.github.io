@@ -8,6 +8,9 @@ plugins:
 sass:
   style: compressed
 
+kramdown:
+  header_offset: 1
+
 include:
   - .nojekyll
 
