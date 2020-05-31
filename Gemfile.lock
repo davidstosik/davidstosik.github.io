@@ -59,24 +59,15 @@ GEM
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
-    tzinfo (1.2.7)
-      thread_safe (~> 0.1)
-    tzinfo-data (1.2020.1)
-      tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 4.0.1)
-  jekyll-feed (~> 0.12)
-  jekyll-seo-tag (~> 2.1)
-  tzinfo (~> 1.2)
-  tzinfo-data
-  wdm (~> 0.1.1)
+  jekyll
+  jekyll-feed
+  jekyll-seo-tag
 
 BUNDLED WITH
    2.1.4
