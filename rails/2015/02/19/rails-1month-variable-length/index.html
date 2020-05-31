@@ -50,7 +50,7 @@ what’s happening under the hood).</p>
 
 <p>Well I’ve got news for you, things only get weirder!</p>
 
-<h2 id="discovering-the-problem">Discovering the problem</h2>
+<h3 id="discovering-the-problem">Discovering the problem</h3>
 
 <p>Let’s use Timecop to freeze time first, so that we know where we’re at (or should I
 say <em>when</em>?).</p>
@@ -100,7 +100,7 @@ Feb. 19th, I won’t get March 19th…</em></p>
 
 <p>The answer to that is “it depends”, obviously.</p>
 
-<h2 id="understanding-how-its-working">Understanding how it’s working</h2>
+<h3 id="understanding-how-its-working">Understanding how it’s working</h3>
 
 <p>As we found out one month ago with Ben, <a href="http://www.bnjs.co/2015/01/14/rails-date-class-durations-and-ruby-basicobject/"><code class="highlighter-rouge">1.day</code> is not an <code class="highlighter-rouge">Object</code></a>.
 <code class="highlighter-rouge">1.month</code> follows the same pattern, it is an instance of <code class="highlighter-rouge">ActiveSupport::Duration</code>,
@@ -188,7 +188,7 @@ Now if we jump back to <code class="highlighter-rouge">Date#advance</code> defin
 <p>There you have it! At no point, from beginning to end, was a number of days, or
 seconds, involved.</p>
 
-<h2 id="consequences">Consequences</h2>
+<h3 id="consequences">Consequences</h3>
 
 <p>Well, the consequences of such behavior are multiple, some come very handy, while
 others can be dangerous.</p>
@@ -248,7 +248,7 @@ not always schedule job in one month</a>.</p>
 
 <hr />
 
-<h2 id="last-one-for-the-fun">Last one for the fun</h2>
+<h3 id="last-one-for-the-fun">Last one for the fun</h3>
 
 <p>Now for the fun, let’s consider the two following expressions.</p>
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">+</span> <span class="mi">1</span><span class="p">.</span><span class="nf">month</span> <span class="o">-</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span> <span class="o">-</span> <span class="mi">30</span><span class="p">.</span><span class="nf">days</span>

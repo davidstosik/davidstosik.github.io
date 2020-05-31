@@ -52,7 +52,7 @@ As it’s my first work on Pebble, I went the straightest way: have each image d
 At some point, thinking it might be better not to load resources too often (apparently, it uses CPU, thus battery), I tried to cache each of them in a static variable, to retrieve it next time I need to display it.
 Turns out it uses a lot of memory in the heap!</p>
 
-<h2 id="maths">Maths.</h2>
+<h3 id="maths">Maths.</h3>
 
 <p>A thing to know about bitmaps in Pebble’s SDK, is that their rows must be a multiple of 32 pixels (4 bytes) long.
 If not, then useless padding is added to get the required size. This padding is irrelevant data for your application, but it takes up memory!
@@ -109,7 +109,7 @@ There are two apparently efficient ways to pack all my digits in sprite sheet(s)
 
 <p><img src="http://i3.kym-cdn.com/photos/images/newsfeed/000/120/220/85f.jpg" alt="Fuck yeah." /></p>
 
-<h2 id="in-the-code">In the code</h2>
+<h3 id="in-the-code">In the code</h3>
 
 <p>You’ll have to store in your code, somehow, the position of each sprite in the sheet (origin + size: it’s a GRect). Either use <code class="highlighter-rouge">#define</code> macros, which will be replaced during compilation, <del>and use no memory</del> (like this:</p>
 
@@ -127,7 +127,7 @@ There are two apparently efficient ways to pack all my digits in sprite sheet(s)
 
 <p>Pretty cool, right?</p>
 
-<h2 id="texturepacker">TexturePacker</h2>
+<h3 id="texturepacker">TexturePacker</h3>
 
 <p>Now making and maintaining a sprite sheet is tedious, especially when you’re starting to add a lot of small sprites, it gets hard to pack them the best may, and to measure all dimensions and positions.</p>
 

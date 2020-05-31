@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Static blog using Jekyll 4.1.0 with GitHub Pages and Actions | Sto’s thoughts</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Static blog using Jekyll 4.1.0 with GitHub Pages and Actions" />
+<meta name="author" content="David Stosik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Now my blog setup is renewed and running, I thought I could write a bit about the setup." />
+<meta property="og:description" content="Now my blog setup is renewed and running, I thought I could write a bit about the setup." />
+<meta property="og:site_name" content="Sto’s thoughts" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-31T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"Now my blog setup is renewed and running, I thought I could write a bit about the setup.","@type":"BlogPosting","headline":"Static blog using Jekyll 4.1.0 with GitHub Pages and Actions","dateModified":"2020-05-31T00:00:00+00:00","url":"/2020/05/31/static-blog-jekyll-410-github-pages-actions.html","datePublished":"2020-05-31T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/05/31/static-blog-jekyll-410-github-pages-actions.html"},"author":{"@type":"Person","name":"David Stosik"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/main.css" /><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Sto's thoughts" /></head>
+
+  <body>
+    <header><nav>
+        <a href="/">
+          Sto&#39;s thoughts
+        </a>
+
+        <ul><li>
+                <a href="/about/">
+                  About Me
+                </a>
+              </li></ul>
+      </nav>
+    </header>
+
+    <main>
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header>
+    <h1 itemprop="name headline">
+      Static blog using Jekyll 4.1.0 with GitHub Pages and Actions</h1>
+    <small><time datetime="2020-05-31T00:00:00+00:00" itemprop="datePublished">
+        May 31, 2020
+      </time></small></header>
+
+  <div itemprop="articleBody">
+    <p>Now my blog setup is renewed and running, I thought I could write a bit about the setup.</p>
+
+<h2 id="before">Before</h2>
+
+<p>When I started this blog (5 years ago, then dropped almost immediately..!), I used <a href="https://pages.github.com/">GitHub Pages</a>’ typical setup for <em>user pages</em> (in opposition to <em>project pages</em>):</p>
+
+<ol>
+  <li>Create the <a href="https://github.com/davidstosik/davidstosik.github.io"><code class="highlighter-rouge">davidstosik/davidstosik.github.io</code> repository</a>.</li>
+  <li>Create a new Jekyll site with <code class="highlighter-rouge">jekyll new</code>.</li>
+  <li>Start writing.</li>
+  <li>Push changes to the <code class="highlighter-rouge">master</code> branch.</li>
+  <li>Let GitHub do its magic to build and publish the static site.</li>
+</ol>
+
+<p>It’s that simple, and <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll">well documented</a>.</p>
+
+<p>I won’t explain Jekyll here as, if you found this page, you probably know what it is. If you don’t, you can always take a look at <a href="https://jekyllrb.com">Jekyll’s official website.</a></p>
+
+<h2 id="problem">Problem</h2>
+
+<p>When I picked up this decrepit project a few days ago, it wasn’t too hard to get things restarted, but I was not completely happy with the setup.
+It didn’t take me long to realize that GitHub Pages are running an outdated version of Jekyll, <a href="https://github.com/jekyll/jekyll/blob/v3.8.7/History.markdown#387--2020-05-08">3.8.7</a> which, even though it’s fairly recent, has only received bug fixes in the last 2 years.</p>
+
+<p>Also, GitHub Pages is not able to build sites that use <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins">plugins</a> it does not support.</p>
+
+<p>Those limitations, joined with my tendency to over-engineer and look into unknown technologies for fun, got me started.</p>
+
+<h2 id="solution-enter-github-actions">Solution: enter GitHub Actions!</h2>
+
+<blockquote>
+  <p><a href="https://github.com/features/actions">GitHub Actions</a> makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.</p>
+</blockquote>
+
+<p>Put simply, it is an automation tool that one can setup to run actions (such as building or publishing a static site) on specific triggers (such as pushing new content). That’s exactly what I need.</p>
+
+<h3 id="jekyll-action">jekyll-action</h3>
+
+<p>Jekyll actually <a href="https://jekyllrb.com/docs/continuous-integration/github-actions">provides and documents</a> a recommended way to use latest versions on GitHub Pages, based on GitHub Actions and the action named <a href="https://github.com/marketplace/actions/jekyll-actions">jekyll-action</a>.</p>
+
+<p>This might work for and satisfy most people, and I’d recommend to try that first, if your goal is just to get over with it and start blogging.</p>
+
+<p>However, I was once again a bit picky with the details, such as the need to generate a GitHub <em>Personal Access Token</em>, a setup that did not seem perfect with <em>user/organization pages</em> or the time it takes to run.</p>
+
+<h3 id="custom-github-actions-workflow">Custom GitHub Actions workflow</h3>
+
+<p>Jekyll’s recommendation is to write a GitHub Actions <a href="https://help.github.com/en/actions/configuring-and-managing-workflows">workflow</a> that makes use of the <a href="https://github.com/helaili/jekyll-action"><code class="highlighter-rouge">jekyll-action</code></a> action.</p>
+
+<p>Instead, I wrote a workflow that makes only use of <a href="https://github.com/actions/">GitHub official actions</a> and runs the commands necessary to build and publish the site.</p>
+
+<p>You can find the GitHub Actions workflow file in my repository: <a href="https://github.com/davidstosik/davidstosik.github.io/blob/4404486b970c1522c76668dd27f2d4e6fdde5404/.github/workflows/github-pages.yml"><code class="highlighter-rouge">davidstosik/davidstosik.github.io/.github/workflows/github-pages.yml</code></a>.</p>
+
+<p>Let’s go over some details.</p>
+
+<h4 id="branches">Branches</h4>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">master-source</span>
+</code></pre></div></div>
+
+<p>This part tells GitHub Actions to run the workflow when content gets pushed (or merged via a pull request) to the branch named <code class="highlighter-rouge">master-source</code>.</p>
+
+<p>Unfortunately, <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site"><em>Configuring a publishing source for your GitHub Pages site</em></a> only applies to <em>project pages</em>. On the other hand, <em>user/organization pages</em> must “be built from the <code class="highlighter-rouge">master</code> branch”.</p>
+
+<p>The word “built” in the sentence above, taken from GitHub’s settings pages, either means “built with GitHub Pages’ Jekyll flow” or “published as static site”. As we’re not using GitHub Pages’ Jekyll flow, the <code class="highlighter-rouge">master</code> branch needs to contain the static site resulting from building it with Jekyll. As a consequence, I had to choose another branch to contain the source files (Jekyll configuration, layouts, markdown content, etc), hence <code class="highlighter-rouge">master-source</code>.</p>
+
+<p>For convenience, I configured the repository’s default branch to be <code class="highlighter-rouge">master-source</code>.</p>
+
+<h4 id="double-checkout">Double checkout</h4>
+
+<p>There are two important branches in this blog’s repository:</p>
+<ul>
+  <li><code class="highlighter-rouge">master-source</code> contains the Jekyll source: configuration files, layouts, Markdown content, etc.</li>
+  <li><code class="highlighter-rouge">master</code> contains the generated static site: the HTML (and CSS, JS, etc.) files that need to be hosted and served when visiting this blog.</li>
+</ul>
+
+<p>I found that doing a checkout operation for each branch made the process cleaner:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">source</span>
+
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">ref</span><span class="pi">:</span> <span class="s">master</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">build</span>
+</code></pre></div></div>
+
+<p>The resulting file structure looks like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$GITHUB_WORKSPACE
+|-- source             # where `master-source` (Jekyll source) is checked out
+  |-- _config.yml
+  |-- index.md
+  |-- README.md
+  |-- _posts/
+      |-- 2020-05-31-using-jekyll-410-on-github-pages-with-github-actions.md
+      |-- etc...
+  |-- etc...
+|-- build              # where `master` (static site) is checked out and built
+    |-- index.html
+    |-- etc...
+</code></pre></div></div>
+
+<h4 id="build-environment">Build environment</h4>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-ruby@v1</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">ruby-version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2.6'</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Bundle install</span>
+        <span class="na">working-directory</span><span class="pi">:</span> <span class="s">source</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">gem install bundler --no-document</span>
+          <span class="s">bundle config path vendor/bundle</span>
+          <span class="s">bundle install --jobs 4 --retry 3</span>
+</code></pre></div></div>
+
+<p>These actions do the following:</p>
+<ul>
+  <li>install the Ruby interpreter, required to execute Jekyll</li>
+  <li>install the Bundler gem, required to install the gems (for example Jekyll plugins) listed in <code class="highlighter-rouge">Gemfile</code></li>
+  <li>install the needed plugins and gems</li>
+</ul>
+
+<h4 id="build-and-publish-site">Build and publish site</h4>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Jekyll Build</span>
+        <span class="na">working-directory</span><span class="pi">:</span> <span class="s">source</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">JEKYLL_ENV=production bundle exec jekyll build -d ../build</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Commit and push changes to master</span>
+        <span class="na">working-directory</span><span class="pi">:</span> <span class="s">build</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">git config user.name "${GITHUB_ACTOR}"</span>
+          <span class="s">git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"</span>
+          <span class="s">git add .</span>
+          <span class="s">git commit -m "Update GitHub pages from Jekyll build for commit ${GITHUB_SHA}"</span>
+          <span class="s">git push origin master</span>
+</code></pre></div></div>
+
+<p>The first step builds the Jekyll site in the <code class="highlighter-rouge">build/</code> directory. Then the following step commits changes to the <code class="highlighter-rouge">master</code> branch and pushes them to GitHub.</p>
+
+<p>Once the updated static files land on the <code class="highlighter-rouge">master</code> branch on GitHub, the site should be published!</p>
+
+<h2 id="result">Result</h2>
+
+<p>This blog is now generated with the latest version of Jekyll (4.1.0), and I am able to update it as soon as a new version comes out. I can also use any Jekyll plugin or theme I like.</p>
+
+<p>The blog still gets built automatically when I push new content to GitHub, and that publication process only takes a few seconds to complete.</p>
+
+<p>If you’re interested in seeing more details about my Jekyll + GitHub Pages + GitHub Actions set up, feel free to take a look at the GitHub repository: <a href="https://github.com/davidstosik/davidstosik.github.io">github.com/davidstosik/davidstosik.github.io</a>.</p>
+
+  </div>
+</article>
+
+    </main>
+
+    <footer>
+      <hr />
+
+      Made by
+      <a href="/about/">
+        David Stosik
+      </a>
+    </footer>
+  </body>
+</html>
