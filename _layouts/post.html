@@ -4,7 +4,12 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
   <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 itemprop="name headline">
+      {{ page.title | escape }}
+      {%- if page.draft -%}
+        <sup>(Draft)</sup>
+      {%- endif -%}
+    </h1>
     <small>
 
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
