@@ -3,7 +3,7 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - master-source
+      - main
 
 jobs:
   github-pages:
@@ -15,7 +15,7 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: gh-pages
           path: build
 
       - uses: actions/setup-ruby@v1
@@ -40,11 +40,11 @@ jobs:
         working-directory: source
         run: JEKYLL_ENV=production bundle exec jekyll build -d ../build
 
-      - name: Commit and push changes to master
+      - name: Commit and push changes to gh-pages
         working-directory: build
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .
           git commit -m "Update GitHub pages from Jekyll build for commit ${GITHUB_SHA}"
-          git push origin master
+          git push origin gh-pages
