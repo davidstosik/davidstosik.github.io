@@ -8,37 +8,21 @@ on:
 jobs:
   github-pages:
     runs-on: ubuntu-22.04
+
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: source
 
       - uses: actions/checkout@v2
         with:
           ref: gh-pages
           path: build
 
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
-
-      - uses: actions/cache@v2
-        with:
-          path: source/vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - name: Bundle install
-        working-directory: source
-        run: |
-          gem install bundler --no-document
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true
 
       - name: Jekyll Build
-        working-directory: source
-        run: JEKYLL_ENV=production bundle exec jekyll build -d ../build
+        run: JEKYLL_ENV=production bundle exec jekyll build -d build
 
       - name: Commit and push changes to gh-pages
         working-directory: build
