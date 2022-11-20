@@ -15,9 +15,9 @@
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+# the base hostname & protocol for your site, e.g. https://example.com
+url: "https://davidstosik.github.io"
 
 permalink: pretty
 template_engine: liquid
@@ -28,6 +28,7 @@ template_engine: liquid
 # ensure you use the `relative_url` helper for all links and assets in your HTML.
 # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
 # update `publicPath`.
+base_path: "/bridgetown"
 
 # timezone: America/Los_Angeles
 # pagination:
