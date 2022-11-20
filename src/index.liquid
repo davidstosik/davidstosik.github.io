@@ -1,9 +1,12 @@
 ---
 layout: default
+paginate:
+  collection: posts
+  per_page: 100
 ---
 
 <ul>
-  {% for post in collections.posts.resources %}
+  {% for post in paginator.resources %}
     <li>
       <small>{{ post.date | date: "%Y-%m-%d" }}</small>
       <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
@@ -14,3 +17,18 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+    <li>
+      <a href="{{ paginator.previous_page_path }}">Previous Page</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li>
+      <a href="{{ paginator.next_page_path }}">Next Page</a>
+    </li>
+    {% endif %}
+  </ul>
+{% endif %}
