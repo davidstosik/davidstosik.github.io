@@ -471,6 +471,11 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
+mvp.css@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/mvp.css/-/mvp.css-1.6.2.tgz#c7510b4446b6a77a7d465fef309b277609b75bfb"
+  integrity sha512-Kx73AwYggF+FlGSTeVOQ1f0Jr7R0eFlDWWXImMwiRxc865x/IYzu8t6kQSBvqU6K7DsTG7uxlZCck1cBdMrPpA==
+
 nanoid@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
