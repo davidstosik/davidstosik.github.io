@@ -59,20 +59,29 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "yarn"
+
+      - name: Install Yarn dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
 
       - name: Build with Bridgetown
-        run: |
-          mkdir _site
-          echo "Hello World!" > _site/index.html
+        run: bin/bridgetown deploy
+        env:
+          BRIDGETOWN_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: bridgetown-site
-          path: _site
+          path: output
 
   merge:
     runs-on: ubuntu-latest
