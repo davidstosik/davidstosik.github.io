@@ -8,9 +8,9 @@ layout: default
       <small>{{ post.date | date: "%Y-%m-%d" }}</small>
       <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
 
-      {%- if post.draft -%}
+      {%- unless post.published -%}
         <sup>draft</sup>
-      {%- endif -%}
+      {%- endunless -%}
     </li>
   {% endfor %}
 </ul>

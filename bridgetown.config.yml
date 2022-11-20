@@ -33,3 +33,7 @@ base_path: "/bridgetown"
 # timezone: America/Los_Angeles
 # pagination:
 #   enabled: true
+
+development:
+  unpublished: true
+  future: true
