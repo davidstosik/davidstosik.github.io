@@ -1,14 +1,16 @@
 ---
-layout: page
-title: Posts
+layout: default
 ---
 
 <ul>
   {% for post in collections.posts.resources %}
     <li>
+      <small>{{ post.date | date: "%Y-%m-%d" }}</small>
       <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+
+      {%- if post.draft -%}
+        <sup>draft</sup>
+      {%- endif -%}
     </li>
   {% endfor %}
 </ul>
-
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!

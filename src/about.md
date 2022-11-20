@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
+permalink: /about/
 ---
 
-This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)
-
-You can find the source code for Bridgetown at GitHub:
-[bridgetownrb](https://github.com/bridgetownrb) /
-[bridgetown](https://github.com/bridgetownrb/bridgetown)
+Hi, I'm David Stosik, develop websites on my day job, and sometimes write code on
+my free time too. I'll use this space to share my experiences and thoughts.
