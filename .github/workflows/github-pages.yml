@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Build and deploy Bridgetown site to GitHub Pages
 
 on:
   push:
@@ -15,8 +15,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build_jekyll:
+    runs-on: ubuntu-latest
+
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -27,17 +30,28 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "yarn"
+
+      - name: Install Yarn dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Build with Bridgetown
+        run: bin/bridgetown deploy
         env:
-          JEKYLL_ENV: production
+          BRIDGETOWN_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        with:
+          path: output
 
   deploy:
     needs: build

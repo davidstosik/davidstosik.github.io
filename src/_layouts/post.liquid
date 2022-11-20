@@ -6,9 +6,9 @@ layout: default
   <header>
     <h1 itemprop="name headline">
       {{ page.title | escape }}
-      {%- if page.draft -%}
-        <sup>(Draft)</sup>
-      {%- endif -%}
+      {%- unless page.published -%}
+        <sup>draft</sup>
+      {%- endunless -%}
     </h1>
     <small>
 

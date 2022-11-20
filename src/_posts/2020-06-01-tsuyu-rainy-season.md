@@ -1,6 +1,7 @@
 ---
 title: Tsuyu, the rainy season
 category: japan
+permalink: /japan/2020/06/01/tsuyu-rainy-season.html
 ---
 
 We're already in June. May really has flown by!

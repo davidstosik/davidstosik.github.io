@@ -1,7 +1,6 @@
 ---
 title: "Zambilight/Zambi: How I got scammed and lost all trust in Indiegogo"
 categories: other
-permalink: /:categories/:year/:month/:day/:title/
 ---
 
 *Preliminary note: this is an ongoing story, so I'll probably update and correct
@@ -100,9 +99,9 @@ Amazon][amazon projector]. This one is the proof that Indiegogo was aware of
 *Softare Enterprise*'s doings, but didn't care enough to take the backers'
 questions about Zambilight more seriously.
 
-    [![Zambilight](/images/2015-02-21/igg-zambilight_thumb.jpg)](/images/2015-02-21/igg-zambilight.jpg)
-     [![iPhone app](/images/2015-02-21/igg-iphone-app_thumb.jpg)](/images/2015-02-21/igg-iphone-app.jpg)
-     [![LEGO Minifig](/images/2015-02-21/igg-minifig_thumb.jpg)](/images/2015-02-21/igg-minifig.jpg)
+    [![Zambilight]({{ "/images/2015-02-21/igg-zambilight_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/igg-zambilight.jpg" | relative_url }})
+     [![iPhone app]({{ "/images/2015-02-21/igg-iphone-app_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/igg-iphone-app.jpg" | relative_url }})
+     [![LEGO Minifig]({{ "/images/2015-02-21/igg-minifig_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/igg-minifig.jpg" | relative_url }})
 
 3. The deeper I got digging, asking questions, the shadier their technical
 descriptions of the product, and solutions to apparent problems got. I'll take for
@@ -128,7 +127,7 @@ hold the Raspberry Pi, I never got any convincing answer.
 time, and always promising more pictures "next week", "next Friday", etc.
 
 [For the record, I dumped the 6 months of comments left by backers and *Software
-Enterprise* on the Indiegogo's project page.](/misc/2015-02-21/igg-comments.html)
+Enterprise* on the Indiegogo's project page.]({{ "/misc/2015-02-21/igg-comments.html" | relative_url }})
 
 No need to say, I didn't have much trust left in *Software Enterprise*, but I still
 had a little hope that they were just a couple of unexperienced people doing this in
@@ -173,7 +172,7 @@ asking questions to the post office, and around, in order to find the lost packa
 What a surprise when he finally got hold of it, and found inside... a pack of
 Pampers diapers!
 
-[![Pampers](/images/2015-02-21/pampers_thumb.jpg)](/images/2015-02-21/pampers.jpg)
+[![Pampers]({{ "/images/2015-02-21/pampers_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/pampers.jpg" | relative_url }})
 
 Here's one theory that's running between backers: *l4v4l4mp3* should never have
 found that package, which would then have been returned to sender. And we would
@@ -271,7 +270,7 @@ name, with Philips' trademarked Ambilight.
 Philips' letter in their possession (but not releasing it
 publicly).][androidworld zambilight]
 
-[![AndroidNews](/images/2015-02-21/androidworld_thumb.jpg)](/images/2015-02-21/androidworld.jpg)
+[![AndroidNews]({{ "/images/2015-02-21/androidworld_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/androidworld.jpg" | relative_url }})
 
 This is not really a surprise here, it's even a concern I had back in October,
 and asked about:
@@ -297,11 +296,11 @@ Paypal's time limit for opening a claim.
 **Update (2015/02/24):** *Software Enterprise* posted low-resolution pictures of the
 alleged letter from Philips.
 
-[![Philips' letter (1)](/images/2015-02-21/philips-letter-1_thumb.jpg)](/images/2015-02-21/philips-letter-1.jpg)
-[![Philips' letter (2)](/images/2015-02-21/philips-letter-2_thumb.jpg)](/images/2015-02-21/philips-letter-2.jpg)
-[![Philips' letter (3)](/images/2015-02-21/philips-letter-3_thumb.jpg)](/images/2015-02-21/philips-letter-3.jpg)
-[![Philips' letter (4)](/images/2015-02-21/philips-letter-4_thumb.jpg)](/images/2015-02-21/philips-letter-4.jpg)
-[![Philips' letter (5)](/images/2015-02-21/philips-letter-5_thumb.jpg)](/images/2015-02-21/philips-letter-5.jpg)
+[![Philips' letter (1)]({{ "/images/2015-02-21/philips-letter-1_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/philips-letter-1.jpg" | relative_url }})
+[![Philips' letter (2)]({{ "/images/2015-02-21/philips-letter-2_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/philips-letter-2.jpg" | relative_url }})
+[![Philips' letter (3)]({{ "/images/2015-02-21/philips-letter-3_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/philips-letter-3.jpg" | relative_url }})
+[![Philips' letter (4)]({{ "/images/2015-02-21/philips-letter-4_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/philips-letter-4.jpg" | relative_url }})
+[![Philips' letter (5)]({{ "/images/2015-02-21/philips-letter-5_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/philips-letter-5.jpg" | relative_url }})
 
 The certificates seem legit:
 
@@ -358,7 +357,7 @@ towards a fake name.  Also, it is easy to find a Facebook's account unique
 numeric id, I checked the nearest ids, and only found accounts created around
 Feb. 18th 2015.
 
-[![facebook fake](/images/2015-02-21/facebook-fake_thumb.jpg)](/images/2015-02-21/facebook-fake.jpg)
+[![facebook fake]({{ "/images/2015-02-21/facebook-fake_thumb.jpg" | relative_url }})]({{ "/images/2015-02-21/facebook-fake.jpg" | relative_url }})
 
 ---
 

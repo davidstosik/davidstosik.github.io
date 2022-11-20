@@ -1,7 +1,6 @@
 ---
 title:  "Using a sprite sheet on Pebble SDK"
 categories: pebble
-permalink: /:categories/:year/:month/:day/:title/
 ---
 
 This story will probably sound dumb to people who are used to coding on Pebble, or other similar environments, but I'm sure it can help other people (and the bonus at the end might please much many people!).
@@ -38,7 +37,7 @@ Now I'm gonna take the example of the watch face I'm working on at the moment. I
   - 16 small ones, 25x55 pixels (`11 + 55*4 = 231B`)
   - 13 big ones, 27x59 pixels (`11 + 59*4 = 247B`)
 
-![Zero](/images/2015-02-10/zero.png)
+![Zero]({{ "/images/2015-02-10/zero.png" | relative_url }})
 
 *The pink zone is the memory wasted for 32-bit padding.*
 
@@ -52,7 +51,7 @@ There are two apparently efficient ways to pack all my digits in sprite sheet(s)
 
 In my case (and that's NOT an absolute truth), the second one has a very slighter gain. Maths (again) for the first one:
 
-![One line](/images/2015-02-10/oneline.png)
+![One line]({{ "/images/2015-02-10/oneline.png" | relative_url }})
 
 I need `16*25 + 13*27 = 751` columns. `(16*25 + 13*27)/32 = 23.46`. Too bad, looks like I'm still going to spend a lot on 32-bit padding (the closest you are to the next whole number, the better). So 24 packs of 4 Bytes per row, on 59 rows. That's 5664 Bytes to which I need to add the 11+ of a `GBitmap` structure. **5675** Bytes total.
 
@@ -60,7 +59,7 @@ I need `16*25 + 13*27 = 751` columns. `(16*25 + 13*27)/32 = 23.46`. Too bad, loo
 
 And maths for the second one: `11 + 55*ceil(16*25/32)*4 + 11 + 59*ceil(13*27/32)*4 = 5478` Bytes. More than a 20% gain, awesome!
 
-![Two lines](/images/2015-02-10/twolines.png)
+![Two lines]({{ "/images/2015-02-10/twolines.png" | relative_url }})
 
 ![Fuck yeah.](http://i3.kym-cdn.com/photos/images/newsfeed/000/120/220/85f.jpg)
 

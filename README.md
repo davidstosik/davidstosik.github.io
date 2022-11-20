@@ -4,7 +4,7 @@ Yet another attempt at me keeping a blog, starting by way too much time on the s
 
 ## Setup
 
-This site is using Jekyll and is built using GitHub Actions.
+This site is built on Bridgetown using GitHub Actions.
 
 ## Working with this setup
 

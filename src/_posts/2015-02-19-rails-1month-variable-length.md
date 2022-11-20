@@ -1,7 +1,6 @@
 ---
 title:  "Rails' `1.month` has a variable length"
 categories: rails
-permalink: /:categories/:year/:month/:day/:title/
 ---
 
 One month ago, Ben and I investigated on [`1.day` not being an `Object`][1daynotobject]
