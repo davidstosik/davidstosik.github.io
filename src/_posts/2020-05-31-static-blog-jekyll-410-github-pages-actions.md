@@ -1,5 +1,6 @@
 ---
 title: Static blog using Jekyll 4.1.0 with GitHub Pages and Actions
+permalink: /2020/05/31/static-blog-jekyll-410-github-pages-actions.html
 ---
 
 Now my blog setup is renewed and running, I thought I could write a bit about the setup.
