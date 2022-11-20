@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Your First Post on Bridgetown"
 date:   2022-11-20 13:53:24 +0900
 categories: updates
