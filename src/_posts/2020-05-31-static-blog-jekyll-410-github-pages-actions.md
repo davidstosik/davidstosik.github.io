@@ -2,6 +2,9 @@
 title: Static blog using Jekyll 4.1.0 with GitHub Pages and Actions
 permalink: /2020/05/31/static-blog-jekyll-410-github-pages-actions.html
 ---
+_Update: [I switched to Bridgetown]({% link _posts/2022-11-22-switched-to-bridgetown.md %}) in 2022, so this article does not reflect my current setup anymore._
+
+---
 
 Now my blog setup is renewed and running, I thought I could write a bit about the setup.
 
