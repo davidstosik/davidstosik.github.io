@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/create_post
+  specs:
+    create_post (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -120,6 +125,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.1.0)
+  create_post!
   puma (~> 5.6)
 
 BUNDLED WITH
