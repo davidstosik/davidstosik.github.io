@@ -6,3 +6,18 @@ ul.pagination li {
   display: inline-block;
   margin-right: 10px;
 }
+
+img.image {
+  margin: 10px auto;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
