@@ -9,7 +9,7 @@
   "devDependencies": {
     "esbuild": "^0.14.39",
     "glob": "^8.0.1",
-    "mvp.css": "1.6.2",
+    "mvp.css": "^1.6.2",
     "postcss": "^8.4.12",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.1.0",
