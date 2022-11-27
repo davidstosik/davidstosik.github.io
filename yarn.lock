@@ -113,6 +113,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz#de2a4be678bd4d0d1ffbb86e6de779cde5999028"
   integrity sha512-bZBrLAIX1kpWelV0XemxBZllyRmM6vgFQQG2GdNb+r3Fkp0FOh1NJSvekXDs7jq70k4euu1cryLMfU+mTXlEpw==
 
+"@tossters/pygments-css@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@tossters/pygments-css/-/pygments-css-1.0.1.tgz#19c2e8a8b815fe92217cfe8efa8d2122f2a92827"
+  integrity sha512-wXM4lbd9D3za/iZDqiRSPH6/hX7j+ZsEY8my4uqKwPh6Hf/vij0wxfcPPG9L5bBuaYNlawmjVm5TDeE9xFYBDQ==
+
 anymatch@~3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"

@@ -1,5 +1,12 @@
 @import "mvp.css/mvp.css";
 @import "mvp_overrides.scss";
+@import "@tossters/pygments-css/monokai.css";
+
+// Override MVP's code styles to ensure Monokai is used
+.highlight code {
+  background: inherit;
+  color: inherit;
+}
 
 ul.pagination li {
   list-style: none;
