@@ -125,4 +125,4 @@ DEPENDENCIES
   rack (~> 2.2)
 
 BUNDLED WITH
-   2.3.24
+   2.5.5
