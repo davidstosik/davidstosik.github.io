@@ -17,5 +17,6 @@
     "postcss-preset-env": "^7.4.3",
     "sass": "^1.50.1",
     "sass-loader": "^12.6.0"
-  }
+  },
+  "dependencies": {}
 }
