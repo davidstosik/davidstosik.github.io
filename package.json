@@ -7,7 +7,6 @@
     "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
-    "@tossters/pygments-css": "^1.0.1",
     "esbuild": "^0.14.39",
     "glob": "^8.0.1",
     "mvp.css": "^1.6.2",
