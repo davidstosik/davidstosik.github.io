@@ -34,6 +34,4 @@ gem "rack", "~> 2.2" # Some Bridgetown ecosystem might not support Rack 3 (https
 # (you can optionally limit this to the "development" group)
 gem "puma"
 
-group :bridgetown_plugins do
-  gem "create_post", path: "vendor/create_post"
-end
+gem "create_post", path: "vendor/create_post"
