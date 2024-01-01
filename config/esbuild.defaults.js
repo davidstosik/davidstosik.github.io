@@ -6,7 +6,7 @@
 // when an update is applied hence we strongly recommend adding overrides to
 // `esbuild.config.js` instead of editing this file.
 //
-// Shipped with Bridgetown v1.1.0
+// Shipped with Bridgetown v1.2.0
 
 const path = require("path")
 const fsLib = require("fs")
@@ -84,7 +84,7 @@ const importGlobPlugin = () => ({
 })
 
 // Plugin for PostCSS
-const postCssPlugin = (options, configuration) => ({
+const importPostCssPlugin = (options, configuration) => ({
   name: "postcss",
   async setup(build) {
     // Process .css files with PostCSS
@@ -98,7 +98,7 @@ const postCssPlugin = (options, configuration) => ({
         load: async filename => {
           let contents = await readCache(filename, "utf-8")
           const filedir = path.dirname(filename)
-          // We'll want to track any imports later when in watch mode:          
+          // We'll want to track any imports later when in watch mode:
           additionalFilePaths.push(filename)
 
           // We need to transform `url(...)` in imported CSS so the filepaths are properly
@@ -232,8 +232,8 @@ const bridgetownPreset = (outputFolder) => ({
           manifest[stripPrefix(value.entryPoint)] = outputPath
           entrypoints.push([outputPath, fileSize(key)])
         } else if (key.match(/index(\.js)?\.[^-.]*\.css/) && inputs.find(item => item.match(/frontend.*\.(s?css|sass)$/))) {
-          const input = inputs.find(item => item.match(/frontend.*\.(s?css|sass)$/))
           // Special treatment for index.css
+          const input = inputs.find(item => item.match(/frontend.*\.(s?css|sass)$/))
           manifest[stripPrefix(input)] = outputPath
           entrypoints.push([outputPath, fileSize(key)])
         } else if (inputs.length > 0) {
@@ -258,12 +258,12 @@ const bridgetownPreset = (outputFolder) => ({
 
 // Load the PostCSS config from postcss.config.js or whatever else is a supported location/format
 const postcssrc = require("postcss-load-config")
-const postCssConfig = postcssrc.sync()
 
-module.exports = (outputFolder, esbuildOptions) => {
+module.exports = async (outputFolder, esbuildOptions) => {
   esbuildOptions.plugins = esbuildOptions.plugins || []
   // Add the PostCSS & glob plugins to the top of the plugin stack
-  esbuildOptions.plugins.unshift(postCssPlugin(postCssConfig, esbuildOptions.postCssPluginConfig || {}))
+  const postCssConfig = await postcssrc()
+  esbuildOptions.plugins.unshift(importPostCssPlugin(postCssConfig, esbuildOptions.postCssPluginConfig || {}))
   if (esbuildOptions.postCssPluginConfig) delete esbuildOptions.postCssPluginConfig
   esbuildOptions.plugins.unshift(importGlobPlugin())
   // Add the Sass plugin
@@ -290,7 +290,7 @@ module.exports = (outputFolder, esbuildOptions) => {
     minify: process.argv.includes("--minify"),
     sourcemap: true,
     target: "es2016",
-    entryPoints: ["frontend/javascript/index.js"],
+    entryPoints: ["./frontend/javascript/index.js"],
     entryNames: "[dir]/[name].[hash]",
     outdir: path.join(process.cwd(), `${outputFolder}/_bridgetown/static`),
     publicPath: "/_bridgetown/static",
