@@ -7,7 +7,7 @@
     "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
-    "esbuild": "^0.14.39",
+    "esbuild": "^0.19.2",
     "glob": "^8.0.1",
     "mvp.css": "^1.6.2",
     "postcss": "^8.4.12",
