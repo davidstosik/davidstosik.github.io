@@ -709,11 +709,6 @@ jackspeak@^2.3.5:
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
 
-klona@^2.0.4:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
-  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
-
 lilconfig@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-3.0.0.tgz#f8067feb033b5b74dab4602a5f5029420be749bc"
@@ -1114,12 +1109,11 @@ resolve@^1.1.7:
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
-sass-loader@^12.6.0:
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-12.6.0.tgz#5148362c8e2cdd4b950f3c63ac5d16dbfed37bcb"
-  integrity sha512-oLTaH0YCtX4cfnJZxKSLAyglED0naiYfNG1iXfU5w1LNZ+ukoA5DtyDIN5zmKVZwYNJP4KRc5Y3hkWga+7tYfA==
+sass-loader@^13.3.3:
+  version "13.3.3"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.3.3.tgz#60df5e858788cffb1a3215e5b92e9cba61e7e133"
+  integrity sha512-mt5YN2F1MOZr3d/wBRcZxeFgwgkH44wVc2zohO2YF6JiOMkiXe4BYRZpSu2sO1g71mo/j16txzUhsKZlqjVGzA==
   dependencies:
-    klona "^2.0.4"
     neo-async "^2.6.2"
 
 sass@^1.50.1:
