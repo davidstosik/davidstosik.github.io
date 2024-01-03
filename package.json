@@ -15,7 +15,7 @@
     "postcss-import": "^15.1.0",
     "postcss-load-config": "^5.0.2",
     "postcss-preset-env": "^9.3.0",
-    "sass": "^1.50.1",
+    "sass": "^1.69.7",
     "sass-loader": "^13.3.3"
   },
   "dependencies": {}
