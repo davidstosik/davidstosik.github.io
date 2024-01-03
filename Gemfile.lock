@@ -85,7 +85,7 @@ GEM
     mutex_m (0.2.0)
     nio4r (2.7.0)
     public_suffix (5.0.4)
-    puma (6.4.0)
+    puma (6.4.1)
       nio4r (~> 2.0)
     rack (2.2.8)
     rake (13.1.0)
