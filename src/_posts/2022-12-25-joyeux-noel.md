@@ -3,6 +3,7 @@ title: Joyeux Noël !
 date: 2022-12-25 00:39:44.918892000 +09:00
 category: life
 lang: fr
+image: "/images/2022-12-25/christmas.jpg"
 ---
 
 Un petit billet rapide pour souhaiter un Joyeux Noël à ceux qui me sont chers.

@@ -52,6 +52,8 @@ GEM
       thor (~> 1.1)
       tilt (~> 2.0)
       zeitwerk (~> 2.5)
+    bridgetown-feed (3.0.0)
+      bridgetown (>= 1.2.0.beta2, < 2.0)
     bridgetown-paginate (1.3.2)
       bridgetown-core (= 1.3.2)
     colorator (1.1.0)
@@ -114,6 +116,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.3.0)
+  bridgetown-feed (~> 3.0)
   create_post!
   puma
   rack (~> 2.2)
