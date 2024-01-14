@@ -1,5 +1,5 @@
 ---
-title: Du pain, du vin... du boursin ?!
+title: Du pain, du vin... du Boursin ?!
 date: 2024-01-14 22:46:51.142173000 +09:00
 category: life
 image: /images/2024-01-14/boursin.jpeg
