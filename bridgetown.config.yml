@@ -17,7 +17,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 # the base hostname & protocol for your site, e.g. https://example.com
-url: "https://davidstosik.github.io"
+url: "https://davidstosik.me"
 
 permalink: pretty
 template_engine: liquid
