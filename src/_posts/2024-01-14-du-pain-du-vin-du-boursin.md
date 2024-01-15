@@ -19,7 +19,7 @@ We were surprised how good this substitute is, for how easy to make it is.
 Getting to the point (I wouldn't want my blog to become one of those sites where recipes are hidden after endless stories), here's the recipe:
 
 - cottage cheese (I used the "smooth" type, not the "grainy" one)
-- green onions (called konegi - 小ネギ - in Japanese) ; in France I would use ciboulette, obviously
+- green onions (called konegi - 小ネギ - in Japanese) ; in France I would use ciboulette (chives?), obviously
 - parsley
 - garlic
 - black pepper
