@@ -41,7 +41,7 @@ This recipe is so obvious and simple that I'm surprised I didn't think of it soo
 
 ---
 
-This was the opportunity for me to explain to Yuko Boursin's slogan: _Du pain, du vin, du Boursin_, which rhymes and means "Some bread, some wine, some Boursin".
+This was the opportunity for me to explain Boursin's slogan to Yuko: _Du pain, du vin, du Boursin_, which rhymes and means "Some bread, some wine, some Boursin".
 Boursin came up with it in 1972, and I would say that it is almost a part of France's modern culture. We had another cracker watching some of Boursin's old ads. Nostalgic to me, and I'm sure a bit puzzling to Yuko.
 
 <p class="flex-centered">
