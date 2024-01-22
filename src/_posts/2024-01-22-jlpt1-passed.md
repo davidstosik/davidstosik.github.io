@@ -2,7 +2,6 @@
 title: 'JLPT N1: passed!'
 date: 2024-01-22 11:04:25.184131000 +09:00
 category: life
-published: false
 image: "/images/2024-01-22/jlpt1.png"
 ---
 
