@@ -36,6 +36,6 @@ gem "puma"
 
 gem "create_post", path: "vendor/create_post"
 
-gem "bridgetown-feed", "~> 3.0"
+gem "bridgetown-feed", "~> 3.1"
 
 gem "bridgetown-seo-tag", "~> 6.0"
