@@ -29,9 +29,7 @@ This was very instructive, and I'm glad I got a practice round.
 To be frank, it also made me a little anxious about when I'll have to do the real thing. A small baby seems so fragile, and there's so much room for mistakes to be made!
 
 <p class="flex-centered">
-  <a href="{{ "/images/2024-01-27/bath.jpeg" | relative_url }}" target="_blank">
-    <img width="400px" alt="Bath course" class="image" src="{{ "/images/2024-01-27/bath.jpeg" | relative_url }}" />
-  </a>
+  {% pic bath, Bath course %}
 </p>
 
 I think I did an okay job though. One thing I learned is that I'll want to get something at the proper height, since sinks and counters in Japan are rather low and I'm on the taller side, or my back could suffer from it...
@@ -39,13 +37,8 @@ I think I did an okay job though. One thing I learned is that I'll want to get s
 We also were given the opportunity to wear a pregnancy experience suit, allowing us dads-to-be to get a peek at what moms-to-be experience every hour of the day (and night!) during the last months of their pregnancy. I wore this 8-kg suit for about half an hour, tried to do simple things such as picking up an object on the ground, sitting down, lying down, walking, tying my shoes... This was hard, and I can imagine this to be excruciating for Yuko. And I didn't even get to experience of having a living, moving, kicking thing inside you, and all the other pains that brings.
 
 <p class="flex-centered">
-  <a href="{{ "/images/2024-01-27/suit.jpeg" | relative_url }}" target="_blank">
-    <img width="400px" alt="Pregnancy suit" class="image" src="{{ "/images/2024-01-27/suit.jpeg" | relative_url }}" />
-  </a>
-
-  <a href="{{ "/images/2024-01-27/suit_sleep.jpeg" | relative_url }}" target="_blank">
-    <img width="400px" alt="Sleeping with a pregnancy suit" class="image" src="{{ "/images/2024-01-27/suit_sleep.jpeg" | relative_url }}" />
-  </a>
+  {% pic suit, Pregnancy suit %}
+  {% pic suit_sleep, Sleeping with a pregnancy suit %}
 </p>
 
 We ended the course with a 30-year old educational video about how babies can hear their dad's voice from inside the womb, and how that has an impact on their future relationship. I'm gonna have to talk to Yuko's belly a little more!
