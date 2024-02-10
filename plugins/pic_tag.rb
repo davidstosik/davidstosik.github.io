@@ -27,7 +27,7 @@ class PicTag < SiteBuilder
 
     <<~HTML
       <a href="#{file.url}" target="_blank">
-        <img width="400px" alt="#{alt}" class="image" src="#{file.url}" />
+        <img alt="#{alt}" class="image" src="#{file.url}" />
       </a>
     HTML
   end

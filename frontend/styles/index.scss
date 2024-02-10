@@ -12,7 +12,18 @@ img.image {
   display: block;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
-  max-width: 100%;
+  width: 300px;
+}
+
+figure:has(img.image) {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  img.image {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .flex-centered {

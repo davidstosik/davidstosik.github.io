@@ -1,8 +1,8 @@
 ---
 title: The house construction has started!
-date: 2024-01-21 19:08:00.392142000 +09:00
+date: 2024-02-10 23:18:00.392142000 +09:00
 category: house
-published: false
+image: "/images/2024-02-10/foundation-2.jpeg"
 ---
 
 As I mentioned in my New Year post, [we're building a house in the Nagano prefecture]({% post_url 2024-01-01-happy-new-year-2024 %}#:~:text=We%E2%80%99re%20building%20a%20house%20in%20the%20country%20side!).
@@ -27,9 +27,6 @@ The analysis consists in drilling the ground at strategic locations where the ho
   {% pic_cap soil-analysis-table %}
     The results for location number 3, for example, show very little resistance from 1 to 2 meters in depth.
   {% endpic_cap %}
-  {% pic_cap soil-analysis-suggestion %}
-    A simplified explanation of what the solution is
-  {% endpic_cap %}
 </div>
 
 The results reveal a very soft layer of sandy soil about 2 meters under the ground level.
@@ -38,39 +35,70 @@ Since we don't want our house to sink in the ground, the plan is to set up micro
 They'll anchor the house onto more solid ground and support the house's framework.
 
 <div class="flex-centered">
-  {% pic micropiles %}
+  {% pic_cap soil-analysis-suggestion %}
+    A simplified explanation of what the solution is.
+  {% endpic_cap %}
+  {% pic_cap micropiles %}
+    The location of 33 micropiles under the house's foundations.
+  {% endpic_cap %}
 </div>
 
 This work happened on January 19th, which will be the date at which the construction officially started.
 
 <div class="flex-centered">
-  {% pic soil-improvement-1 %}
-  {% pic soil-improvement-2 %}
-  {% pic soil-improvement-3 %}
-  {% pic soil-improvement-4 %}
-  {% pic soil-improvement-5 %}
+  {% pic_cap soil-improvement-5 %}
+    Drilling one of the 33 columns reinforcing the ground.
+  {% endpic_cap %}
+  {% pic_cap soil-improvement-2 %}
+    This doesn't look like much, but it's supposed to do a lot!
+  {% endpic_cap %}
 </div>
 
 Those columns don't need much time to dry, so the actual house foundation work started on the next Monday (01-22).
+
+<div class="flex-centered">
+  {% pic_cap foundation-3 %}
+    Preparing for the concrete foundations and slab.
+  {% endpic_cap %}
+</div>
+
 A week later on January 29th, the lower half of the concrete slab was poured and dry!
 I learned that the construction workers placed a small enveloppe (or box?), called shizume-mono (鎮物), in the bottom slab.
 According to the supervisor, this is an offering to the gods that the priest, during the groundbreaking ceremony, prepared and handed over to be burried in the foundations.
 
 <div class="flex-centered">
-  {% pic foundation-1 %}
-  {% pic foundation-2 %}
-  {% pic foundation-3 %}
-  {% pic foundation-4 %}
-  {% pic foundation-5 %}
-  {% pic slab-1 %}
-  {% pic slab-2 %}
-  {% pic slab-3 %}
-  {% pic slab-4 %}
-  {% pic slab-5 %}
-  {% pic snow-1 %}
-  {% pic snow-2 %}
+  {% pic_cap slab-1 %}
+    The lower half of the slab is done. More concrete will come on top to complete the foundations.
+  {% endpic_cap %}
+  {% pic_cap slab-4 %}
+    Shizume-mono (鎮物)
+  {% endpic_cap %}
 </div>
 
-I'm completing this blog post a couple weeks later after the above happened, and two days ago, the supervisor sent us two more pictures to inform us the foundations are complete, that Miyota is covered in snow, and we should be careful on our way here for our next meeting.
+I'm finishing this blog post a couple weeks later after the above happened, and at the beginning of the week, the supervisor sent us two more pictures to inform us the foundations are complete, that Miyota is covered in snow, and we should be careful on our way here for our next meeting.
 
-I have just arrived in Miyota today actually, so I'll have more pictures and more to write about soon!
+I am just back from Miyota actually, so I'll have more pictures and more to write about soon!
+
+<div class="flex-centered">
+  {% pic_cap snow-2 %}
+    The foundations are done, and covered in snow!
+  {% endpic_cap %}
+</div>
+
+---
+
+Here are a few additional pictures:
+
+<div class="flex-centered">
+  {% pic soil-improvement-1 %}
+  {% pic soil-improvement-3 %}
+  {% pic soil-improvement-4 %}
+  {% pic foundation-1 %}
+  {% pic foundation-2 %}
+  {% pic foundation-4 %}
+  {% pic foundation-5 %}
+  {% pic slab-2 %}
+  {% pic slab-3 %}
+  {% pic slab-5 %}
+  {% pic snow-1 %}
+</div>
