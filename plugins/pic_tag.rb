@@ -7,10 +7,15 @@ class PicTag < SiteBuilder
   private
 
   def pic_cap(params, tag)
+    site = tag.context.registers[:site]
+    converter = site.find_converter_instance(Bridgetown::Converters::Markdown)
+    content = Bridgetown::Utils.reindent_for_markdown(tag.content)
+    markdownified_content = converter.convert(content)
+
     <<~HTML
       <figure>
         #{pic(params, tag)}
-        <figcaption>#{tag.content}</figcaption>
+        <figcaption>#{markdownified_content}</figcaption>
       </figure>
     HTML
   end
@@ -25,9 +30,11 @@ class PicTag < SiteBuilder
       file.relative_path =~ %r{images/#{date}/#{name}}
     end
 
+    url = file&.url || "notfound"
+
     <<~HTML
-      <a href="#{file.url}" target="_blank">
-        <img alt="#{alt}" class="image" src="#{file.url}" />
+      <a href="#{url}" target="_blank">
+        <img alt="#{alt}" class="image" src="#{url}" />
       </a>
     HTML
   end
