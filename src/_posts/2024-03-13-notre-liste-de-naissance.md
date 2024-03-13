@@ -39,7 +39,7 @@ Après une longue hésitation, nous avons abandonné l'idée d'utiliser un "syst
 
 À la place, nous avons acheté un siège qui facilite l'entrée et la sortie du bébé de la voiture, et que nous pourrons utiliser longtemps.
 
-Pour la poussette, nous avons passé des mois à faire les magasin, essayer, questionner quelles fonctionnalités pour une poussette sont importantes, et avons finalement décidé d'opter pour la Bugaboo Dragonfly.
+Pour la poussette, nous avons passé des mois à faire les magasins, essayer, questionner quelles fonctionnalités pour une poussette sont importantes, et avons finalement décidé d'opter pour la Bugaboo Dragonfly.
 
 La plupart des poussettes dans Tokyo semblent faites pour la ville, mais ayant déjà prévu de déménager vers une région moins urbaine, nous avons choisi une poussette qui s'adapterait mieux aux chemins cabossés.
 
