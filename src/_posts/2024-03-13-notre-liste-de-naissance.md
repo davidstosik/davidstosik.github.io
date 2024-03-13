@@ -3,7 +3,7 @@ title: Notre liste de naissance
 date: 2024-03-13 19:44:23.287390000 +09:00
 category: life
 lang: fr
-image: "/images/2024-03-13/cagnotte.webp"
+image: "/images/2024-03-13/liste_naissance2.jpg"
 ---
 
 Yuko et moi sommes en passe de devenir parents !
