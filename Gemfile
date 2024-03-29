@@ -19,7 +19,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.3.0"
+gem "bridgetown", "~> 1.3.4"
 
 gem "rack", "~> 2.2" # Some Bridgetown ecosystem might not support Rack 3 (https://www.bridgetownrb.com/docs/installation/upgrade)
 
