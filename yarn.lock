@@ -731,10 +731,10 @@ minimatch@^9.0.1:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
 
-mvp.css@^1.6.2:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/mvp.css/-/mvp.css-1.14.0.tgz#97153b9fdd9f31ef5e1d7de3d7b6573503029472"
-  integrity sha512-f7F8dUw3kCA80z4myG4z5ymsrNK0oft2JQ1Fz0brpc+vIimJhpLk5B/rI44IQLgjpBDNIRzaZfwZUdndKs6j3w==
+mvp.css@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/mvp.css/-/mvp.css-1.15.0.tgz#171b927bfe082cae2b5dc916e27ee4af64035848"
+  integrity sha512-1imgST97G3yWJMRVVGRQKwxmkwJBLu74PsfThOpCtOcHlIS2PDC0zLvnhTX42b2BOe2UnJAgeQmujq0Q1IEBFA==
 
 nanoid@^3.3.7:
   version "3.3.7"
