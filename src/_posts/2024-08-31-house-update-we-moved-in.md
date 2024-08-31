@@ -2,11 +2,11 @@
 title: 'House update: we moved in!'
 date: 2024-08-31 17:45:03.985369000 +09:00
 category: house
-image: "/images/2024-08-31/2024-07-29 2.jpg"
+image: "/images/2024-08-31/2024-07-29_2.jpg"
 ---
 
 <div class="flex-centered">
-  {% pic_cap 2024-07-29 2.jpg %}
+  {% pic_cap 2024-07-29_2.jpg %}
   {% endpic_cap %}
 </div>
 
@@ -42,115 +42,115 @@ We've been in our new house for about a month now, and we're just getting used t
 There's a lot more I'd like to write about but if I do so now it'll take me forever and I won't publish anything. I'll try to write more in future posts. (Though this is not a promise!)
 
 <div class="flex-centered">
-  {% pic_cap 2023-11-04 1.jpg %}
+  {% pic_cap 2023-11-04_1.jpg %}
     2023-11-04
   {% endpic_cap %}
-  {% pic_cap 2023-12-16 1.jpg %}
+  {% pic_cap 2023-12-16_1.jpg %}
     2023-12-16
   {% endpic_cap %}
-  {% pic_cap 2023-12-17 1.jpg %}
+  {% pic_cap 2023-12-17_1.jpg %}
     2023-12-17
   {% endpic_cap %}
-  {% pic_cap 2024-01-22 1.jpg %}
+  {% pic_cap 2024-01-22_1.jpg %}
     2024-01-22
   {% endpic_cap %}
-  {% pic_cap 2024-01-29 1.jpg %}
+  {% pic_cap 2024-01-29_1.jpg %}
     2024-01-29
   {% endpic_cap %}
-  {% pic_cap 2024-02-06 1.jpg %}
+  {% pic_cap 2024-02-06_1.jpg %}
     2024-02-06
   {% endpic_cap %}
-  {% pic_cap 2024-02-07 1.jpg %}
+  {% pic_cap 2024-02-07_1.jpg %}
     2024-02-07
   {% endpic_cap %}
-  {% pic_cap 2024-02-07 2.jpg %}
+  {% pic_cap 2024-02-07_2.jpg %}
     2024-02-07
   {% endpic_cap %}
-  {% pic_cap 2024-02-20 1.jpg %}
+  {% pic_cap 2024-02-20_1.jpg %}
     2024-02-20
   {% endpic_cap %}
-  {% pic_cap 2024-02-20 2.jpg %}
+  {% pic_cap 2024-02-20_2.jpg %}
     2024-02-20
   {% endpic_cap %}
-  {% pic_cap 2024-02-20 3.jpg %}
+  {% pic_cap 2024-02-20_3.jpg %}
     2024-02-20
   {% endpic_cap %}
-  {% pic_cap 2024-02-20 4.jpg %}
+  {% pic_cap 2024-02-20_4.jpg %}
     2024-02-20
   {% endpic_cap %}
-  {% pic_cap 2024-02-20 5.jpg %}
+  {% pic_cap 2024-02-20_5.jpg %}
     2024-02-20
   {% endpic_cap %}
-  {% pic_cap 2024-02-20 6.jpg %}
+  {% pic_cap 2024-02-20_6.jpg %}
     2024-02-20
   {% endpic_cap %}
-  {% pic_cap 2024-03-07 1.jpg %}
+  {% pic_cap 2024-03-07_1.jpg %}
     2024-03-07
   {% endpic_cap %}
-  {% pic_cap 2024-03-29 1.jpg %}
+  {% pic_cap 2024-03-29_1.jpg %}
     2024-03-29
   {% endpic_cap %}
-  {% pic_cap 2024-03-29 2.jpg %}
+  {% pic_cap 2024-03-29_2.jpg %}
     2024-03-29
   {% endpic_cap %}
-  {% pic_cap 2024-04-18 1.jpg %}
+  {% pic_cap 2024-04-18_1.jpg %}
     2024-04-18
   {% endpic_cap %}
-  {% pic_cap 2024-04-23 1.jpg %}
+  {% pic_cap 2024-04-23_1.jpg %}
     2024-04-23
   {% endpic_cap %}
-  {% pic_cap 2024-04-24 1.jpg %}
+  {% pic_cap 2024-04-24_1.jpg %}
     2024-04-24
   {% endpic_cap %}
-  {% pic_cap 2024-05-10 1.jpg %}
+  {% pic_cap 2024-05-10_1.jpg %}
     2024-05-10
   {% endpic_cap %}
-  {% pic_cap 2024-05-15 1.jpg %}
+  {% pic_cap 2024-05-15_1.jpg %}
     2024-05-15
   {% endpic_cap %}
-  {% pic_cap 2024-05-15 2.jpg %}
+  {% pic_cap 2024-05-15_2.jpg %}
     2024-05-15
   {% endpic_cap %}
-  {% pic_cap 2024-05-16 1.jpg %}
+  {% pic_cap 2024-05-16_1.jpg %}
     2024-05-16
   {% endpic_cap %}
-  {% pic_cap 2024-05-16 2.jpg %}
+  {% pic_cap 2024-05-16_2.jpg %}
     2024-05-16
   {% endpic_cap %}
-  {% pic_cap 2024-05-16 3.jpg %}
+  {% pic_cap 2024-05-16_3.jpg %}
     2024-05-16
   {% endpic_cap %}
-  {% pic_cap 2024-05-16 4.jpg %}
+  {% pic_cap 2024-05-16_4.jpg %}
     2024-05-16
   {% endpic_cap %}
-  {% pic_cap 2024-05-16 5.jpg %}
+  {% pic_cap 2024-05-16_5.jpg %}
     2024-05-16
   {% endpic_cap %}
-  {% pic_cap 2024-05-16 6.jpg %}
+  {% pic_cap 2024-05-16_6.jpg %}
     2024-05-16
   {% endpic_cap %}
-  {% pic_cap 2024-06-08 1.jpg %}
+  {% pic_cap 2024-06-08_1.jpg %}
     2024-06-08
   {% endpic_cap %}
-  {% pic_cap 2024-06-08 2.jpg %}
+  {% pic_cap 2024-06-08_2.jpg %}
     2024-06-08
   {% endpic_cap %}
-  {% pic_cap 2024-06-25 1.jpg %}
+  {% pic_cap 2024-06-25_1.jpg %}
     2024-06-25
   {% endpic_cap %}
-  {% pic_cap 2024-07-03 1.jpg %}
+  {% pic_cap 2024-07-03_1.jpg %}
     2024-07-03
   {% endpic_cap %}
-  {% pic_cap 2024-07-09 1.jpg %}
+  {% pic_cap 2024-07-09_1.jpg %}
     2024-07-09
   {% endpic_cap %}
-  {% pic_cap 2024-07-24 1.jpg %}
+  {% pic_cap 2024-07-24_1.jpg %}
     2024-07-24
   {% endpic_cap %}
-  {% pic_cap 2024-07-28 1.jpg %}
+  {% pic_cap 2024-07-28_1.jpg %}
     2024-07-28
   {% endpic_cap %}
-  {% pic_cap 2024-07-29 1.jpg %}
+  {% pic_cap 2024-07-29_1.jpg %}
     2024-07-29
   {% endpic_cap %}
 </div>
