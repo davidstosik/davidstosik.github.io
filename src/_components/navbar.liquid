@@ -4,6 +4,23 @@
     <a href="{{ "/" | relative_url }}">
       {{ metadata.title | escape }}
     </a>
+
+    {% if resource.lang == "en" %}
+      {% assign target = "fr" %}
+      {% assign label = "En français" %}
+    {% else %}
+      {% assign target = "en" %}
+      {% assign label = "In English" %}
+    {% endif %}
+
+    {% comment %}
+    Somehow, site.url appears to be empty when accessing from this file.
+    {{ site.url | replace: ".", "-" }}
+    Instead I had to hardcode the URL.
+    {% endcomment %}
+    <a href="https://davidstosik-me.translate.goog{{ resource.relative_url }}?_x_tr_sl={{ resource.lang }}&_x_tr_tl={{ target }}">
+      {{ label }}
+    </a>
   </nav>
 
 </header>

@@ -3,6 +3,7 @@ title: 'House update: we moved in!'
 date: 2024-08-31 17:45:03.985369000 +09:00
 category: house
 image: "/images/2024-08-31/2024-07-29_2.jpg"
+lang: en
 ---
 
 <div class="flex-centered">
