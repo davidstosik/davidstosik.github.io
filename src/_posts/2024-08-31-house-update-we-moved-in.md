@@ -17,7 +17,7 @@ Things are now starting to settle a bit and I wanted to write something about th
 
 Overall, the construction went well, and we're happy with the house.
 
-Dealing with a low-cost house maker ([PaPamaru House](https://www.papamaru.jp/)) however, had its downsides.
+Dealing with a low-cost house constructor ([PaPamaru House](https://www.papamaru.jp/)) however, had its downsides.
 
 We did spend a lot of time checking and re-checking the plans and quotes we were shown along the way, and it's a good thing we did. More than once we found things that didn't match what we had requested and needed to ask them to fix it. In the end though, it was worth it: the house matches what we wanted, and we had the pleasant surprise of finding very few defects at the final inspection.
 
