@@ -5,12 +5,12 @@
       {{ metadata.title | escape }}
     </a>
 
-    {% if resource.lang == "en" %}
-      {% assign target = "fr" %}
-      {% assign label = "En français" %}
-    {% else %}
+    {% if resource.lang == "fr" %}
       {% assign target = "en" %}
       {% assign label = "In English" %}
+    {% else %}
+      {% assign target = "fr" %}
+      {% assign label = "En français" %}
     {% endif %}
 
     {% comment %}
