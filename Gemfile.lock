@@ -92,7 +92,7 @@ GEM
       uri
     nio4r (2.7.3)
     public_suffix (6.0.1)
-    puma (6.4.2)
+    puma (6.4.3)
       nio4r (~> 2.0)
     rack (2.2.9)
     rake (13.2.1)
