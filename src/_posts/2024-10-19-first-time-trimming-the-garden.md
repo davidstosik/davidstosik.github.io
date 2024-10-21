@@ -40,3 +40,9 @@ Now that I'm done and showered, I can say that I kinda liked it. The result look
 Now I'm gonna need a rake, to collect the smaller weeds that I did not gather by hand, as well as to remove a huge amount of rocks!
 
 To be continued...
+
+Update: I bought a rake and spent an our on Monday morning before work to get this. I'm amazed at the amount of rocks we have in there, and I still left a lot behind, but this is looking good.
+
+<div class="flex-centered">
+  {% pic after_raking %}
+</div>
