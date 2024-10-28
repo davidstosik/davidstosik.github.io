@@ -74,7 +74,7 @@ For Kamal to do its job, we will need to track the application on Git.
 
 Before we initialize a Git repository and commit the Writebook code, let's make sure we have proper `.gitignore` file.
 
-Weirdly, Writebook's source code archive doesn't come with one, so instead, I used the default one provided by Rails ([`gitignore.tt` template on GitHub](https://raw.githubusercontent.com/rails/rails/refs/heads/main/railties/lib/rails/generators/rails/app/templates/gitignore.tt)).
+Weirdly, Writebook's source code archive doesn't come with one, so instead, I based mine on the template used by Rails ([`gitignore.tt` on GitHub](https://raw.githubusercontent.com/rails/rails/refs/heads/main/railties/lib/rails/generators/rails/app/templates/gitignore.tt)).
 
 Now we've got a `.gitignore` file, we can initialize the git repository and commit files while knowing we won't commit anything we shouldn't.
 
@@ -100,7 +100,7 @@ If it opens a text editor, then just save and quit. You'll have two more files i
 
 #### Resque and Redis configuration
 
-The Writebook source code assumes that the application in production will run alongside its Redis server, which would then be accessible on `localhost`, Resque's default. This assumptions means the app did not need to declare any settings for Resque.
+The Writebook source code assumes that the application in production will run alongside its Redis server, which would then be accessible on `localhost`, Resque's default. This assumption meant the app did not need to declare any settings for Resque.
 
 When we deploy the app with Kamal however, the Redis server, the web server, and the background workers will each run in their own Docker container, so we need to set up the Rails application so it knows where to find its Redis server.
 
@@ -144,7 +144,7 @@ It's interesting how the Writebook app is designed to run, when it's started by 
 
 1. There's a single `Dockerfile` which runs a custom `bin/boot` script at launch.
 2. That `bin/boot` script looks like a stripped down [Foreman](https://github.com/ddollar/foreman) alternative: it reads the `Procfile` file and starts all processes it defines:
-    1. The web server, started via [Thruster](https://github.com/basecamp/thruster), Basecamp's new HTTP/2 proxy written in Go. I think it was made mainly to be used in combination with Kamal 2 but here, it's used on its own.
+    1. The web server, started via [Thruster](https://github.com/basecamp/thruster), Basecamp's new HTTP/2 proxy written in Go. I thought it was made specifically to be used in combination with Kamal 2 but here, it's used on its own.
     2. A Redis server! This one really surprised me for multiple reasons:
         1. I expected Writebook to rely on the Solid trifecta, in particular [Solid Queue](https://github.com/rails/solid_queue), so it could ditch Rails' need for a Redis server, but it doesn't. Maybe in a future version?
         2. Redis does not run in its own container, but instead it runs along the Rails application.
@@ -154,7 +154,7 @@ This allows the whole Writebook application to run in a single Docker container,
 
 ---
 
-When we deploy with Kamal, I'd rather follow its default pattern of running web and workers on different containers from the same image, and Redis as an _accessory_.
+When we deploy with Kamal, I'd rather follow its default pattern of running web and workers on different containers from the same image, and Redis as an [_accessory_](https://kamal-deploy.org/docs/configuration/accessories/).
 
 With all that in mind, we can adjust the `Dockerfile` file to a Kamal deploy setup. I took some inspiration from [the Dockerfile a Rails 8 application comes with by default](https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/app/templates/Dockerfile.tt):
 
@@ -374,7 +374,7 @@ KAMAL_REGISTRY_PASSWORD=$(kamal secrets extract GITHUB_REGISTRY_TOKEN $SECRETS)
 RAILS_MASTER_KEY=$(cat config/master.key)
 ```
 
-## Deploying
+## Deploying 🚀
 
 We're almost ready to deploy!
 
@@ -392,7 +392,7 @@ kamal setup
 The first deploy will take a few minutes, as it builds the application's Docker image.
 Thanks to Docker's layer caching, future deploys should get faster.
 
-If everything went well, you should be able to visit the (sub)domain you picked earlier and see Writebook's First Run page (`/first_run`).
+If everything went well, you should be able to visit the (sub)domain you picked earlier and see Writebook's "First Run" page (`/first_run`).
 
 <div class="flex-centered">
   {% pic_cap first_run %}
@@ -475,7 +475,7 @@ This will add and install the solid_queue gem, then create required configuratio
 - `bin/jobs` will be our new way to run the background worker process.
 - `config/queue.yml` and `config/recurring.yml` are Solid Queue's core configuration files. We'll keep the defaults.
 - `db/queue_schema.rb` is the schema for the database used by Solid Queue.
-- a couple settings were also changed in `config/environments/production.rb`
+- a couple settings were also changed in `config/environments/production.rb`.
 
 (Note that by default, Solid Queue will only be enabled in production, sticking to `:async` and `:test` adapters for development and test environments respectively.)
 
@@ -627,7 +627,7 @@ kamal deploy
 
 Our Writebook instance now does not depend on Resque or Redis anymore, so we're able to do some clean up!
 
-1. Kamal finds its source of truth in the deploy configuration file. Before we remove the Redis accessory from that file, we need to detroy it on the server:
+1. Kamal finds its source of truth in the deploy configuration file. Before we remove the Redis accessory from that file, we need to destroy it on the server:
     ```sh-session
     kamal accessory remove redis
     ```
@@ -686,7 +686,7 @@ Verify that everything is working as expected, and we're done!
 
 ## Conclusion
 
-We started with a Rails application that was setup to run with Redis on a single Docker container.
+We started with a Rails application that was set up to run with Redis on a single Docker container.
 The easy way to deploy that application was to first SSH into a server and then run the command provided by ONCE.
 ONCE's CLI also provided a way to easily update the application in case a new version were to be released.
 
