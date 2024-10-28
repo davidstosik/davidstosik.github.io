@@ -2,7 +2,12 @@
 title: Deploying Writebook with Kamal 2
 date: 2024-10-21 18:13:54.170920000 +09:00
 category: dev
+image: "/images/2024-10-21/writebook-kamal.webp"
 ---
+
+<div class="flex-centered">
+  {% pic writebook-kamal %}
+</div>
 
 [Writebook](https://once.com/writebook) is [37signals](https://37signals.com/)' second ONCE product.
 
