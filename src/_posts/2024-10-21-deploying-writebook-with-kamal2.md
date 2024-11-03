@@ -697,6 +697,80 @@ After introducing Kamal and making a few changes to the application:
 - which we can easily deploy to our infrastructure without ever having to SSH to our server.
 - And since we're using Kamal, we can easily host other applications (possibly other ONCE applications?) on the same server.
 
+---
+
+<a name="update-20241103"></a>
+Update: [Nick Schwaderer](https://bsky.app/profile/schwad.bsky.social) shared with me his first `deploy.yml` file and I found there something that I thought would be worth implementing for an application this size: we can run the Solid Queue supervisor inside of Puma, which means we can go back to making this app a single-server deployment.
+
+The code diff looks like this:
+
+```diff
+diff --git a/config/deploy.yml b/config/deploy.yml
+index dc9702d..35f2550 100644
+--- a/config/deploy.yml
++++ b/config/deploy.yml
+@@ -10,10 +10,6 @@ image: davidstosik/writebook
+ servers:
+   web:
+     - 65.108.85.64
+-  job:
+-    hosts:
+-      - 65.108.85.64
+-    cmd: bin/jobs
+ 
+ # Use Kamal-Proxy, and set up SSL via Let's Encrypt.
+ proxy:
+@@ -32,6 +28,8 @@ builder:
+   arch: amd64
+ 
+ env:
++  clear:
++    SOLID_QUEUE_IN_PUMA: true
+   secret:
+     - RAILS_MASTER_KEY
+ 
+diff --git a/config/puma.rb b/config/puma.rb
+index 022ebc8..a71f1a5 100644
+--- a/config/puma.rb
++++ b/config/puma.rb
+@@ -15,4 +15,8 @@ when "development"
+ end
+ 
+ port ENV.fetch("PORT", 3000)
++
++# Run the Solid Queue supervisor inside of Puma for single-server deployments
++plugin :solid_queue if ENV["SOLID_QUEUE_IN_PUMA"]
++
+ plugin :tmp_restart
+```
+
+And then you just need to deploy with Kamal again:
+
+```sh-session
+git add .
+git commit --message "Run Solid Queue supervisor inside of Puma"
+kamal deploy
+```
+
+Well... almost.
+
+Unfortunately, Kamal is currently unable to clean up application containers that are not defined in `deploy.yml` (just like we had to remove the Redis accessory earlier).
+To remove it once we've deployed our new version that does not use it, we need to checkout an older version of `deploy.yml` that still declares the `job` role/host, then we can ask Kamal to do some clean up:
+
+```sh-session
+git checkout HEAD~1 # Check out previous commit
+kamal app remove --roles=job
+git checkout - # Return where we were
+```
+
+(I opened an issue for this on Kamal's repository since I think this is a surprising behavior that could be improved: [Kamal does not clean up the container for a "server" removed from configuration](https://github.com/basecamp/kamal/issues/1187).)
+
+You can check there are no unwanted containers left running on your server with `kamal app containers`: you should see a `writebook-web` container running, but no `writebook-job` container should be left.
+
+And now I think we're truly done! We've managed to deploy Writebook as a single-container application with Kamal.
+
+---
+
 I hope you enjoyed spending some time with me taking a look at Writebook's architecture and deploying an app with Kamal.
 
 What will you deploy next?
