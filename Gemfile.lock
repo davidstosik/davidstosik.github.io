@@ -90,9 +90,9 @@ GEM
     minitest (5.25.1)
     net-http (0.4.1)
       uri
-    nio4r (2.7.3)
+    nio4r (2.7.4)
     public_suffix (6.0.1)
-    puma (6.4.2)
+    puma (6.5.0)
       nio4r (~> 2.0)
     rack (2.2.9)
     rake (13.2.1)
