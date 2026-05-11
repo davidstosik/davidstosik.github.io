@@ -1,0 +1,71 @@
+---
+layout: md
+permalink: /resume.md
+---
+{% assign resume = site.data.resume %}
+# {{ resume.header }}
+
+**{{ resume.subheader }}**
+**{{ resume.subsubheader }}**
+
+{{ resume.email }}
+{% for social in resume.socials %}[{% if social[1].label == "X" %}@{{ social[1].url | split: "/" | last }}{% else %}{{ social[1].label }}{% endif %}]({{ social[1].url }}){% unless forloop.last %} · {% endunless %}{% endfor %}
+
+---
+
+## Summary
+
+{{ resume.summary | strip }}
+
+---
+
+## {{ resume.work.title }}
+
+{% for job in resume.work.entries %}
+### {{ job.position }} — {% if job.company.url %}[{{ job.company.name }}]({{ job.company.url }}){% else %}{{ job.company.name }}{% endif %}
+**{{ job.start | date: "%B %Y" }} – {% if job.end == "now" %}present{% else %}{{ job.end | date: "%B %Y" }}{% endif %}{% if job.location %} · {{ job.location }}{% endif %}**
+{% if job.subheader %}{{ job.subheader }}
+{% endif %}
+{% if job.sections %}{% for sec in job.sections %}
+**{{ sec.header }}** *({{ sec.start | date: "%B %Y" }} – {% if sec.end == "now" %}present{% else %}{{ sec.end | date: "%B %Y" }}{% endif %})*
+{% for bullet in sec.bullets %}- {{ bullet }}
+{% endfor %}
+{% endfor %}{% elsif job.bullets %}{% for bullet in job.bullets %}- {{ bullet }}
+{% endfor %}{% endif %}
+{% endfor %}
+---
+
+## {{ resume.skills.title }}
+
+{% for cat in resume.skills.entries %}**{{ cat.header }}:** {{ cat.items | join: ", " }}
+{% endfor %}
+---
+
+## {{ resume.certifications.title }}
+
+| Certification | Year |
+|---|---|
+{% for cert in resume.certifications.entries %}| {{ cert.name }} | {{ cert.year }} |
+{% endfor %}
+---
+
+## {{ resume.education.title }}
+
+{% for edu in resume.education.entries %}**{{ edu.degree }}**
+{% if edu.school.url %}[{{ edu.school.name }}]({{ edu.school.url }}){% else %}{{ edu.school.name }}{% endif %}{% if edu.location %} — {{ edu.location }}{% endif %} · {{ edu.start | date: "%Y" }}–{{ edu.end | date: "%Y" }}
+
+{% endfor %}---
+
+## {{ resume.languages.title }}
+
+{% for lang in resume.languages.entries %}- **{{ lang.name }}** — {{ lang.level }}
+{% endfor %}
+---
+
+## {{ resume.community.title | default: "Community & Leadership" }}
+
+{% assign community_entries = resume.community.entries | default: resume.community %}{% for entry in community_entries %}
+**{{ entry.header }}**{% if entry.organization %} — {% if entry.organization.url %}[{{ entry.organization.name }}]({{ entry.organization.url }}){% else %}{{ entry.organization.name }}{% endif %}{% if entry.location %}, {{ entry.location }}{% endif %}{% endif %} *({{ entry.start | date: "%Y" }} – {% if entry.end == "now" %}present{% else %}{{ entry.end | date: "%Y" }}{% endif %})*
+{% if entry.description %}{{ entry.description | strip }}
+{% endif %}
+{% endfor %}
