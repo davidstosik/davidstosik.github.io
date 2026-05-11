@@ -32,7 +32,7 @@ gem "rack", "~> 2.2" # Some Bridgetown ecosystem might not support Rack 3 (https
 
 # Puma is a Rack-compatible server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma"
+gem "puma", "< 7"
 
 gem "create_post", path: "vendor/create_post"
 
