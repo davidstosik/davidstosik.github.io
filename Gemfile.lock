@@ -91,6 +91,7 @@ GEM
     net-http (0.4.1)
       uri
     nio4r (2.7.3)
+    ostruct (0.6.3)
     public_suffix (6.0.1)
     puma (6.4.2)
       nio4r (~> 2.0)
@@ -128,6 +129,7 @@ DEPENDENCIES
   bridgetown-feed (~> 3.1)
   bridgetown-seo-tag (~> 6.0)
   create_post!
+  ostruct
   puma
   rack (~> 2.2)
 
