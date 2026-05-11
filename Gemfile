@@ -38,6 +38,6 @@ gem "create_post", path: "vendor/create_post"
 
 gem "bridgetown-feed", "~> 3.1"
 
-gem "bridgetown-seo-tag", "~> 6.0"
+gem "bridgetown-seo-tag", "~> 7.0"
 
 gem "ostruct"
