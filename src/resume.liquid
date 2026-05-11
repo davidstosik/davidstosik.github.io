@@ -1,0 +1,182 @@
+---
+layout: none
+permalink: /resume/
+---
+{% assign resume = site.data.resume %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ resume.header }} — Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #2563eb; --text: #1a1a1a; --muted: #6b7280; --border: #e5e7eb; --bg: #ffffff;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.6; color: var(--text); background: var(--bg); max-width: 860px; margin: 0 auto; padding: 48px 40px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 2px solid var(--accent); }
+    header .left h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+    header .left .tagline { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+    header .left .sub-tagline { font-size: 13px; color: var(--muted); }
+    header .right { text-align: right; font-size: 13px; color: var(--muted); flex-shrink: 0; }
+    header .right a { color: var(--muted); }
+    header .right a:hover { color: var(--accent); }
+    header .right p { margin-bottom: 2px; }
+    .contact-link { display: inline-flex; align-items: center; justify-content: flex-end; gap: 6px; }
+    .contact-link .icon { order: 2; width: 12px; height: 12px; flex: 0 0 12px; background-color: currentColor; opacity: 0.72; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
+    .contact-link span { order: 1; }
+    section { margin-bottom: 28px; }
+    h2 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin-bottom: 14px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+    .summary { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .job { margin-bottom: 20px; }
+    .job:last-child { margin-bottom: 0; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 2px; }
+    .job-title { font-weight: 700; font-size: 14px; }
+    .job-date { font-size: 12px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .job-company { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .job ul { padding-left: 18px; margin-top: 4px; }
+    .job li { margin-bottom: 3px; font-size: 13px; }
+    .sub-team { margin-top: 10px; margin-bottom: 4px; }
+    .sub-team-title { font-size: 13px; font-weight: 600; color: var(--text); }
+    .sub-team-date { font-size: 12px; color: var(--muted); }
+    .skills-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+    .skill-label { font-weight: 600; color: var(--muted); white-space: nowrap; }
+    .certs-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+    .cert-label { font-weight: 600; color: var(--muted); white-space: nowrap; }
+    .lang-list { display: flex; gap: 24px; font-size: 13px; }
+    .lang-item strong { margin-right: 4px; }
+    .community-entry { margin-bottom: 10px; }
+    .community-entry:last-child { margin-bottom: 0; }
+    .community-title { font-weight: 600; font-size: 13px; }
+    .community-desc { font-size: 12px; color: var(--muted); }
+    @media print { body { padding: 24px 28px; font-size: 12px; }  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left">
+      <h1>{{ resume.header }}</h1>
+      <p class="tagline">{{ resume.subheader }}</p>
+      <p class="sub-tagline">{{ resume.subsubheader }}</p>
+    </div>
+    <div class="right">
+      {% for social in resume.socials %}
+      {% assign social_data = social[1] %}
+      {% assign social_title = social_data.title | default: "" %}
+      {% assign icon_name = social[0] %}
+      <p>
+        <a
+            class="contact-link"
+            href="{{ social_data.url }}"
+            aria-label="{{ social_title }}"
+            title="{{ social_title }}"
+            {% if social_data.url contains "http" %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
+        >
+          <span class="icon" style="--icon: url('/images/icons/{{ icon_name }}.svg');" aria-hidden="true"></span>
+          <span>{{ social_data.label }}</span>
+        </a>
+      </p>
+      {% endfor %}
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">{{ resume.summary | strip | newline_to_br }}</p>
+  </section>
+
+  <section>
+    <h2>{{ resume.work.title }}</h2>
+    {% for job in resume.work.entries %}
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">{{ job.position }} — {% if job.company.url %}<a href="{{ job.company.url }}">{{ job.company.name }}</a>{% else %}{{ job.company.name }}{% endif %}</span>
+        <span class="job-date">{{ job.start | date: "%B %Y" }} – {% if job.end == "now" %}present{% else %}{{ job.end | date: "%B %Y" }}{% endif %}{% if job.location %} · {{ job.location }}{% endif %}</span>
+      </div>
+      {% if job.subheader %}<p class="job-company">{{ job.subheader }}</p>{% endif %}
+      {% if job.sections %}
+        {% for sec in job.sections %}
+        <div class="sub-team"{% if forloop.first == false %} style="margin-top:14px;"{% endif %}>
+          <span class="sub-team-title">{{ sec.header }}</span>
+          <span class="sub-team-date"> · {{ sec.start | date: "%B %Y" }} – {% if sec.end == "now" %}present{% else %}{{ sec.end | date: "%B %Y" }}{% endif %}</span>
+        </div>
+        <ul>
+          {% for bullet in sec.bullets %}{% capture bullet_html %}{{ bullet | markdownify }}{% endcapture %}<li>{{ bullet_html | remove: "<p>" | remove: "</p>" | strip }}</li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      {% elsif job.bullets %}
+      <ul>
+        {% for bullet in job.bullets %}{% capture bullet_html %}{{ bullet | markdownify }}{% endcapture %}<li>{{ bullet_html | remove: "<p>" | remove: "</p>" | strip }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>{{ resume.skills.title }}</h2>
+    <div class="skills-grid">
+      {% for cat in resume.skills.entries %}
+      <span class="skill-label">{{ cat.header }}</span>
+      <span>{{ cat.items | join: ", " }}</span>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2>{{ resume.certifications.title }}</h2>
+    <div class="certs-grid">
+      {% for cert in resume.certifications.entries %}
+      <span class="cert-label">{{ cert.name }}</span>
+      <span>{{ cert.year }}</span>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2>{{ resume.education.title }}</h2>
+    {% for edu in resume.education.entries %}
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">{{ edu.degree }} — {% if edu.school.url %}<a href="{{ edu.school.url }}">{{ edu.school.name }}</a>{% else %}{{ edu.school.name }}{% endif %}</span>
+        <span class="job-date">{{ edu.start | date: "%Y" }} – {{ edu.end | date: "%Y" }}{% if edu.location %} · {{ edu.location }}{% endif %}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>{{ resume.languages.title }}</h2>
+    <div class="lang-list">
+      {% for lang in resume.languages.entries %}
+      <span class="lang-item"><strong>{{ lang.name }}</strong> {{ lang.level }}</span>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <h2>{{ resume.community.title | default: "Community & Leadership" }}</h2>
+    {% assign community_entries = resume.community.entries | default: resume.community %}
+    {% for entry in community_entries %}
+    <div class="community-entry">
+      <p class="community-title">
+      {% if entry.url %}
+        <a href="{{ entry.url }}">{{ entry.header }}</a>
+      {% else %}
+        {{ entry.header }}
+      {% endif %}
+      {% if entry.organization %} — {% if entry.organization.url %}<a href="{{ entry.organization.url }}">{{ entry.organization.name }}</a>{% else %}{{ entry.organization.name }}{% endif %}{% if entry.location %}, {{ entry.location }}{% endif %}{% endif %} · {{ entry.start | date: "%Y" }} – {% if entry.end == "now" %}present{% else %}{{ entry.end | date: "%Y" }}{% endif %}
+      </p>
+      {% if entry.description %}<p class="community-desc">{{ entry.description | strip }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+</body>
+</html>

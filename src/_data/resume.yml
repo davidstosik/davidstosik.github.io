@@ -1,0 +1,277 @@
+header: "David Stosik"
+subheader: "Staff-level Ruby engineer with 20 years of experience."
+subsubheader: "Writes high-quality software, tackles elusive bugs, grows strong engineers, builds with AI."
+socials:
+  email:
+    label: david@davidstosik.me
+    url: mailto:david@davidstosik.me
+    title: "Email"
+  linkedin:
+    label: linkedin.com/in/davidstosik
+    url: https://linkedin.com/in/davidstosik
+    title: "LinkedIn"
+  github:
+    label: github.com/davidstosik
+    url: https://github.com/davidstosik
+    title: "GitHub"
+  x:
+    label: x.com/davidstosik
+    url: https://x.com/davidstosik
+    title: "X"
+summary: |
+  Seasoned software engineer with 20 years of experience building web applications and leading engineering teams.
+  Deep expertise in Ruby on Rails, with a track record spanning product development, developer productivity, infrastructure, and engineering management.
+  Based in Japan since 2010.
+work:
+  title: Work Experience
+  entries:
+  - position: "Senior Software Engineer"
+    company:
+      name: Shopify
+      url: https://shopify.com
+    start: 2022-01-10
+    end: now
+    location: Remote
+    subheader: "Global commerce platform"
+    sections:
+    - header: "Payments / Ledger team"
+      start: 2025-11-24
+      end: 2026-02-12
+      bullets:
+      - Draft proposal for an end-to-end verification/testing framework applied to the new internal ledger project
+      - Implementation of parts of the solution, CI
+      - Ruby developer expertise (best practices, gem development)
+    - header: "Rails Infrastructure team"
+      start: 2022-01-10
+      end: 2025-11-23
+      bullets:
+      - Extensive work on Shopify's Core Rails monolith, with occasional dives into the CI infrastructure (Buildkite, internal tooling), focused on improving the productivity of hundreds of developers.
+      - Enabled test parallelization within single CI workers (Ruby threads), reducing CI duration
+      - Dead code detection and removal tool offering developers a simple UI for one-click PRs. (Sorbet static analysis, tombstone pattern, etc)
+      - Tracked and improved core monolith health metrics (boot time, test suite start time, etc.)
+      - Worked on component isolation using [Packwerk](https://github.com/Shopify/packwerk)
+  - position: Freelance Developer
+    company:
+      name: Location Hunting Game
+    start: 2022-09-14
+    end: 2022-11-21
+    location: Tokyo / Remote
+    subheader: "Doctoral student project on a web-based photo location hunting game involving geolocation"
+    bullets:
+    - Ruby on Rails application optimization, refactor and feature implementation
+  - position: Freelance Developer
+    company:
+      name: Cookpad R&D
+    start: 2021-08-10
+    end: 2022-03-31
+    location: Tokyo / Remote
+    subheader: "Oitoco: IoT platform for asynchronous self-service sales of local homemade goods"
+    bullets:
+    - Early stage prototyping, development and improvement of the Ruby on Rails backend
+  - position: Freelance Developer
+    company:
+      name: Vincere
+      url: https://www.vincere.io/
+    start: 2021-03-25
+    end: 2021-07-25
+    location: Remote
+    subheader: "Recruitment operating system"
+    bullets:
+    - Audited a Ruby on Rails application central to the business
+    - Provided recommendations to improve team productivity, scalability, and software quality
+    - Offered targeted support on selected technical issues
+  - position: "Senior Software Engineer → Engineering Manager"
+    company:
+      name: Cookpad
+      url: https://cookpad.com
+    start: 2017-02-01
+    end: 2021-08-31
+    location: Tokyo / Remote
+    subheader: "Global recipe sharing platform"
+    sections:
+    - header: "Engineering Manager"
+      start: 2020-03-01
+      end: 2021-08-31
+      bullets:
+      - Managed 6–8 Ruby on Rails engineers distributed across multiple countries
+      - Provided regular feedback and supported engineers' career growth through structured 1:1s
+      - Maintained and evolved team practices; facilitated staffing and hiring decisions
+      - Continued as a hands-on individual contributor (~50% of time)
+    - header: "Developer Productivity Lead"
+      start: 2018-10-01
+      end: 2020-03-31
+      bullets:
+      - Led the Developer Productivity team, improving tooling, processes, and practices to empower all developers
+      - Mentored junior developers and unlocked their growth
+      - Collaborated with SRE on infrastructure and deployment processes
+    - header: "Senior Software Engineer"
+      start: 2017-02-01
+      end: 2018-10-01
+      bullets:
+      - Implemented product features across the stack (backend, API, frontend)
+  - position: "Senior / Lead Software Engineer"
+    company:
+      name: Kenzai
+      url: https://kenzai.com
+    start: 2013-06-01
+    end: 2017-01-31
+    location: Tokyo / Remote
+    subheader: "Fitness programs delivered online"
+    bullets:
+    - Built a new Ruby on Rails application from scratch (backend, frontend, [JSON:API](https://jsonapi.org))
+    - Designed and implemented APIs consumed by mobile application contractors
+    - Established CI/CD pipeline ([Codeship](https://codeship.com)) and TDD practices (RSpec, Cucumber)
+    - Managed infrastructure on [Heroku](https://heroku.com); optimized performance with Redis and Sidekiq
+    - Contributed to open-source Ruby gems
+    - Worked closely with founders and product owner in a small, agile team
+  - position: "Senior Drupal Engineer"
+    company:
+      name: Alethia
+    start: 2012-08-01
+    end: 2013-05-31
+    location: Tokyo
+    subheader: "Small web development shop"
+    bullets:
+    - "Built [JALT](https://jalt.org/) (Japan Association for Language Teaching) website from scratch: user, group, and content management"
+    - Delivered e-commerce features and payment system upgrades for JunkSofa bike shop
+    - Maintained and extended HiringBoss "website factory" platform
+  - position: "Web Developer & Drupal Referent"
+    company:
+      name: Makina Corpus
+      url: https://makina-corpus.com
+    start: 2010-09-01
+    end: 2012-07-31
+    location: Toulouse / Remote
+    subheader: "Open-source web agency"
+    bullets:
+    - "Lab'Orange: built community website for Orange (major French telecom)"
+    - "Barrierepoker.fr: developed French online poker platform with white-label partner system"
+    - "Voyages-SNCF.com: multi-language support and performance optimization"
+    - First experience working fully remote (from Tokyo, with France)
+  - position: "Software Engineer"
+    company:
+      name: Capgemini
+      url: https://www.capgemini.com
+    start: 2006-06-01
+    end: 2010-08-31
+    location: Toulouse
+    subheader: "Global IT consulting firm"
+    bullets:
+    - "[France 24](https://www.france24.com/) & [RFI](https://www.rfi.fr/): built new Drupal-based news websites featuring persistent audio/video player"
+    - "Toulouse Blagnac Airport: led technical design, external API integration, and theming"
+    - "Participated in [Drupal.org](https://drupal.org) redesign code sprint (Paris, 2009)"
+    - Grew from junior engineer to internal Drupal referent
+    - 'Airbus "Quick Access": developed document search portlet (Java/J2EE)'
+skills:
+  title: Skills
+  entries:
+  - header: "Languages & Frameworks"
+    items:
+    - Ruby
+    - Ruby on Rails
+    - SQL
+    - HTML/CSS
+    - JavaScript
+  - header: "Practices"
+    items:
+    - TDD
+    - CI/CD
+    - Software Architecture
+    - Code Review
+    - Developer Productivity
+  - header: "Tools & Infrastructure"
+    items:
+    - Git/GitHub
+    - Relational Databases
+    - Kafka
+    - Heroku
+    - AWS
+  - header: "AI & LLM"
+    items:
+    - Claude Code
+    - Codex
+    - Pi
+    - local model deployment
+    - personal AI agent infrastructure (OpenClaw)
+  - header: "Other"
+    items:
+    - Engineering Management
+    - Mentoring
+    - Problem Solving
+    - Electronics prototyping
+    - Microcontroller hardware programming (C/C++ on Arduino, ESP)
+    - 3D Printing
+certifications:
+  title: Certifications
+  entries:
+  - name: "JLPT N1 (Japanese Language Proficiency Test)"
+    year: 2023
+  - name: "AWS Certified Solutions Architect – Associate"
+    year: 2018
+  - name: "Certified ScrumMaster"
+    year: 2016
+  - name: "TOEIC 940/990"
+    year: 2005
+education:
+  title: Education
+  entries:
+  - degree: "Master's Degree, Computer Science & Applied Mathematics"
+    school:
+      name: ENSEEIHT
+      url: https://www.enseeiht.fr
+    location: "Toulouse, France"
+    start: 2003-09-01
+    end: 2006-06-30
+  - degree: "Japanese Language Program"
+    school:
+      name: Tokyo International Japanese School
+      url: https://tijs.co.jp/en/
+    location: Tokyo
+    start: 2010-09-01
+    end: 2012-07-31
+languages:
+  title: Languages
+  entries:
+  - name: French
+    level: Native
+  - name: English
+    level: Fluent
+  - name: Japanese
+    level: Professional working proficiency
+community:
+  title: Community & Leadership 
+  entries:
+  - header: "AI Study Group"
+    organization:
+      name: Gokalab
+      url: https://gokalab.jp
+    location: Miyota
+    start: 2026-03-15
+    end: now
+    description: |
+      Founded a local AI study group at Gokalab coworking space.
+      Sessions cover LLM fundamentals, practical AI tooling, and hands-on application.
+  - header: "TOKYO Rails Meetup"
+    url: https://www.meetup.com/tokyo-rails/
+    organization:
+      name: Cookpad
+      url: https://cookpad.com
+    start: 2018-01-01
+    end: 2019-12-31
+    description: |
+      Co-organized Ruby on Rails developer gatherings with talks and networking.
+      Also presented talks.
+  - header: "Cookpad Makers Club"
+    organization:
+      name: Cookpad
+      url: https://cookpad.com
+    start: 2017-01-01
+    end: 2021-08-31
+    description: |
+      Founded an internal makers club at Cookpad.
+      Activities included microcontrollers (Arduino, ESP), sensors, electronics, 3D printing, and laser cutting.
+  - header: "Conference Attendee"
+    start: 2009-01-01
+    end: now
+    description: |
+      Regular attendee at developer conferences, including RubyKaigi (×6) and RailsWorld (×3).
