@@ -1,8 +1,3 @@
-PATH
-  remote: vendor/create_post
-  specs:
-    create_post (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,7 +126,6 @@ DEPENDENCIES
   bridgetown (~> 1.3.0)
   bridgetown-feed (~> 3.1)
   bridgetown-seo-tag (~> 6.0)
-  create_post!
   ostruct
   puma (< 7)
   rack (~> 2.2)
