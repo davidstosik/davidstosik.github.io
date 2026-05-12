@@ -191,8 +191,8 @@ skills:
     - Claude Code
     - Codex
     - Pi
-    - local model deployment
-    - personal AI agent infrastructure (OpenClaw)
+    - Local model deployment
+    - Personal AI agent infrastructure (OpenClaw)
   - header: "Other"
     items:
     - Engineering Management

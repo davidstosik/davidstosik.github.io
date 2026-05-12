@@ -1,0 +1,82 @@
+---
+layout: none
+permalink: /resume.md
+---
+{% assign resume = site.data.resume %}
+# {{ resume.header }} – Resume
+
+**{{ resume.subheader }}**
+_{{ resume.subsubheader }}_
+
+{% for social in resume.socials -%}
+{% assign social_data = social[1] -%}
+- [{{ social_data.label }}]({{ social_data.url }})
+{% endfor %}
+---
+
+## Summary
+
+{{ resume.summary | strip }}
+
+---
+
+## {{ resume.work.title }}
+
+{% for job in resume.work.entries %}
+### {{ job.position }} — {% if job.company.url %}[{{ job.company.name }}]({{ job.company.url }}){% else %}{{ job.company.name }}{% endif %}
+
+**{{ job.start | date: "%B %Y" }} – {% if job.end == "now" %}present{% else %}{{ job.end | date: "%B %Y" }}{% endif %} · {{ job.location }}**
+
+{{ job.subheader | strip }}
+
+{% for sec in job.sections %}
+#### {{ sec.header }}
+
+*{{ sec.start | date: "%B %Y" }} – {% if sec.end == "now" %}present{% else %}{{ sec.end | date: "%B %Y" }}{% endif %}*
+
+{% for bullet in sec.bullets %}- {{ bullet }}
+{% endfor %}
+{% endfor %}{% for bullet in job.bullets %}- {{ bullet }}
+{% endfor %}
+{% endfor %}
+---
+
+## {{ resume.skills.title }}
+
+{% for cat in resume.skills.entries %}- {{ cat.header }}
+{% for item in cat.items %}  - {{ item }}
+{% endfor %}{% endfor %}
+---
+
+## {{ resume.certifications.title }}
+
+{% for cert in resume.certifications.entries %}- {% if cert.url %}[{{ cert.name }}]({{ cert.url }}){% else %}{{ cert.name }}{% endif %} — {{ cert.year }}
+{% endfor %}
+---
+
+## {{ resume.education.title }}
+
+{% for edu in resume.education.entries %}
+### {{ edu.degree }}
+
+{% if edu.school.url %}[{{ edu.school.name }}]({{ edu.school.url }}){% else %}{{ edu.school.name }}{% endif %} — {{ edu.location }} · {{ edu.start | date: "%Y" }}–{{ edu.end | date: "%Y" }}
+
+{% endfor %}
+---
+
+## {{ resume.languages.title }}
+
+{% for lang in resume.languages.entries %}- **{{ lang.name }}** — {{ lang.level }}
+{% endfor %}
+---
+
+## {{ resume.community.title }}
+
+{% for entry in resume.community.entries %}
+### {% if entry.url %}[{{ entry.header }}]({{ entry.url }}){% else %}{{ entry.header }}{% endif %}{% if entry.organization %} — {% if entry.organization.url %}[{{ entry.organization.name }}]({{ entry.organization.url }}){% else %}{{ entry.organization.name }}{% endif %}{% endif %}
+
+*{{ entry.start | date: "%Y" }} – {% if entry.end == "now" %}present{% else %}{{ entry.end | date: "%Y" }}{% endif %}{% if entry.location %} · {{ entry.location }}{% endif %}*
+
+{{ entry.description | strip }}
+
+{% endfor %}
