@@ -72,6 +72,7 @@ GEM
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
     ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -110,7 +111,7 @@ GEM
       date
       stringio
     public_suffix (7.0.5)
-    puma (7.2.0)
+    puma (8.0.1)
       nio4r (~> 2.0)
     rack (3.2.6)
     rackup (2.3.1)
@@ -149,12 +150,13 @@ GEM
 
 PLATFORMS
   arm64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   bridgetown (~> 2.1.0)
   bridgetown-feed (~> 4.0)
   bridgetown-seo-tag (~> 7.0)
-  puma (< 8)
+  puma (< 9)
 
 BUNDLED WITH
    2.5.5
