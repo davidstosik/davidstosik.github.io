@@ -25,3 +25,4 @@ bower_components
 # Mac files
 .DS_Store
 
+tmp
