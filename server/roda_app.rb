@@ -6,6 +6,7 @@
 
 class RodaApp < Roda
   plugin :bridgetown_server
+  plugin :hooks
 
   # Add additional Roda configuration here if needed
 
