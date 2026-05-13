@@ -8,22 +8,22 @@ permalink: /resume/
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ resume.name }} — Resume</title>
-  <link rel="alternate" type="text/markdown" href="/resume.md" title="{{ resume.name }} resume in Markdown">
+  <title>{{ resume.name | escape }} — Resume</title>
+  <link rel="alternate" type="text/markdown" href="/resume.md" title="{{ resume.name | escape }} resume in Markdown">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "{{ resume.name }}",
-    "url": "{{ site.url }}",
-    "email": "{{ resume.socials.email.url }}",
-    "jobTitle": "{{ resume.headline }}",
-    "description": "{{ resume.summary | strip_newlines | strip | replace: '"', '\\"' }}",
+    "name": {{ resume.name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "email": {{ resume.socials.email.url | jsonify }},
+    "jobTitle": {{ resume.headline | jsonify }},
+    "description": {{ resume.summary | strip_newlines | strip | jsonify }},
     "knowsLanguage": ["fr", "en", "ja"],
     "sameAs": [
-      "{{ resume.socials.github.url }}",
-      "{{ resume.socials.linkedin.url }}",
-      "{{ resume.socials.x.url }}"
+      {{ resume.socials.github.url | jsonify }},
+      {{ resume.socials.linkedin.url | jsonify }},
+      {{ resume.socials.x.url | jsonify }}
     ]
   }
   </script>
@@ -85,9 +85,9 @@ permalink: /resume/
 
   <header>
     <div class="left">
-      <h1>{{ resume.name }}</h1>
-      <p class="headline">{{ resume.headline }}</p>
-      <p class="subheadline">{{ resume.subheadline }}</p>
+      <h1>{{ resume.name | escape }}</h1>
+      <p class="headline">{{ resume.headline | escape }}</p>
+      <p class="subheadline">{{ resume.subheadline | escape }}</p>
     </div>
     <div class="right">
       {% for social in resume.socials %}
@@ -98,14 +98,14 @@ permalink: /resume/
         <a
             class="contact-link"
             href="{{ social_data.url }}"
-            aria-label="{{ social_title }}"
-            title="{{ social_title }}"
+            aria-label="{{ social_title | escape }}"
+            title="{{ social_title | escape }}"
             {% if social_data.url contains "http" %}
               target="_blank" rel="noopener noreferrer"
             {% endif %}
         >
           <span class="icon" style="--icon: url('/images/icons/{{ icon_name }}.svg');" aria-hidden="true"></span>
-          <span>{{ social_data.label }}</span>
+          <span>{{ social_data.label | escape }}</span>
         </a>
       </p>
       {% endfor %}
@@ -114,22 +114,22 @@ permalink: /resume/
 
   <section>
     <h2>Summary</h2>
-    <p class="summary">{{ resume.summary | strip }}</p>
+    <p class="summary">{{ resume.summary | strip | escape }}</p>
   </section>
 
   <section>
-    <h2>{{ resume.work.title }}</h2>
+    <h2>{{ resume.work.title | escape }}</h2>
     {% for job in resume.work.entries %}
     <div class="job">
       <div class="job-header">
-        <span class="job-title">{{ job.position }} — {% if job.company.url %}<a href="{{ job.company.url }}">{{ job.company.name }}</a>{% else %}{{ job.company.name }}{% endif %}</span>
-        <span class="job-date">{{ job.start | date: "%B %Y" }} – {% if job.end == "now" %}present{% else %}{{ job.end | date: "%B %Y" }}{% endif %}{% if job.location %} · {{ job.location }}{% endif %}</span>
+        <span class="job-title">{{ job.position | escape }} — {% if job.company.url %}<a href="{{ job.company.url | escape }}">{{ job.company.name | escape }}</a>{% else %}{{ job.company.name | escape }}{% endif %}</span>
+        <span class="job-date">{{ job.start | date: "%B %Y" }} – {% if job.end == "now" %}present{% else %}{{ job.end | date: "%B %Y" }}{% endif %}{% if job.location %} · {{ job.location | escape }}{% endif %}</span>
       </div>
-      {% if job.subheader %}<p class="job-company">{{ job.subheader }}</p>{% endif %}
+      {% if job.subheader %}<p class="job-company">{{ job.subheader | escape }}</p>{% endif %}
       {% if job.sections %}
         {% for sec in job.sections %}
         <div class="sub-team"{% if forloop.first == false %} style="margin-top:14px;"{% endif %}>
-          <span class="sub-team-title">{{ sec.header }}</span>
+          <span class="sub-team-title">{{ sec.header | escape }}</span>
           <span class="sub-team-date"> · {{ sec.start | date: "%B %Y" }} – {% if sec.end == "now" %}present{% else %}{{ sec.end | date: "%B %Y" }}{% endif %}</span>
         </div>
         <ul>
@@ -148,60 +148,60 @@ permalink: /resume/
   </section>
 
   <section>
-    <h2>{{ resume.skills.title }}</h2>
+    <h2>{{ resume.skills.title | escape }}</h2>
     <div class="skills-grid">
       {% for cat in resume.skills.entries %}
-      <span class="skill-label">{{ cat.header }}</span>
-      <span>{{ cat.items | join: ", " }}</span>
+      <span class="skill-label">{{ cat.header | escape }}</span>
+      <span>{{ cat.items | join: ", " | escape }}</span>
       {% endfor %}
     </div>
   </section>
 
   <section>
-    <h2>{{ resume.certifications.title }}</h2>
+    <h2>{{ resume.certifications.title | escape }}</h2>
     <div class="certs-grid">
       {% for cert in resume.certifications.entries %}
-      <span class="cert-label">{{ cert.name }}</span>
+      <span class="cert-label">{{ cert.name | escape }}</span>
       <span>{{ cert.year }}</span>
       {% endfor %}
     </div>
   </section>
 
   <section>
-    <h2>{{ resume.education.title }}</h2>
+    <h2>{{ resume.education.title | escape }}</h2>
     {% for edu in resume.education.entries %}
     <div class="job">
       <div class="job-header">
-        <span class="job-title">{{ edu.degree }} — {% if edu.school.url %}<a href="{{ edu.school.url }}">{{ edu.school.name }}</a>{% else %}{{ edu.school.name }}{% endif %}</span>
-        <span class="job-date">{{ edu.start | date: "%Y" }} – {{ edu.end | date: "%Y" }}{% if edu.location %} · {{ edu.location }}{% endif %}</span>
+        <span class="job-title">{{ edu.degree | escape }} — {% if edu.school.url %}<a href="{{ edu.school.url | escape }}">{{ edu.school.name | escape }}</a>{% else %}{{ edu.school.name | escape }}{% endif %}</span>
+        <span class="job-date">{{ edu.start | date: "%Y" }} – {{ edu.end | date: "%Y" }}{% if edu.location %} · {{ edu.location | escape }}{% endif %}</span>
       </div>
     </div>
     {% endfor %}
   </section>
 
   <section>
-    <h2>{{ resume.languages.title }}</h2>
+    <h2>{{ resume.languages.title | escape }}</h2>
     <div class="lang-list">
       {% for lang in resume.languages.entries %}
-      <span class="lang-item"><strong>{{ lang.name }}</strong> {{ lang.level }}</span>
+      <span class="lang-item"><strong>{{ lang.name | escape }}</strong> {{ lang.level | escape }}</span>
       {% endfor %}
     </div>
   </section>
 
   <section>
-    <h2>{{ resume.community.title | default: "Community & Leadership" }}</h2>
+    <h2>{{ resume.community.title | default: "Community & Leadership" | escape }}</h2>
     {% assign community_entries = resume.community.entries | default: resume.community %}
     {% for entry in community_entries %}
     <div class="community-entry">
       <p class="community-title">
       {% if entry.url %}
-        <a href="{{ entry.url }}">{{ entry.header }}</a>
+        <a href="{{ entry.url | escape }}">{{ entry.header | escape }}</a>
       {% else %}
-        {{ entry.header }}
+        {{ entry.header | escape }}
       {% endif %}
-      {% if entry.organization %} — {% if entry.organization.url %}<a href="{{ entry.organization.url }}">{{ entry.organization.name }}</a>{% else %}{{ entry.organization.name }}{% endif %}{% if entry.location %}, {{ entry.location }}{% endif %}{% endif %} · {{ entry.start | date: "%Y" }} – {% if entry.end == "now" %}present{% else %}{{ entry.end | date: "%Y" }}{% endif %}
+      {% if entry.organization %} — {% if entry.organization.url %}<a href="{{ entry.organization.url | escape }}">{{ entry.organization.name | escape }}</a>{% else %}{{ entry.organization.name | escape }}{% endif %}{% if entry.location %}, {{ entry.location | escape }}{% endif %}{% endif %} · {{ entry.start | date: "%Y" }} – {% if entry.end == "now" %}present{% else %}{{ entry.end | date: "%Y" }}{% endif %}
       </p>
-      {% if entry.description %}<p class="community-desc">{{ entry.description | strip }}</p>{% endif %}
+      {% if entry.description %}<p class="community-desc">{{ entry.description | strip | escape }}</p>{% endif %}
     </div>
     {% endfor %}
   </section>
