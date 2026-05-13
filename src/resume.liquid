@@ -9,6 +9,7 @@ permalink: /resume/
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ resume.name }} — Resume</title>
+  <link rel="alternate" type="text/markdown" href="/resume.md" title="{{ resume.name }} resume in Markdown">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -184,5 +185,10 @@ permalink: /resume/
     </div>
     {% endfor %}
   </section>
+
+  <p class="llm-note">
+    <a class="screen-only" href="/resume.md">LLM token-efficient Markdown version</a>
+    <span class="print-only">LLM token-efficient Markdown version available at https://davidstosik.me/resume.md</span>
+  </p>
 </body>
 </html>
