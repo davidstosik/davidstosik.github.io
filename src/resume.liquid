@@ -9,7 +9,22 @@ permalink: /resume/
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ resume.name | escape }} — Resume</title>
+
+  {% assign meta_description = resume.summary | strip | replace: "\n", " " | replace: "  ", " " %}
+  <meta name="description" content="{{ meta_description | escape }}">
+  <link rel="canonical" href="{{ "/resume/" | absolute_url }}">
+
+  <meta property="og:title" content="{{ resume.name | escape }} — Resume">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ "/resume/" | absolute_url }}">
+  <meta property="og:type" content="profile">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ resume.name | escape }} — Resume">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+
   <link rel="alternate" type="text/markdown" href="/resume.md" title="{{ resume.name | escape }} resume in Markdown">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -18,7 +33,7 @@ permalink: /resume/
     "url": {{ site.url | jsonify }},
     "email": {{ resume.socials.email.url | jsonify }},
     "jobTitle": {{ resume.headline | jsonify }},
-    "description": {{ resume.summary | strip_newlines | strip | jsonify }},
+    "description": {{ meta_description | jsonify }},
     "knowsLanguage": ["fr", "en", "ja"],
     "sameAs": [
       {{ resume.socials.github.url | jsonify }},
