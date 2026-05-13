@@ -120,7 +120,7 @@ work:
     bullets:
     - Built a new Ruby on Rails application from scratch (backend, frontend, [JSON:API](https://jsonapi.org))
     - Designed and implemented APIs consumed by mobile application contractors
-    - Established CI/CD pipeline ([Codeship](https://codeship.com)) and TDD practices (RSpec, Cucumber)
+    - Established CI/CD pipeline (Codeship) and TDD practices (RSpec, Cucumber)
     - Managed infrastructure on [Heroku](https://heroku.com); optimized performance with Redis and Sidekiq
     - Contributed to open-source Ruby gems
     - Worked closely with founders and product owner in a small, agile team
