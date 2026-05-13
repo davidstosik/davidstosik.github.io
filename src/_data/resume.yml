@@ -169,7 +169,10 @@ skills:
     items:
     - Ruby
     - Ruby on Rails
+    - Sorbet
     - SQL
+    - PostgreSQL
+    - MySQL
     - HTML/CSS
     - JavaScript
   - header: "Practices"
@@ -182,7 +185,7 @@ skills:
   - header: "Tools & Infrastructure"
     items:
     - Git/GitHub
-    - Relational Databases
+    - Buildkite
     - Kafka
     - Heroku
     - AWS
