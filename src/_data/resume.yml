@@ -169,33 +169,41 @@ skills:
     items:
     - Ruby
     - Ruby on Rails
-    - Sorbet
     - SQL
-    - PostgreSQL
-    - MySQL
     - HTML/CSS
     - JavaScript
-  - header: "Practices"
+  - header: "Focus Areas"
     items:
-    - TDD
-    - CI/CD
-    - Software Architecture
-    - Code Review
-    - Developer Productivity
-  - header: "Tools & Infrastructure"
+    - Rails at scale
+    - Developer productivity
+    - CI performance
+    - Monolith health
+    - Testing strategy
+    - Code review
+    - Software architecture
+  - header: "Ruby/Rails Ecosystem"
     items:
-    - Git/GitHub
-    - Buildkite
-    - Kafka
-    - Heroku
-    - AWS
+    - Minitest
+    - RSpec
+    - Sorbet
+    - Packwerk
+    - gem development
   - header: "AI & LLM"
     items:
+    - Pi
     - Claude Code
     - Codex
-    - Pi
     - Local model deployment
-    - Personal AI agent infrastructure (OpenClaw)
+    - Personal AI agent infrastructure using OpenClaw
+  - header: "Tools & Infrastructure"
+    items:
+    - Buildkite
+    - GitHub Actions
+    - Kamal
+    - PostgreSQL
+    - MySQL
+    - AWS
+    - Heroku
   - header: "Other"
     items:
     - Engineering Management
