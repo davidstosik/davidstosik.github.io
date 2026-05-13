@@ -30,19 +30,20 @@ permalink: /resume/
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --accent: #2563eb; --text: #1a1a1a; --muted: #6b7280; --border: #e5e7eb; --bg: #ffffff;
+      --accent: #1d4ed8; --text: #1a1a1a; --muted: #6b7280; --border: #e5e7eb; --page-bg: #f8fafc; --bg: #ffffff;
     }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 14px; line-height: 1.6; color: var(--text); background: var(--bg); max-width: 860px; margin: 0 auto; padding: 48px 40px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 15px; line-height: 1.6; color: var(--text); background: var(--page-bg); max-width: 940px; margin: 0 auto; padding: 48px 40px; }
+    .resume-page { background: var(--bg); padding: 48px 40px; box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08); }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .top-actions { display: flex; justify-content: center; margin-bottom: 18px; }
     .print-button { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border: 1px solid var(--accent); border-radius: 6px; color: var(--accent); background: #eff6ff; font: inherit; font-weight: 600; cursor: pointer; }
     .print-button:hover { background: #dbeafe; text-decoration: none; }
     header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 2px solid var(--accent); }
-    header .left h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
-    header .left .headline { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
-    header .left .subheadline { font-size: 13px; color: var(--muted); }
-    header .right { text-align: right; font-size: 13px; color: var(--muted); flex-shrink: 0; }
+    header .left h1 { font-size: 29px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+    header .left .headline { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+    header .left .subheadline { font-size: 14px; color: var(--muted); }
+    header .right { text-align: right; font-size: 14px; color: var(--muted); flex-shrink: 0; }
     header .right a { color: var(--muted); }
     header .right a:hover { color: var(--accent); }
     header .right p { margin-bottom: 2px; }
@@ -50,32 +51,32 @@ permalink: /resume/
     .contact-link .icon { order: 2; width: 12px; height: 12px; flex: 0 0 12px; background-color: currentColor; opacity: 0.72; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
     .contact-link span { order: 1; }
     section { margin-bottom: 28px; }
-    h2 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin-bottom: 14px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
-    .summary { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin-bottom: 14px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+    .summary { font-size: 14px; color: var(--muted); line-height: 1.7; }
     .job { margin-bottom: 20px; }
     .job:last-child { margin-bottom: 0; }
     .job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 2px; }
-    .job-title { font-weight: 700; font-size: 14px; }
-    .job-date { font-size: 12px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
-    .job-company { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .job-title { font-weight: 700; font-size: 15px; }
+    .job-date { font-size: 13px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .job-company { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
     .job ul { padding-left: 18px; margin-top: 4px; }
-    .job li { margin-bottom: 3px; font-size: 13px; }
-    .sub-team { margin-top: 10px; margin-bottom: 4px; }
-    .sub-team-title { font-size: 13px; font-weight: 600; color: var(--text); }
-    .sub-team-date { font-size: 12px; color: var(--muted); }
-    .skills-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
-    .skill-label { font-weight: 600; color: var(--muted); white-space: nowrap; }
-    .certs-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+    .job li { margin-bottom: 3px; font-size: 14px; }
+    .sub-team { margin-top: 10px; margin-bottom: 4px; border-left: 2px solid var(--border); padding-left: 10px; }
+    .sub-team-title { font-size: 14px; font-weight: 600; color: var(--text); }
+    .sub-team-date { font-size: 13px; color: var(--muted); }
+    .skills-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 14px; }
+    .skill-label { font-weight: 700; color: var(--text); white-space: nowrap; }
+    .certs-grid { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 14px; }
     .cert-label { font-weight: 600; color: var(--muted); white-space: nowrap; }
-    .lang-list { display: flex; gap: 24px; font-size: 13px; }
+    .lang-list { display: flex; gap: 24px; font-size: 14px; }
     .lang-item strong { margin-right: 4px; }
     .community-entry { margin-bottom: 10px; }
     .community-entry:last-child { margin-bottom: 0; }
-    .community-title { font-weight: 600; font-size: 13px; }
-    .community-desc { font-size: 12px; color: var(--muted); }
-    .llm-note { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12px; text-align: center; }
+    .community-title { font-weight: 600; font-size: 14px; }
+    .community-desc { font-size: 13px; color: var(--muted); }
+    .llm-note { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; text-align: center; }
     .print-only { display: none; }
-    @media print { body { padding: 24px 28px; font-size: 12px; } a { color: inherit; text-decoration: none; } .top-actions, .screen-only { display: none; } .print-only { display: inline; } }
+    @media print { body { max-width: 860px; padding: 24px 28px; font-size: 12px; background: #fff; } .resume-page { padding: 0; box-shadow: none; } a { color: inherit; text-decoration: none; } .top-actions, .screen-only { display: none; } .print-only { display: inline; } header .left h1 { font-size: 28px; } header .left .headline { font-size: 14px; } header .left .subheadline, header .right { font-size: 13px; } h2 { font-size: 11px; } .summary { font-size: 13px; } .job-title { font-size: 14px; } .job-date, .job-company, .sub-team-date, .community-desc, .llm-note { font-size: 12px; } .job li, .sub-team-title, .skills-grid, .certs-grid, .lang-list, .community-title { font-size: 13px; } }
   </style>
 </head>
 <body>
@@ -83,6 +84,7 @@ permalink: /resume/
     <button type="button" class="print-button" onclick="window.print()">Print / Save as PDF</button>
   </div>
 
+  <main class="resume-page">
   <header>
     <div class="left">
       <h1>{{ resume.name | escape }}</h1>
@@ -131,11 +133,11 @@ permalink: /resume/
         <div class="sub-team"{% if forloop.first == false %} style="margin-top:14px;"{% endif %}>
           <span class="sub-team-title">{{ sec.header | escape }}</span>
           <span class="sub-team-date"> · {{ sec.start | date: "%B %Y" }} – {% if sec.end == "now" %}present{% else %}{{ sec.end | date: "%B %Y" }}{% endif %}</span>
+          <ul>
+            {% for bullet in sec.bullets %}{% capture bullet_html %}{{ bullet | markdownify }}{% endcapture %}<li>{{ bullet_html | remove: "<p>" | remove: "</p>" | strip }}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <ul>
-          {% for bullet in sec.bullets %}{% capture bullet_html %}{{ bullet | markdownify }}{% endcapture %}<li>{{ bullet_html | remove: "<p>" | remove: "</p>" | strip }}</li>
-          {% endfor %}
-        </ul>
         {% endfor %}
       {% elsif job.bullets %}
       <ul>
@@ -210,5 +212,6 @@ permalink: /resume/
     <a class="screen-only" href="{{ "/resume.md" | relative_url }}">LLM-friendly Markdown version</a>
     <span class="print-only">LLM-friendly Markdown version available at {{ "/resume.md" | absolute_url }}</span>
   </p>
+  </main>
 </body>
 </html>
