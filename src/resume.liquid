@@ -15,9 +15,9 @@ permalink: /resume/
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "{{ resume.name }}",
-    "url": "https://davidstosik.me/",
+    "url": "{{ site.url }}",
     "email": "{{ resume.socials.email.url }}",
-    "jobTitle": "Staff-level Ruby engineer",
+    "jobTitle": "{{ resume.headline }}",
     "description": "{{ resume.summary | strip_newlines | strip | replace: '"', '\\"' }}",
     "knowsLanguage": ["fr", "en", "ja"],
     "sameAs": [
@@ -207,8 +207,8 @@ permalink: /resume/
   </section>
 
   <p class="llm-note">
-    <a class="screen-only" href="/resume.md">LLM-friendly Markdown version</a>
-    <span class="print-only">LLM-friendly Markdown version available at https://davidstosik.me/resume.md</span>
+    <a class="screen-only" href="{{ "/resume.md" | relative_url }}">LLM-friendly Markdown version</a>
+    <span class="print-only">LLM-friendly Markdown version available at {{ "/resume.md" | absolute_url }}</span>
   </p>
 </body>
 </html>
