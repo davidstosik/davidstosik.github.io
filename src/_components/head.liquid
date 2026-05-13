@@ -7,3 +7,25 @@
 <script src="{% asset_path js %}" defer></script>
 {% live_reload_dev_js %}
 {% feed_meta %}
+
+{% if resource.data.permalink == "/about/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "David Stosik",
+  "url": "https://davidstosik.me/",
+  "image": "https://davidstosik.me/images/profile.jpg",
+  "email": "mailto:hi@davidstosik.me",
+  "jobTitle": "Staff-level Ruby engineer",
+  "description": "French Ruby developer based in rural Nagano, Japan.",
+  "knowsLanguage": ["fr", "en", "ja"],
+  "sameAs": [
+    "https://github.com/davidstosik",
+    "https://www.linkedin.com/in/davidstosik/",
+    "https://x.com/davidstosik",
+    "https://famichiki.jp/@davidstosik"
+  ]
+}
+</script>
+{% endif %}

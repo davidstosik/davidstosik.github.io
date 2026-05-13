@@ -10,6 +10,23 @@ permalink: /resume/
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ resume.name }} — Resume</title>
   <link rel="alternate" type="text/markdown" href="/resume.md" title="{{ resume.name }} resume in Markdown">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ resume.name }}",
+    "url": "https://davidstosik.me/",
+    "email": "{{ resume.socials.email.url }}",
+    "jobTitle": "Staff-level Ruby engineer",
+    "description": "{{ resume.summary | strip_newlines | strip | replace: '"', '\\"' }}",
+    "knowsLanguage": ["fr", "en", "ja"],
+    "sameAs": [
+      "{{ resume.socials.github.url }}",
+      "{{ resume.socials.linkedin.url }}",
+      "{{ resume.socials.x.url }}"
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
