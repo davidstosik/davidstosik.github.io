@@ -1,6 +1,6 @@
-header: "David Stosik"
-subheader: "Staff-level Ruby engineer with 20 years of experience."
-subsubheader: "Writes high-quality software, tackles elusive bugs, grows strong engineers, builds with AI."
+name: "David Stosik"
+headline: "Staff-level Ruby engineer with 20 years of experience."
+subheadline: "Writes high-quality software, tackles elusive bugs, grows strong engineers, builds with AI."
 socials:
   email:
     label: david@davidstosik.me

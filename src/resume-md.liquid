@@ -3,10 +3,10 @@ layout: none
 permalink: /resume.md
 ---
 {% assign resume = site.data.resume %}
-# {{ resume.header }} – Resume
+# {{ resume.name }} – Resume
 
-**{{ resume.subheader }}**
-_{{ resume.subsubheader }}_
+**{{ resume.headline }}**
+_{{ resume.subheadline }}_
 
 {% for social in resume.socials -%}
 {% assign social_data = social[1] -%}
