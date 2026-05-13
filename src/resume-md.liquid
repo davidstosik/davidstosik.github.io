@@ -78,5 +78,8 @@ _{{ resume.subheadline }}_
 *{{ entry.start | date: "%Y" }} – {% if entry.end == "now" %}present{% else %}{{ entry.end | date: "%Y" }}{% endif %}{% if entry.location %} · {{ entry.location }}{% endif %}*
 
 {{ entry.description | strip }}
-
 {% endfor %}
+
+---
+
+_[Printable HTML version]({{ "/resume/" | absolute_url }})_
