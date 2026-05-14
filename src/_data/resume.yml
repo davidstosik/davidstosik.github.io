@@ -14,6 +14,10 @@ socials:
     label: github.com/davidstosik
     url: https://github.com/davidstosik
     title: "GitHub"
+  website:
+    label: davidstosik.me/resume
+    url: https://davidstosik.me/resume/
+    title: "Resume URL"
   x:
     label: x.com/davidstosik
     url: https://x.com/davidstosik
