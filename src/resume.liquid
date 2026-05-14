@@ -10,18 +10,20 @@ permalink: /resume/
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ resume.name | escape }} — Resume</title>
 
-  {% assign meta_description = resume.summary | strip | replace: "\n", " " | replace: "  ", " " %}
+  {% assign meta_description = resume.headline | append: ". " | append: resume.subheadline | strip | normalize_whitespace %}
   <meta name="description" content="{{ meta_description | escape }}">
   <link rel="canonical" href="{{ "/resume/" | absolute_url }}">
 
+  <meta property="og:url" content="{{ "/resume/" | absolute_url }}">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="{{ resume.name | escape }} — Resume">
   <meta property="og:description" content="{{ meta_description | escape }}">
-  <meta property="og:url" content="{{ "/resume/" | absolute_url }}">
-  <meta property="og:type" content="profile">
+  <meta property="og:image" content="{{ "/images/profile-1200x630.jpg" | absolute_url }}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ resume.name | escape }} — Resume">
   <meta name="twitter:description" content="{{ meta_description | escape }}">
+  <meta name="twitter:image" content="{{ "/images/profile-1200x630.jpg" | absolute_url }}">
 
   <link rel="alternate" type="text/markdown" href="/resume.md" title="{{ resume.name | escape }} resume in Markdown">
 
