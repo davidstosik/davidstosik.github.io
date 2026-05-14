@@ -133,7 +133,7 @@ permalink: /resume/
 
   <section>
     <h2>Summary</h2>
-    <p class="summary">{{ resume.summary | strip | escape }}</p>
+    <div class="summary">{{ resume.summary | markdownify }}</div>
   </section>
 
   <section>
