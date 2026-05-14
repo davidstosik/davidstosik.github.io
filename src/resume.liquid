@@ -93,6 +93,7 @@ permalink: /resume/
     .community-title { font-weight: 600; font-size: 14px; }
     .community-desc { font-size: 13px; color: var(--muted); }
     .llm-note { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; text-align: center; }
+    .last-updated { margin-top: 8px; color: var(--muted); font-size: 12px; text-align: center; }
     .print-only { display: none; }
     @media print { body { max-width: 860px; padding: 24px 28px; font-size: 12px; background: #fff; } .resume-page { padding: 0; box-shadow: none; } a { color: inherit; text-decoration: none; } .top-actions, .screen-only { display: none; } .print-only { display: inline; } header .left h1 { font-size: 28px; } header .left .headline { font-size: 14px; } header .left .subheadline, header .right { font-size: 13px; } h2 { font-size: 11px; } .summary { font-size: 13px; } .job-title { font-size: 14px; } .job-date, .job-company, .sub-team-date, .community-desc, .llm-note { font-size: 12px; } .job li, .sub-team-title, .skills-grid, .certs-grid, .lang-list, .community-title { font-size: 13px; } }
   </style>
@@ -230,6 +231,9 @@ permalink: /resume/
     <a class="screen-only" href="{{ "/resume.md" | relative_url }}">LLM-friendly Markdown version</a>
     <span class="print-only">LLM-friendly Markdown version available at {{ "/resume.md" | absolute_url }}</span>
   </p>
+  {% if resume.updated_at %}
+  <p class="last-updated">Last updated: {{ resume.updated_at | date: "%B %-d, %Y" }}</p>
+  {% endif %}
   </main>
 </body>
 </html>
