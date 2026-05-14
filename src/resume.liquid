@@ -231,9 +231,7 @@ permalink: /resume/
     <a class="screen-only" href="{{ "/resume.md" | relative_url }}">LLM-friendly Markdown version</a>
     <span class="print-only">LLM-friendly Markdown version available at {{ "/resume.md" | absolute_url }}</span>
   </p>
-  {% if resume.updated_at %}
   <p class="last-updated">Last updated: {{ resume.updated_at | date: "%B %-d, %Y" }}</p>
-  {% endif %}
   </main>
 </body>
 </html>
