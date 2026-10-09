@@ -1,0 +1,9 @@
+---
+layout: md
+---
+
+# {{ page.title }}
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+{{ page.date | date: date_format }}{% unless page.published %} · draft{% endunless %}
+
+{{ content }}
