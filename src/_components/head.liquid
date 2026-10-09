@@ -3,6 +3,10 @@
 {% capture resource_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
 {% seo %}
 
+{% if resource.data.markdown_url %}
+<link rel="alternate" type="text/markdown" href="{{ resource.data.markdown_url | absolute_url | escape }}" title="Markdown version" />
+{% endif %}
+
 <link rel="stylesheet" href="{% asset_path css %}" />
 <script src="{% asset_path js %}" defer></script>
 {% live_reload_dev_js %}
