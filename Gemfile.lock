@@ -110,7 +110,7 @@ GEM
     prettyprint (0.2.0)
     prism (1.9.0)
     public_suffix (7.0.5)
-    puma (7.2.1)
+    puma (8.0.2)
       nio4r (~> 2.0)
     rack (3.2.6)
     rackup (2.3.1)
@@ -160,7 +160,7 @@ DEPENDENCIES
   bridgetown (~> 2.2.2)
   bridgetown-feed (~> 4.0)
   bridgetown-seo-tag (~> 7.0)
-  puma (< 8)
+  puma (~> 8.0)
 
 BUNDLED WITH
    2.5.5
