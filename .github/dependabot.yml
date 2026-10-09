@@ -1,17 +1,47 @@
 version: 2
+# Batch routine maintenance for this static site. Security updates run independently
+# of the version-update schedule, cooldown, and open-pull-requests-limit.
+# For version updates, group minor/patch releases; leave major upgrades separate.
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 20
+      interval: "monthly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    groups:
+      actions-maintenance:
+        applies-to: version-updates
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 20
+      interval: "monthly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    groups:
+      npm-maintenance:
+        applies-to: version-updates
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+      npm-security:
+        applies-to: security-updates
+        patterns: ["*"]
   - package-ecosystem: "bundler"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 20
+      interval: "monthly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    groups:
+      ruby-maintenance:
+        applies-to: version-updates
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+      ruby-security:
+        applies-to: security-updates
+        patterns: ["*"]
