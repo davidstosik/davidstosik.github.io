@@ -1,0 +1,104 @@
+[
+  {
+    "variant": "baseline",
+    "name": "homepage",
+    "errors": [],
+    "desktop": {
+      "title": "Sto’s thoughts: Sto’s thoughts",
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "variant": "baseline",
+    "name": "post",
+    "errors": [],
+    "desktop": {
+      "title": "Deploying Writebook with Kamal 2 | Sto’s thoughts",
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "horizontalOverflow": true
+    }
+  },
+  {
+    "variant": "ruby",
+    "name": "homepage",
+    "errors": [],
+    "desktop": {
+      "title": "Sto’s thoughts: Sto’s thoughts",
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "variant": "ruby",
+    "name": "post",
+    "errors": [],
+    "desktop": {
+      "title": "Deploying Writebook with Kamal 2 | Sto’s thoughts",
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "horizontalOverflow": true
+    }
+  },
+  {
+    "variant": "js",
+    "name": "homepage",
+    "errors": [],
+    "desktop": {
+      "title": "Sto’s thoughts: Sto’s thoughts",
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "variant": "js",
+    "name": "post",
+    "errors": [],
+    "desktop": {
+      "title": "Deploying Writebook with Kamal 2 | Sto’s thoughts",
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "horizontalOverflow": true
+    }
+  },
+  {
+    "variant": "ruby",
+    "name": "homepage",
+    "differentColorChannels": 0,
+    "totalColorChannels": 4752000
+  },
+  {
+    "variant": "ruby",
+    "name": "post",
+    "differentColorChannels": 0,
+    "totalColorChannels": 4752000
+  },
+  {
+    "variant": "js",
+    "name": "homepage",
+    "differentColorChannels": 0,
+    "totalColorChannels": 4752000
+  },
+  {
+    "variant": "js",
+    "name": "post",
+    "differentColorChannels": 0,
+    "totalColorChannels": 4752000
+  }
+]
