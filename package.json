@@ -10,13 +10,13 @@
   "devDependencies": {
     "esbuild": "^0.28.2",
     "glob": "^13.0.6",
-    "mvp.css": "^1.6.2",
-    "postcss": "^8.5.26",
+    "mvp.css": "^1.18.0",
+    "postcss": "^8.5.29",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^16.0.0",
+    "postcss-import": "^17.0.0",
     "postcss-load-config": "^6.0.1",
-    "postcss-preset-env": "^11.3.2",
-    "sass": "^1.102.0",
-    "sass-loader": "^16.0.8"
+    "postcss-preset-env": "^11.6.1",
+    "sass": "^1.105.1",
+    "sass-loader": "^17.0.1"
   }
 }
