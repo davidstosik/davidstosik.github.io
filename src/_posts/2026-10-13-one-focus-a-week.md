@@ -1,6 +1,8 @@
 ---
 title: 'One focus a week'
 date: 2026-10-13
+description: >-
+  Trying to do more by doing less: one focus a week, ignore the rest. Hopefully progress comes.
 category: dev
 published: true
 image:
