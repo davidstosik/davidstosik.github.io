@@ -63,8 +63,8 @@ The printer is an Ultimaker 3 Extended. My employer acquired it recently and bui
 <div class="flex-centered">
   <figure>
     <video controls muted loop playsinline preload="metadata" width="560" style="max-width: 100%; height: auto;" aria-label="Ultimaker 3 Extended printing the first layers of the adapter">
-      <source src="/images/2019-04-16/printing-first-layers.mp4" type="video/mp4">
-      <a href="/images/2019-04-16/printing-first-layers.mp4">Download the video of the first layers being printed.</a>
+      <source src="/videos/2019-04-16/printing-first-layers.mp4" type="video/mp4">
+      <a href="/videos/2019-04-16/printing-first-layers.mp4">Download the video of the first layers being printed.</a>
     </video>
     <figcaption>Printing the first few layers.</figcaption>
   </figure>
@@ -153,8 +153,8 @@ Final test: it works!
 <div class="flex-centered">
   <figure>
     <video controls muted loop playsinline preload="metadata" width="300" style="max-width: 100%; height: auto;" aria-label="Sesame smart lock turning the door lock through the printed adapter">
-      <source src="/images/2019-04-16/working-lock.mp4" type="video/mp4">
-      <a href="/images/2019-04-16/working-lock.mp4">Download the video of the working lock.</a>
+      <source src="/videos/2019-04-16/working-lock.mp4" type="video/mp4">
+      <a href="/videos/2019-04-16/working-lock.mp4">Download the video of the working lock.</a>
     </video>
     <figcaption>The final test: the lock works with the adapter.</figcaption>
   </figure>
