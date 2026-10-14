@@ -1,7 +1,7 @@
 ---
 title: I 3D-printed an adapter to put my Sesame smart lock on my door
 date: 2019-04-16 09:03:30 +09:00
-category: dev
+category: diy
 description: Designing and 3D-printing an adapter to fit a Sesame smart lock around a curved door handle, from Fusion 360 prototypes to the working installation.
 image: "/images/2019-04-16/sesame-smart-lock.jpg"
 lang: en
