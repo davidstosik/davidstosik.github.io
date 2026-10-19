@@ -10,11 +10,13 @@ tags:
   - 2026W43
 published: true
 image:
-  path:
-  width:
-  height:
-  alt:
+  path: /images/2026-10-19/llm-tools-exploration.jpg
+  width: 1672
+  height: 941
+  alt: A closed laptop beside a Mac mini and a monitor showing agent tasks, with Mount Asama visible through the window at dusk.
 ---
+
+![{{ page.image.alt }}]({{ page.image.path }})
 
 _(For the record, this was initially planned to be my week 42 focus, but a national holiday, two days at the [Kaigi on Rails] conference and being sick contributed to a short and unproductive week...)_
 
