@@ -82,3 +82,7 @@ weeks on how it feels.
 There are only 11 weeks left in the year. That's potentially 11 ideas I could
 dedicate time to before 2027! It does not sound like a lot, but is also way
 more than I've seriously worked on so far in 2026!
+
+## Focus weeks
+
+- 2026W43: [LLM tools exploration]({% link _posts/2026-10-19-focus-llm-tools-exploration.md %})
