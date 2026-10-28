@@ -86,3 +86,4 @@ more than I've seriously worked on so far in 2026!
 ## Focus weeks
 
 - 2026W43: [LLM tools exploration]({% link _posts/2026-10-19-focus-llm-tools-exploration.md %})
+- 2026W44: [Making my smart lock smarter]({% link _posts/2026-10-28-focus-making-my-smart-lock-smarter.md %})
