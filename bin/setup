@@ -1,0 +1,9 @@
+#!/usr/bin/env -S mise exec -- sh
+set -eu
+
+cd "$(dirname "$0")/.."
+
+bundle install
+npm ci
+
+printf '\nSetup complete. Start the development server with bin/bt dev.\n'
