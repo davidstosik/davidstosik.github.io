@@ -1,12 +1,19 @@
 ---
 title: 'No "focus" last week, but I built another iOS app prototype (2026W46)'
 date: 2026-11-16
-description: "I couldn't spend serious time focused on producing something, but I had my coding agent make a basic iOS application."
+description: "Recovering from a difficult week, I built an iOS app prototype from my phone to preserve the cute things my daughter says."
 category: dev
 tags:
   - focus
   - 2026W46
+image:
+  path: /images/2026-11-16/lion-banner.jpg
+  width: 1200
+  height: 675
+  alt: A cheerful lion riding in a blue-and-white garbage truck on a leafy Japanese residential street.
 ---
+
+![{{ page.image.alt }}]({% link images/2026-11-16/lion-banner.jpg %})
 
 After four nights at the hospital, our daughter Amélie was finally discharged on Saturday, November 7.
 We're glad she's okay, though childhood asthma means that we'll have to keep an eye on it.
