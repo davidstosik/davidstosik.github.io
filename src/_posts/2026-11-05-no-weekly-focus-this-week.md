@@ -1,5 +1,5 @@
 ---
-title: 'No weekly focus this week'
+title: 'No weekly focus this week (2026W45)'
 date: 2026-11-05
 description: 'Sometimes, life happens, and one needs to adjust course.'
 category: dev
